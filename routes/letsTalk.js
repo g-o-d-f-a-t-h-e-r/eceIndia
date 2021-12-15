@@ -289,8 +289,8 @@ router.post('/', (req, res) => {
         port:587,
         secure:false,
         auth: {
-          user: 'eceindia2021@gmail.com', // generated ethereal user
-          pass: 'eceIndia@1234', // generated ethereal password
+          user: 'emailAddAdmin', // generated ethereal user
+          pass: 'passwordAdmin', // generated ethereal password
         },
     });
 
