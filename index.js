@@ -10,10 +10,7 @@ const letsTalkRoute = require('./routes/letsTalk')
 const careerRoute = require('./routes/career')
 const applyRoute = require('./routes/apply')
 const achievementsRoute = require('./routes/achievements')
-const aboutUsRoute = require('./routes/aboutUs')
-const projectsRoute = require('./routes/projects')
-const downloadsRoute = require('./routes/downloads')
-const vendorRegistrationRoute = require('./routes/vendorRegistration')
+
 
 const port = process.env.PORT || 80
 
@@ -38,10 +35,7 @@ app.use('/letsTalk', letsTalkRoute)
 app.use('/career', careerRoute)
 app.use('/apply', applyRoute)
 app.use('/achievements', achievementsRoute)
-app.use('/aboutUs', aboutUsRoute)
-app.use('/projects', projectsRoute)
-app.use('/downloads', downloadsRoute)
-app.use('/vendorRegistration', vendorRegistrationRoute)
+
 
 
 
