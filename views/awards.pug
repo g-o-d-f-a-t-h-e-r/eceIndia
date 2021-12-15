@@ -1,0 +1,71 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/awards.css") 
+        title Awards
+    body 
+        
+        include ./nav.pug
+
+        div.awards-container
+            div.cover-img
+                img(src="../public/img/awards.jfif", alt="Awards")
+
+                div.awards
+                    h2 Awards
+
+                    div.awardsMsg
+                        h3 We have aced multiple times in the solar energy field and have won several awards for manufacturing best-in-class solar products.
+        
+
+        div.awards-sec
+            h2 Moments of Honor
+
+            div.para
+                p Our years of hard work and dedication in the solar industry have been outstanding and we have come this far and will always continue to achieve more milestones in the future.
+                p We dedicate our success to all the people in the ECE Family who worked very hard and made this possible.
+                p Today, we pledge to serve more and contribute to nature and society in the future ahead.
+
+            div.awards-display
+                div.sec
+                    div.subSec
+                        div.award
+                            div.awardImg
+                                img(src="../public/img/indiaGreenAward.jpg", alt="Award")
+                            p Indian Federation of Green Energy
+
+                        div.award
+                            div.awardImg
+                                img(src="../public/img/top10.jpg", alt="Award")
+                            p Recognized by Industry Outlook
+
+                    div.subSec
+                        div.award
+                            div.awardImg
+                                img(src="../public/img/sakalExcellenceAward.jpg", alt="Award")
+                            p Sakal News Group
+
+                        div.award
+                            div.awardImg
+                                img(src="../public/img/industrialExcellenceAward.jpg", alt="Award")
+                            p Industrial Engineers Institutes India
+
+                    div.subSec
+                        div.award
+                            div.awardImgLast
+                                img(src="../public/img/amravatiUdyogRatnaAward.jpg", alt="Award")
+                            p Future Earth Foundation
+
+                div.sec
+                    div.big-award
+                        img(src="../public/img/award.jpg", alt="Big Award")
+
+        include ./footer.pug
+
+
+
+        script(src="../public/js/awards.js") 

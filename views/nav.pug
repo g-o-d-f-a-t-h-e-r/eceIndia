@@ -1,0 +1,263 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet",href="../public/css/nav.css")
+    title nav
+  body 
+
+
+    header#navbar.nav
+      div#logo
+        a(href="/") 
+          img#logoImg(src="../public/img/ECE_India1.png", alt="ECE INDIA")
+          p#logoText ECE (INDIA) ENERGIES PRIVATE LIMITED
+
+      div#menu
+        ul
+            li.home-nav #[a(href="/" onclick = "scrolltop()") Home]
+              div.sub-menu-0.sub-menu
+                ul.homeDrop 
+                  li #[a(href='/ecesDistributors') ECE's Distributors]
+
+            li.aboutUs-nav #[a About Us]
+              div.sub-menu-1.sub-menu
+                ul.aboutUsDrop 
+                  li #[a(href='/aboutUs/companyProfile') Company Profile]
+                  li #[a(href='/aboutUs/directorsDesk') Director's Desk]
+            li.products-nav #[a Products]
+              div.sub-menu-2.sub-menu
+                ul.productsDrop 
+                  li.pvModules #[a PV Modules &nbsp &nbsp &nbsp >]
+                    div.sub-menu-2-1.sub-menu
+                      ul.pvModulesDrop 
+                        li.polyCrystaline #[a Poly Crystaline &nbsp &nbsp &nbsp >]
+                          div.sub-menu-2-1-1.sub-menu
+                            ul.polyCrystalineDrop 
+                              li #[a(href='/66CellPoly') 66 Cell Poly]
+                              li #[a(href='/72CellPoly') 72 Cell Poly]
+                              li #[a(href='/144CellPoly') 144 Cell Poly]
+
+                        li.monoPerc #[a Mono Perc &nbsp &nbsp &nbsp >]
+                          div.sub-menu-2-1-2.sub-menu
+                            ul.monoPercDrop 
+                              li #[a(href='/60CellMono') 60 Cell Mono]
+                              li #[a(href='/72CellMono') 72 Cell Mono]
+                              li #[a(href='/144CellMono') 144 Cell Mono]
+
+                        li.bifacial #[a Bifacial &nbsp &nbsp &nbsp >]
+                          div.sub-menu-2-1-3.sub-menu
+                            ul.bifacialDrop 
+                              li #[a(href='/framed') Framed]
+                              li #[a(href='/unframed') Unframed]
+
+                        li #[a(href='/bipv') BIPV]
+
+                        li.dcr #[a DCR &nbsp &nbsp &nbsp >]
+                          div.sub-menu-2-1-4.sub-menu
+                            ul.dcrDrop
+                              li #[a(href='/66CellDcr') 66 Cell DCR]
+                              li #[a(href='/72CellDcr') 72 Cell DCR]
+
+                        li #[a(href='/flexible') Flexible]
+
+
+                  li.solarHomeLightening #[a Solar Home Lightening &nbsp &nbsp &nbsp >]
+                    div.sub-menu-2-2.sub-menu
+                      ul.solarHomeLighteningDrop 
+                        li #[a(href='/homeLightSystems') Home Light Systems]
+                        li #[a(href='/solarCooker') Solar Cooker]
+                        li #[a(href='/solarLantern') Solar Lantern]
+                        li #[a(href='/solarInsectKiller') Solar Insect killer]
+                        li #[a(href='/solarSystem') Solar System]
+                        li.trafficSignal #[a Traffic Signal &nbsp &nbsp &nbsp >]
+                          div.sub-menu-2-2-1.sub-menu
+                            ul.trafficSignalDrop
+                              li #[a(href='/solarBlinker') Solar Blinker]
+                              li #[a(href='/solarStreetLight') Solar Street Light]
+
+
+            li.projects-nav #[a(href="/projects") Projects]
+
+
+            li.solutions-nav #[a Solutions]
+              div.sub-menu-3.sub-menu
+                ul.solutionsDrop 
+                  li.productBelow20Kw #[a Products Below 20 KW &nbsp &nbsp &nbsp >]
+                    div.sub-menu-3-1.sub-menu
+                      ul.productsBelow20KwDrop 
+                        li #[a(href='/commercialBelow20Kw') Commercial Below 20 KW]
+                        li #[a(href='/residentialBelow20Kw') Residential Below 20 KW]
+
+                  li.productAbove20Kw #[a Products Above 20 KW &nbsp &nbsp &nbsp >]
+                    div.sub-menu-3-2.sub-menu
+                      ul.productsAbove20KwDrop 
+                        li #[a(href='/commercialAbove20Kw') Commercial Above 20KW]
+                        li #[a(href='/industrialAbove20Kw') Industrial Above 20 KW]
+
+                  li.oAndM #[a Operation & Maintainance &nbsp &nbsp &nbsp >]
+                    div.sub-menu-3-3.sub-menu
+                      ul.oAndMDrop 
+                        li #[a(href='/spares') Spares]
+
+                        li.amc #[a AMC &nbsp &nbsp &nbsp >]
+                          div.sub-menu-3-3-1.sub-menu
+                            ul.amcDrop 
+                              li #[a(href='/cleaningServices') Cleaning Services]
+                              li #[a(href='/electricalMaintainance') Electrical Maintainance]
+
+
+                  li #[a(href='/solarEpc') Solar EPC]
+                  li #[a(href='/largeProjects') Large Projects / Utility Projects]
+                  li #[a(href='/lisening') Lisening]
+
+            li.downloads-nav #[a Downloads]
+              div.sub-menu-4.sub-menu
+                ul.downloadsDrop
+                  li #[a(href='/downloads/vendorRegistrationForm') Vendor Registration Form]
+                  li #[a(href='/downloads/clientRegistrationForm') Client Registration Form]
+
+            li.blogs-nav #[a(href="/blogs") Blogs]
+            li.contactUs-nav #[a(href="/contactUs") Contact Us]
+            li.news-nav #[a(href="/news") News]
+            li.career-nav #[a(href="/career") Career]
+
+            li.achievements-nav #[a Achievements]
+              div.sub-menu-5.sub-menu
+                ul.achievementsDrop 
+                  li #[a(href='/achievements/certifications') Certifications]
+                  li #[a(href='/achievements/awards') Awards]
+                  li #[a(href='/achievements/patents') R&D / Patents]
+
+            li.photoGallery-nav #[a(href="/photoGallery") Photo Gallery]
+
+      div.hamburger
+        div.hamburger-line
+
+
+    div.dropdown-menu
+      ul 
+        li.home-drop #[p #[a.active Home] #[i.arrow.down]]
+          div.home-menu.sub-menu-drop
+            ul 
+              li #[a(href='/ecesDistributors') ECE's Distributors]
+
+        li.aboutUs-drop #[p #[a About us] #[i.arrow.down]]
+          div.aboutUs-menu.sub-menu-drop
+            ul 
+              li #[a(href='/aboutUs/companyProfile') Company Profile]
+              li #[a(href='/aboutUs/directorsDesk') Directors Desk]
+
+
+        li.products-drop #[p #[a Products] #[i.arrow.down]]
+           div.products-menu.sub-menu-drop
+            ul 
+              li.pvModule-drop #[p #[a PV Module] #[i.arrow.down]]
+                 div.pvModule-menu.sub-menu2-drop
+                  ul 
+                    li.polyCrystaline-drop #[p #[a Poly Crystaline] #[i.arrow.down]]
+                      div.polyCrystaline-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/66CellPoly") 66 Cell Poly]
+                          li #[a(href="/72CellPoly") 72 Cell Poly]
+                          li #[a(href="/144CellPoly") 144 Cell Poly]
+
+                    li.monoPerc-drop #[p #[a Mono Perc] #[i.arrow.down]]
+                      div.monoPerc-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/60CellMono") 60 Cell Mono]
+                          li #[a(href="/72CellMono") 72 Cell Mono]
+                          li #[a(href="/144CellMono") 144 Cell Mono]
+
+                    li.bifacial-drop #[p #[a Bifacial] #[i.arrow.down]]
+                      div.bifacial-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/framed") Framed]
+                          li #[a(href="/unframed") Unframed]
+
+                    li #[a BIPV]
+                    li.dcr-drop #[p #[a DCR] #[i.arrow.down]]
+                      div.dcr-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/66CellDcr") 66 Cell DCR]
+                          li #[a(href="/72CellDcr") 72 Cell DCR]
+
+                    li #[a Flexible]
+                
+
+              li.solarHomeLightening-drop #[p #[a(style="color:white") Solar Home Lightening] #[i(style="border-color : white").arrow.down]]
+                div.solarHomeLightening-menu.sub-menu2-drop
+                  ul 
+                    li #[a(href="/homeLightSystem") Home Light System]
+                    li #[a(href="/solarCooker") Solar Cooker]
+                    li #[a(href="/solarLantern") Solar Lantern]
+                    li #[a(href="/solarInsectKiller") Solar Insect Killer]
+                    li #[a(href="/solarSystem") Solar System]
+                    li.trafficSignal-drop #[p #[a Traffic Signal] #[i.arrow.down]]
+                      div.trafficSignal-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/solarBlinker") Solar Blinker]
+                          li #[a(href="/solarStreetLight") Solar Street Light]
+        
+        li.projects-drop #[a(href='/projects') Projects]
+
+ 
+        li.solutions-drop #[p #[a Solutions] #[i.arrow.down]]
+          div.solutions-menu.sub-menu-drop
+            ul 
+              li.productsBelow20Kw-drop #[p #[a Products Below 20KW] #[i.arrow.down]]
+                div.productsBelow20Kw-menu.sub-menu2-drop
+                  ul 
+                    li #[a(href="/commercialBelow20Kw") Commercial Below 20KW]
+                    li #[a(href="/residentialBelow20Kw") Residential Below 20KW]
+
+              li.productsAbove20Kw-drop #[p #[a Products Above 20KW] #[i.arrow.down]]
+                 div.productsAbove20Kw-menu.sub-menu2-drop
+                  ul 
+                    li #[a(href="/commercialAbove20Kw") Commercial Above 20KW]
+                    li #[a(href="/industrialAbove20Kw") Industrial Above 20KW]
+
+              li.operationAndMaintainance-drop #[p #[a Operation And Maintainance] #[i.arrow.down]]
+                div.operationAndMaintainance-menu.sub-menu2-drop
+                  ul 
+                    li #[a(href="/commercialAbove20Kw") Spares]
+                    li.amc-drop #[p #[a AMC] #[i.arrow.down]]
+                       div.amc-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/cleaningServices") Cleaning Services]
+                          li #[a(href="/electricalMaintainance") Electrical Maintainance]
+
+              li #[a(href="/solarEpc") Solar EPC]
+              li #[a(href="/largeProjects") Large Projects / Utility Projects]
+              li #[a(href="/lisening") Lisening]
+
+        li.downloads-drop #[p #[a Downloads] #[i.arrow.down]]
+          div.downloads-menu.sub-menu-drop
+            ul 
+              li #[a(href="/downloads/vendorRegistrationForm") Vendor Registration Form]
+              li #[a(href="/downloads/clientRegistrationForm") Client Registration Form]
+
+        li.blogs-drop #[a(href='/blogs') Blogs]
+        li.contactUs-drop #[a(href='/contactUs') Contact Us]
+        li.news-drop #[a(href='/news') News]
+        li.career-drop #[a(href='/career') Career]
+        li.achievements-drop #[p #[a Achievements] #[i.arrow.down]]
+          div.achievements-menu.sub-menu-drop
+            ul 
+              li #[a(href="/achievements/certifications") Certifications]
+              li #[a(href="/achievements/awards") Awards]
+              li #[a(href="/achievements/patents") R&D / Patents]
+
+
+        li.photoGallery-drop #[a(href='/photoGallery') Photo Gallery]
+
+
+
+    
+
+    div.msg
+      img(src="../public/img/rotate.png", alt="rotate")
+
+    script(src="../public/js/main.js") 

@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+:root{
+	--theme : rgb(0, 67, 155);
+	--old-color : rgb(0, 117, 196);
+	--background : #0a122e;
+	--greyBackground : rgb(236, 234, 234);
+	--whiteBgHead : #162661;
+	--whiteBgText : rgb(79, 99, 114);
+	--blueBgText : rgb(221, 221, 221);
+	--extraDarkBackground : #030816;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+	outline: none;
+
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutUs-nav a.active{
+    color: var(--theme) !important;
+}
+
+.aboutUs-nav a.active::after{
+    background-color: var(--theme) !important;
+    width: 100% !important;
+}
+
+
+.aboutUs-container{
+    margin-top: 70px;
+}
+
+.cover-img{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}
+
+.cover-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.aboutUs{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 40px 100px;
+    overflow: hidden;
+    user-select: none;
+}
+
+
+.aboutUs h2{
+    position: relative;
+    color: white;
+    font-size: 40px;
+    user-select: none;
+    padding-left: 15px;
+}
+
+.aboutUs h2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.aboutUsMsg{
+    max-width: 100%;
+    color: var(--blueBgText);
+    /* background-color: pink; */
+    margin: 80px 200px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 40px black;
+}
+
+
+
+.our-story-container{
+    width: 100%;
+    padding: 40px 100px;
+    background-color: var(--greyBackground);
+}
+
+.our-story-container h2{
+    text-align: center;
+    color: var(--whiteBgHead);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.our-story{
+    display: flex;
+}
+
+.our-story-para{
+    flex: 3;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding : 20px;
+    font-size: 15px;
+}
+
+.our-story-img{
+    width: 400px;
+    /* height: 500px; */
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.our-story-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.our-story-img img:hover{
+    transform: scale(1.01);
+}
+
+.qualityAndFocus{
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qualityPolicy{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    /* height: 600px; */
+}
+
+.qualityPolicy h2{
+    font-size: 40px;
+    color: var(--whiteBgHead);
+    text-align: center;
+}
+
+.qualityPara{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.qualityPoints{
+    background-color: var(--background);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.qualityPoints p{
+    margin: 10px;
+}
+
+
+.focusArea{
+    position: relative;
+    /* height: 600px; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.focusArea h2{
+    font-size: 40px;
+    color: var(--whiteBgHead);
+    text-align: center;
+}
+
+.focusPara{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+
+.point{
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+}
+
+.point span{
+    font-size: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--whiteBgHead);
+    padding: 10px;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.point span:hover{
+    background-color: var(--whiteBgHead);
+    color: white;
+}
+
+.point h6{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30px;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+.training-container{
+    padding: 40px 100px;
+    background-color: var(--greyBackground);
+}
+
+.training-container h2{
+    font-size: 40px;
+    color: var(--whiteBgHead);
+    text-align: center;
+}
+
+
+.training{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.training .para{
+    width: 60%;
+    font-size: 15px;
+    height: 300px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.trainingImg{
+    width: 40%;
+    height: 300px;
+    overflow: hidden;
+    user-select: none;
+    border-radius: 10px;
+}
+
+.trainingImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-out;
+}
+
+.trainingImg img:hover{
+    transform: scale(1.01);
+}
+
+
+.ourInfrastructure{
+    padding: 40px 100px;
+}
+
+.ourInfrastructure h2{
+    font-size: 40px;
+    color: var(--whiteBgHead);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.infra-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.infra-sec-text{
+    width: 40%;
+    font-size: 15px;
+    padding: 20px;
+}
+
+
+.infra-sec-img{
+    width: 60%;
+    height: 400px;
+    overflow: hidden;
+    user-select: none;
+    border-radius: 10px;
+}
+
+.infra-sec-img img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-out;
+    object-fit: cover;
+}
+
+.infra-sec-img img:hover{
+    transform: scale(1.01);
+}
+
+.infraPara{
+    background-color: var(--greyBackground);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.infraPoints{
+    background-color: var(--background);
+    color: white;
+    font-weight: 600;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.sec{
+    display: flex;
+    align-items: center;
+}
+
+.sec span{
+    font-size: 25px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px 0;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.sec span:hover{
+    color: black;
+    background-color: white;
+}
+
+.sec h6{
+    font-size: 15px;
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+
+
+
+@media screen and (max-width : 1024px) {
+    .aboutUs h2{
+        margin-top: 20px;
+    }
+
+    .our-story-container, .qualityAndFocus, .training-container, .ourInfrastructure{
+        padding: 40px 50px;
+    }
+
+    .qualityAndFocus{
+        justify-content: space-between;
+    }
+
+    .focusArea{
+        padding: 0 30px;
+    }
+
+    .focusPara{
+        margin: 30px 0;
+    }
+
+    .infra-sec-text{
+        width: 60%;
+        
+    }
+
+    .infra-sec-img{
+        width: 40%;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    .aboutUsMsg{
+        margin: 100px 50px;
+    }
+
+    .our-story-container{
+        padding: 40px 20px;
+    }
+
+    .our-story{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .our-story-img{
+        height: 400px;
+    }
+
+    .our-story-para{
+        width: 100%;
+    }
+
+    .qualityAndFocus{
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .qualityPolicy{
+        width: 100%;
+    }
+
+    .focusArea{
+        width: 100%;
+        margin: 40px;
+    }
+
+    .qualityPara{
+        margin: auto;
+        width: 70%;
+        padding: 30px 0;
+        /* background-color: pink; */
+    }
+
+    .training .para{
+        padding: 0 20px;
+    }
+
+
+    .ourInfrastructure{
+        padding: 40px 20px;
+    }
+
+    .infra-sec{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .infra-sec1{
+        flex-direction: column-reverse;
+    }
+
+    .infra-sec-img{
+        width: 95%;
+    }
+
+    .infra-sec-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .infraPoints{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec h6{
+        width: 300px;
+    }
+
+}
+
+
+@media screen and (max-height : 540px) and (orientation : landscape) {
+    .aboutUs-container, .our-story-container, .qualityAndFocus, .training-container, .ourInfrastructure{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 540px) {
+    .aboutUs{
+        padding: 20px;
+    }
+
+    .aboutUs h2{
+        text-align: center;
+    }
+
+    .aboutUs-container h2:after{
+        width: 20%;
+        margin-left: 52%;
+        transform: translateX(-50%);
+    }
+
+    .aboutUsMsg{
+        font-size: 15px;
+        padding: 0px;
+        margin: 80px 0;
+    }
+
+
+    .training-container{
+        padding: 40px 20px;
+    }
+
+    .training{
+        flex-direction: column;
+        margin: 40px 0;
+    }
+
+    .training1{
+        flex-direction: column-reverse;
+    }
+
+    .training .para{
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .trainingImg{
+        width: 100%;
+    }
+
+    .ourInfrastructure{
+        padding: 40px 20px;
+    }
+
+    .infra-sec{
+        margin: 0;
+    }
+
+    .infra-sec-text{
+        width: 100%;
+        padding: 0;
+        margin: 30px;
+    }
+
+    .infraPara{
+        padding: 20px;
+    }
+
+    .infraPoints{
+        width: 100%;
+    }
+
+    .sec{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .sec h6{
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width : 360px) {
+    .aboutUs h2{
+        font-size: 35px;
+    }
+
+    .our-story-container h2, .qualityAndFocus h2, .training-container h2, .ourInfrastructure h2{
+        font-size: 25px;
+    }
+
+    .our-story-container p, .qualityAndFocus p, .training-container p, .ourInfrastructure p{
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width : 320px) {
+    .training .para{
+        margin-top: 50px;
+    }
+}
+
+
+
+
+

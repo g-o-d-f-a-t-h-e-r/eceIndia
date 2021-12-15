@@ -1,0 +1,75 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/contactUs.css") 
+        title Contact Us
+    body
+
+        include ./nav.pug
+
+        div.image
+            img(src="../public/img/solar1.png", alt="Contact Us")
+
+            div.contactUs
+                h2 Contact Us
+
+                div.contactUsMsg
+                    h3 Get in touch with us for any product related queries, orders, and service related requirements.
+
+
+        div.addressAndMap
+            div.add
+                h2 Corporate Address
+                div.addPara
+                    p #[span ECE (India) Energies(P) Limited]
+                    p Plot No. F – 27,
+                    p Amravati MIDC Area,
+                    p Express Highway NH – 06,
+                    p Amravati – 444 607 (M.S.) INDIA
+                    br
+                    p #[span Email :] info@eceindia.com
+                    p #[span Contact :] 0721-2520922,
+                    p +91-7774092700 | +91-7774092701
+
+            div.map
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14910.908864777992!2d77.7610640208298!3d20.88304245424914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a4a67774bc15%3A0xdf659e9886ab203b!2sECE%20(INDIA)%20ENERGIES%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1638777930362!5m2!1sen!2sin" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+        
+        div.letsTalk
+            h2 Let's Talk...
+            form#letsTalk(action="/letsTalk", method="post") 
+                div.sec
+                    input(type="text" placeholder = "Name *" required name="name")
+                    input(type="email" placeholder = "Your Email Address *" required name="emailAdd")
+
+                div.sec
+                    input(type="Number" placeholder = "Phone Number *" required name="phoneNumber")
+                    input(type="text" placeholder = "Reason for Contact *" required name="reasonForContact")
+
+                div.sec
+                    input(type="Number" placeholder = "Zipcode/Pincode *" required name="pincode")
+                    input(type="text" placeholder = "City *" required name="city")
+
+                div.sec
+                    input(type="text" placeholder = "State *" required name="state")
+                    input(type="text" placeholder = "Country *" required name="country")
+
+                div.sec
+                    textarea(cols="60", rows="5" placeholder="Your Message *" required name="yourMessage")
+                
+                div.sec
+                    button Contact Us
+        
+        if bool
+         div.notification
+            p Your request has been received, we will contact you soon!
+        
+        
+        include ./footer.pug
+
+
+        script(src="../public/js/contactUs.js") 

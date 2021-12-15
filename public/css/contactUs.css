@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+
+:root{
+	--theme : rgb(0, 67, 155);
+	--old-color : rgb(0, 117, 196);
+	--background : #0a122e;
+	--greyBackground : rgb(236, 234, 234);
+	--whiteBgHead : #162661;
+	--whiteBgText : rgb(79, 99, 114);
+	--blueBgText : rgb(221, 221, 221);
+	--extraDarkBackground : #030816;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+	outline: none;
+
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contactUs-nav a.active{
+    color: var(--theme) !important;
+}
+
+.contactUs-nav a.active::after{
+    background-color: var(--theme) !important;
+    width: 100% !important;
+}
+
+
+.image{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: black;
+    user-select: none;
+    margin-top: 70px;
+}
+
+.image img{
+    opacity: 0.8;
+    user-select: none;
+}
+
+.contactUs{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 70px;
+    padding: 40px 100px;
+    overflow: hidden;
+}
+
+.contactUs h2{
+    position: relative;
+    color: white;
+    font-size: 40px;
+    user-select: none;
+    padding-left: 15px;
+}
+
+.contactUs h2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contactUsMsg{
+    max-width: 100%;
+    color: var(--blueBgText);
+    /* background-color: pink; */
+    margin: 80px 200px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 40px black;
+}
+
+
+
+.addressAndMap{
+    display: flex;
+    margin: 0;
+    padding: 50px 140px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add h2{
+    color: var(--whiteBgHead);
+    font-size: 35px;
+}
+
+.addPara{
+    padding: 10px;
+}
+
+.add p{
+    color: var(--whiteBgText);
+    font-size: 15px;
+}
+
+.add p span{
+    font-weight: 700;
+}
+
+
+.map iframe{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(209, 209, 209);
+}
+
+
+.letsTalk{
+    background-color: var(--greyBackground);
+    padding: 50px 140px;
+}
+
+.letsTalk h2{
+    text-align: center;
+    font-size: 35px;
+    color: var(--whiteBgHead);
+}
+
+#letsTalk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.sec{
+    width: 65%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    outline: var(--theme);
+}
+
+
+.sec input{
+    width: 350px;
+    margin: 10px;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 2px;   
+    color: var(--whiteBgHead);
+    font-size: 15px;
+    transition: all 0.3s ease;
+    
+}
+
+.sec input:focus{
+    box-shadow: 0 0 3px var(--whiteBgHead);
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+.sec textarea{
+    width: 100%;
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 2px;
+    border: none;
+    color: var(--whiteBgHead);
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.sec textarea:focus{
+    box-shadow: 0 0 3px var(--whiteBgHead);
+}
+
+.sec button{
+    cursor: pointer;
+    width: 100%;
+    margin: 10px;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 2px;   
+    color: var(--whiteBgHead);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--whiteBgHead);
+    font-weight: 700;
+    background-color: line;
+    user-select: none;
+    
+}
+
+.sec button:hover{
+    background-color: var(--whiteBgHead);
+    color: white;
+}
+
+.notification{
+    background-color: white;
+    border: 2px solid green;
+    box-shadow: 0 0 10px green;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    user-select: none;
+    color: var(--whiteBgHead);
+    width: 50%;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    animation: slide 8s ease-out;
+    transition: all 0.5s ease-in;
+    border-radius: 5px;
+    z-index: 1;
+    transform : translate(-50%, -100vh)
+}
+
+@keyframes slide{
+    0%{
+        transform : translate(-50%, -100vh)
+    }
+    5%{
+        transform : translate(-50%, 20px)
+    }
+    8%{
+        transform : translate(-50%, 0)
+    }
+    95%{
+        transform : translate(-50%, 0)
+    }
+    100%{
+        transform : translate(-50%, -100vh)
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width : 1024px) {
+    .contactUs{
+        margin-top: 100px;
+    }
+
+    .contactUsMsg{
+        margin-top: 45px;
+    }
+
+    .addressAndMap{
+        margin: 60px;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .map{
+        width: 500px;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .map iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .letsTalk{
+        padding: 50px 0px;
+    }
+
+    .notification{
+        top:120px;
+    }
+
+}
+
+/* ----------------------------------------------------------------- */
+
+
+@media screen and (max-width: 768px){
+    .conntactUs{
+        margin-top: 100px;
+    }
+
+    .contactUsMsg{
+        margin: 45px 10px;
+    }
+
+    .addressAndMap{
+        margin: 50px;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .add h2{
+        color: var(--whiteBgHead);
+        font-size: 30px;
+    }
+
+    .map{
+        width: 350px;
+        height: 280px;
+        overflow: hidden;
+    }
+
+    .map iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .letsTalk{
+        padding: 50px 0px;
+    
+    }
+
+    .sec{
+        width: 80%;
+    }
+
+    .sec input, .sec textarea, .sec button{
+        padding: 12px 15px;
+    }
+
+    .notification{
+        top:120px;
+        width: 80%;
+    }
+
+}
+
+
+/* -------------------------------------------------------------- */
+
+
+@media screen and (max-height: 540px) and (orientation : landscape){
+    .image, .letsTalk, .regards{
+        display: none;
+    }
+}
+
+/* --------------------------------------------------------------------- */
+
+@media screen and (max-width : 540px){
+    .contactUs{
+        width: 100%;
+        margin-top: 60px;
+        padding: 50px;
+    }
+
+    .contactUs h2{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .contactUs h2::after{
+        width: 25%;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%);
+        height: 2px;
+    }
+
+    .contactUsMsg{
+        font-size: 15px;
+        width: 100%;
+        margin : 60px 0;
+    }
+    
+
+    .addressAndMap{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .add{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .add h2{
+        font-size: 30px;
+        margin: 40px 0;
+        padding: 0;
+    }
+
+    .addPara{
+        margin-top: -30px;
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .letsTalk{
+        margin: 0;
+        padding: 40px 0;
+    }
+
+    .letsTalk h2{
+        margin: 0;
+        padding: 0;
+    }
+
+    .sec{
+        width: 100%;
+        margin: 0;
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec input{
+        width: 100%;
+    }
+
+    .notification{
+        top: 90px;
+        width: 90%;
+        font-size: 15px;
+    }
+
+
+}   
+
+
+@media screen and (max-width : 375px){
+    .add h2{
+        font-size: 28px;
+    }
+
+    .letsTalk{
+        padding: 55px 0;
+    }
+
+    .letsTalk h2{
+        font-size: 28px;
+    }
+
+    .map{
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (max-width : 360px){
+    .contactUsMsg{
+        font-size: 14px;
+        margin: 50px 0;
+        padding: 0;
+    }
+
+    .add h2{
+        font-size: 25px;
+    }
+
+    .addPara{
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .letsTalk h2{
+        font-size: 25px;
+        padding:0;
+    }
+
+    .sec input, .sec textarea, .sec button{
+        padding: 10px 15px;
+    }
+
+    .notification{
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width : 320px){
+    .contactUsMsg{
+        font-size: 14px;
+        margin: 60px 0;
+        padding: 0;
+    }
+
+    .map{
+        width: 320px;
+        height: 200px;
+    }
+
+    .addressAndMap{
+        margin: 0;
+        padding: 40px 0;
+    }
+
+
+    .add h2{
+        font-size: 25px;
+    }
+
+    .addPara {
+        margin: 0;
+        padding: -0 10px;
+        font-size: 14px;
+    }
+
+    .letsTalk h2{
+        font-size: 25px;
+    }
+
+    .sec{
+        margin-top: -10px;
+        padding: 0 25px;
+    }
+
+}
