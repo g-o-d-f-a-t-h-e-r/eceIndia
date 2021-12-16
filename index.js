@@ -10,6 +10,8 @@ const letsTalkRoute = require('./routes/letsTalk')
 const careerRoute = require('./routes/career')
 const applyRoute = require('./routes/apply')
 const achievementsRoute = require('./routes/achievements')
+const NewsRoute = require('./routes/news')
+const photoGalleryRoute = require('./routes/photo')
 
 
 const port = process.env.PORT || 80
@@ -35,6 +37,8 @@ app.use('/letsTalk', letsTalkRoute)
 app.use('/career', careerRoute)
 app.use('/apply', applyRoute)
 app.use('/achievements', achievementsRoute)
+app.use('/news', NewsRoute)
+app.use('/photoGallery', photoGalleryRoute)
 
 
 

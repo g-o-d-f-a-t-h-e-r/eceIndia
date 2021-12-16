@@ -1,0 +1,29 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel="stylesheet", href="../public/css/photo.css")
+  title Photo Gallery
+
+body 
+
+include ./nav.pug
+
+.flex-container
+  .gallery
+    a(target='_blank' style='text-decoration: none' href='')
+      img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rdoHhyN0T64VTsteGQY2fyMttBuQKwan7w&usqp=CAU' alt='' width='100%')
+      h2.text Add a description of the image here
+  .gallery
+    a(target='_blank' style='text-decoration: none' href='')
+      img(src='https://eceindia.com/img/album/621844852309_688294938208771_8120949112741822464_o.jpg' alt='' width='100%')
+      h2.text Add a description of the image here
+  .gallery
+    a(target='_blank' style='text-decoration: none' href='')
+      img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5ZyHa2C3dHepb6ExE5cRNYT8fAklMK_N8Q&usqp=CAU' alt='' width='100%')
+      h2.text Add a description of the image here
+  
+include ./footer.pug
+
+         script(src="../public/js/photo2.js") 
