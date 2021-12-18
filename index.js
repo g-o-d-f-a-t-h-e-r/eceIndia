@@ -12,6 +12,7 @@ const applyRoute = require('./routes/apply')
 const achievementsRoute = require('./routes/achievements')
 const NewsRoute = require('./routes/news')
 const photoGalleryRoute = require('./routes/photo')
+const productsRoute = require('./routes/products')
 
 
 const port = process.env.PORT || 80
@@ -39,6 +40,7 @@ app.use('/apply', applyRoute)
 app.use('/achievements', achievementsRoute)
 app.use('/news', NewsRoute)
 app.use('/photoGallery', photoGalleryRoute)
+app.use('/products', productsRoute)
 
 
 

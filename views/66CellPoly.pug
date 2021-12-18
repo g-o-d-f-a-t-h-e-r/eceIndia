@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/products.css") 
+        
+        title Products 66 Cell Poly Crystaline
+    body 
+
+        include ./nav.pug
+
+
+        div.products-container
+            div.cover-img
+                img(src="../public/img/solar16.jpg", alt="Career")
+
+                div.products
+                    h2 Products > PV Module
+
+                    div.productsMsg
+                        h3 Poly Crystaline
+
+
+        div.products-sec
+            h2 66 Cells - Poly Crystaline
+
+            div.card
+                div.image
+                    img(src="../public/img/products/productImg.png", alt="Product")
+                div.specs
+                    h3 Technical Specifications (ECE072P300)
+                    p #[span Model :] ECE072P300
+                    p #[span Power in Watts :] 300 W
+                    p #[span Voltage at max power :] 36.10 V
+                    p #[span Current at max power :] 8.31 V
+                    p #[span Solar Cells per Module :] 66 (11 * 6) Cells
+
+                    div.download-button
+                        a(href="../public/dataSheets/66CellPoly300W.pdf" download) Download Data Sheet
+
+
+
+
+
+        include ./footer.pug
+
+
+        script(src="../public/js/products.js") 
