@@ -3,47 +3,59 @@ head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel="stylesheet", href="../public/css/photo.css")
-  title Photo Gallery
+  <link rel="icon" href="../public/img/favicon.png">
+  link(rel="stylesheet", href="../public/css/photo.css") 
+  title Sales Office Inauguration Gallery
 
 body 
 
-include ./nav.pug
+  include ./nav.pug
 
-.flex-container
-  .gallery
-    a(target='_blank' style='text-decoration: none' href='')
-      img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rdoHhyN0T64VTsteGQY2fyMttBuQKwan7w&usqp=CAU' alt='' width='100%')
-      h2.text Add a description of the image here
-  .gallery
-    a(target='_blank' style='text-decoration: none' href='')
-      img(src='https://eceindia.com/img/album/621844852309_688294938208771_8120949112741822464_o.jpg' alt='' width='100%')
-      h2.text Add a description of the image here
-  .gallery
-    a(target='_blank' style='text-decoration: none' href='')
-      img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5ZyHa2C3dHepb6ExE5cRNYT8fAklMK_N8Q&usqp=CAU' alt='' width='100%')
-      h2.text Add a description of the image here
-  .gallery
-    a(target='_blank' style='text-decoration: none' href='')
-      img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfPCbcWyDpf93Xm24TP5YKwki-kH_Zk_1uWw&usqp=CAU' alt='' width='100%')
-      h2.text Add a description of the image here
-  .gallery
-    a(target='_blank' style='text-decoration: none' href='')
-      img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfPCbcWyDpf93Xm24TP5YKwki-kH_Zk_1uWw&usqp=CAU' alt='' width='100%')
-      h2.text Add a description of the image here
-  .gallery
-    a(target='_blank' style='text-decoration: none' href='')
-      img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfPCbcWyDpf93Xm24TP5YKwki-kH_Zk_1uWw&usqp=CAU' alt='' width='100%')
-      h2.text Add a description of the image here
-  .gallery
-    a(target='_blank' style='text-decoration: none' href='')
-      img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfPCbcWyDpf93Xm24TP5YKwki-kH_Zk_1uWw&usqp=CAU' alt='' width='100%')
-      h2.text Add a description of the image here
-  .gallery
-    a(target='_blank' style='text-decoration: none' href='')
-      img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfPCbcWyDpf93Xm24TP5YKwki-kH_Zk_1uWw&usqp=CAU' alt='' width='100%')
-      h2.text Add a description of the image here
+  div.photo-container
+      div.cover-img
+        img(src="../public/img/photoGallery.jpg", alt="PhotoGallery")
 
-include ./footer.pug
+        div.photo
+          h2 Photo Gallery
 
-        script(src="../public/js/photo1.js") 
+          div.photoMsg
+            h3 Solar energy – Today’s resource for a brighter tomorrow!
+
+  div.heading
+    h2 Sales Office Inauguration
+
+  .flex-container
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/1.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/2.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/3.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/4.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/5.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/6.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/7.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/8.jpg' alt='' width='100%')
+
+  include ./footer.pug
+    script(src="../public/js/photoGallery.js") 

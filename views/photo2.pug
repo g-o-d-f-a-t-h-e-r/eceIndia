@@ -3,27 +3,46 @@ head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel="stylesheet", href="../public/css/photo.css")
-  title Photo Gallery
+  <link rel="icon" href="../public/img/favicon.png">
+  link(rel="stylesheet", href="../public/css/photo.css") 
+  title You Need to know Gallery
 
 body 
 
-include ./nav.pug
+  include ./nav.pug
 
-.flex-container
-  .gallery
-    a(target='_blank' style='text-decoration: none' href='')
-      img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rdoHhyN0T64VTsteGQY2fyMttBuQKwan7w&usqp=CAU' alt='' width='100%')
-      h2.text Add a description of the image here
-  .gallery
-    a(target='_blank' style='text-decoration: none' href='')
-      img(src='https://eceindia.com/img/album/621844852309_688294938208771_8120949112741822464_o.jpg' alt='' width='100%')
-      h2.text Add a description of the image here
-  .gallery
-    a(target='_blank' style='text-decoration: none' href='')
-      img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5ZyHa2C3dHepb6ExE5cRNYT8fAklMK_N8Q&usqp=CAU' alt='' width='100%')
-      h2.text Add a description of the image here
-  
-include ./footer.pug
 
-         script(src="../public/js/photo2.js") 
+  div.photo-container
+        div.cover-img
+          img(src="../public/img/photoGallery.jpg", alt="PhotoGallery")
+
+          div.photo
+            h2 Photo Gallery
+
+            div.photoMsg
+              h3 Solar energy – Today’s resource for a brighter tomorrow!
+
+  div.heading
+    h2 You Need to Know
+
+  .flex-container
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/youNeedToKnow/1.jfif' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/youNeedToKnow/2.jfif' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/youNeedToKnow/3.jfif' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/youNeedToKnow/4.jpg' alt='' width='100%')
+        
+    
+  include ./footer.pug
+
+  script(src="../public/js/photoGallery.js") 

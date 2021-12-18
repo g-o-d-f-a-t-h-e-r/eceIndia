@@ -3,57 +3,154 @@ head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='stylesheet' href='style.css')
   <link rel="icon" href="../public/img/favicon.png">
   link(rel="stylesheet", href="../public/css/news.css") 
   title News
 body 
 
-include ./nav.pug
-.flex-container
-  .card
-    img(src='https://static.vecteezy.com/system/resources/thumbnails/003/687/020/small/abstract-broadcast-news-lower-thirds-template-vector.jpg' alt='')
-    .container
-      h4.text Heading
-      p
-        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias a voluptas incidunt repudiandae inventore laboriosam et neque, provident obcaecati quisquam distinctio ipsam itaque minus fuga quaerat sunt qui impedit.
-  .card
-    img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1N6KD84Qc1KKU_0FUJz_-xGMIrrAOYLMZug&usqp=CAU' alt='')
-    .container
-      h4.text Heading
-      p
-        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias a voluptas incidunt repudiandae inventore laboriosam et neque, provident obcaecati quisquam distinctio ipsam itaque minus fuga quaerat sunt qui impedit.
-  .card
-    img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHE2hgHRoTosuexOicZ7Ykfeb9rBODcWWTDA&usqp=CAU' alt='')
-    .container
-      h4.text Heading
-      p
-        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias a voluptas incidunt repudiandae inventore laboriosam et neque, provident obcaecati quisquam distinctio ipsam itaque minus fuga quaerat sunt qui impedit.
-  .card
-    img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo26By889zKlafC_sMSxLzeTWculcUJy14qA&usqp=CAU' alt='')
-    .container
-      h4.text Heading
-      p
-        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias a voluptas incidunt repudiandae inventore laboriosam et neque, provident obcaecati quisquam distinctio ipsam itaque minus fuga quaerat sunt qui impedit.
-  .card
-    img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHisJ9iFKeOMYHexMXAETr21C8Y2jIlHsjQ&usqp=CAU' alt='')
-    .container
-      h4.text Heading
-      p
-        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias a voluptas incidunt repudiandae inventore laboriosam et neque, provident obcaecati quisquam distinctio ipsam itaque minus fuga quaerat sunt qui impedit.
-  .card
-    img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHisJ9iFKeOMYHexMXAETr21C8Y2jIlHsjQ&usqp=CAU' alt='')
-    .container
-      h4.text Heading
-      p
-        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias a voluptas incidunt repudiandae inventore laboriosam et neque, provident obcaecati quisquam distinctio ipsam itaque minus fuga quaerat sunt qui impedit.
-  .card
-    img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuyOBl78VCAwWUl915ch6QuA0l5myyfr5EOg&usqp=CAU' alt='')
-    .container
-      h4.text Heading
-      p
-        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias a voluptas incidunt repudiandae inventore laboriosam et neque, provident obcaecati quisquam distinctio ipsam itaque minus fuga quaerat sunt qui impedit.
+  include ./nav.pug
 
-include ./footer.pug
 
-script(src="../public/js/news.js") 
+  div.news-container
+    div.cover-img
+      img(src="../public/img/news.jpg", alt="news-cover")
+
+      div.news
+        h2 News/CSR
+
+        div.newsMsg
+          h3 Go Green, Go Solar!
+
+
+  div.heading
+    h2 News Articles
+
+
+  .flex-container
+    .card
+      .img
+        a(target = "_blank" href="../public/img/news/1.jpg" ) #[img(src='../public/img/news/1.jpg' alt='news')]
+      .container
+        h4.text BIS Certificate
+        p
+          | We are Proud Announce that BIS registration for all range modules has been done successfully. Range of Solar PV Modules 30wp to 370wp. We are developing Bi-facial and Transparent solar PV module 
+    .card
+      .img
+        a(target = "_blank" href="../public/img/news/2.jpg" ) #[img(src='../public/img/news/2.jpg' alt='news')]
+      .container
+        h4.text Sakal Excellence Award 2019
+        p
+          | Our Managing Director got Excellence Award 2019 in Business.
+    .card
+      .img
+        a(target = "_blank" href="../public/img/news/3.jpg" ) #[img(src='../public/img/news/3.jpg' alt='news')]
+      .container
+        h4.text 1st Patent
+        p
+          | Chairman Dr. V. T. Ingole - 35th Patent registered (Solar Energy).
+
+    .card
+      .img
+        a(target = "_blank" href="../public/img/news/4.jpg" ) #[img(src='../public/img/news/4.jpg' alt='news')]
+      .container
+        h4.text Samarth High School
+        p
+          | 10 Kilo Watt Solar Project installed on Samarth High school, Amravati.
+    .card
+      .img
+        a(target = "_blank" href="../public/img/news/5.jpg" ) #[img(src='../public/img/news/5.jpg' alt='news')]
+      .container
+        h4.text Hon Mr. Girish Bapat Visit
+        p
+          | Hon Mr. Girish Bapat (Member of Parliament) Visited ECE (India) Energies.
+    .card
+      .img
+        a(target = "_blank" href="../public/img/news/6.jpg" ) #[img(src='../public/img/news/6.jpg' alt='news')]
+      .container
+        h4.text University Workshop
+        p
+          | Workshop conducted in University.
+    .card
+      .img
+        a(target = "_blank" href="../public/img/news/7.jpg" ) #[img(src='../public/img/news/7.jpg' alt='news')]
+      .container
+        h4.text YOGA
+        p
+          | YOGA classes for Employees.
+
+    .card
+      .img
+        a(target = "_blank" href="../public/img/news/8.png" ) #[img(src='../public/img/news/8.png' alt='news')]
+      .container
+        h4.text Cover in EPR magazine
+        p
+          | EPR Magzine has covered our Beloved MD Mr Amit Arokar Views over.
+
+
+
+  div.heading
+    h2 CSR Activities
+
+  .flex-container
+    .card
+      .img
+        a(target = "_blank" href="../public/img/csr/1.jpg" ) #[img(src='../public/img/csr/1.jpg' alt='news')]
+      .container
+        h4.text Lok Biradri Prakalp
+        p
+          | Donation of 20 Solar Street Light
+
+    .card
+      .img
+        a(target = "_blank" href="../public/img/csr/2.jpg" ) #[img(src='../public/img/csr/2.jpg' alt='news')]
+      .container
+        h4.text Shree Ram Sikshan Sanstha
+        p
+          | Donation of School stationary
+    .card
+      .img
+        a(target = "_blank" href="../public/img/csr/3.jpg" ) #[img(src='../public/img/csr/3.jpg' alt='news')]
+      .container
+        h4.text Sant Shree Gulabrao Maharaj BhaktiDham
+        p
+          | Donation of 35 Solar Street Light
+    .card
+      .img
+        a(target = "_blank" href="../public/img/csr/4.jpg" ) #[img(src='../public/img/csr/4.jpg' alt='news')]
+      .container
+        h4.text Smile On Face
+        p
+          | Donation for Diwali Festival
+    .card
+      .img
+        a(target = "_blank" href="../public/img/csr/5.jpg" ) #[img(src='../public/img/csr/5.jpg' alt='news')]
+      .container
+        h4.text Covid Relief Fund
+        p
+          | Donation for CORONA WARRIORS
+    .card
+      .img
+        a(target = "_blank" href="../public/img/csr/6.jpg" ) #[img(src='../public/img/csr/6.jpg' alt='news')]
+      .container
+        h4.text Prakashyaan Project
+        p
+          | PRAKASHYAAN Project at SGBAU, Amravati
+    .card
+      .img
+        a(target = "_blank" href="../public/img/csr/7.jpg" ) #[img(src='../public/img/csr/7.jpg' alt='news')]
+      .container
+        h4.text P.R. Patil College of Engineering and Technology
+        p
+          | Knowledge sharing at P.R.P.C.E & Tech, Amravati
+    .card
+      .img
+        a(target = "_blank" href="../public/img/csr/8.jpg" ) #[img(src='../public/img/csr/8.jpg' alt='news')]
+      .container
+        h4.text CM Relief Fund
+        p
+          | Donation to Chief Minister Relief Fund
+
+
+  include ./footer.pug
+
+  script(src="../public/js/news.js") 
