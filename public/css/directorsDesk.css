@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 :root{
 	--theme : rgb(0, 67, 155);
@@ -163,10 +163,12 @@ body{
     color: yellow;
 }
 
-
+.message-sec{
+    width: 60%;
+}
 
 .message{
-    width: 60%;
+    
     font-size: 15px;
     font-weight: 500;
     background-color: var(--greyBackground);
@@ -178,6 +180,48 @@ body{
     margin: 20px 0;
     line-height: 30px;
 }
+
+
+.contactUs{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: var(--background);
+    user-select: none;
+}
+
+
+.contactUs span{
+    font-weight: 600;
+    color: white;
+}
+
+.contactUs p{
+    width: 30px;
+    height: 30px;
+    /* background-color: violet; */
+    color: black;
+    
+}
+
+
+.contactUs img{
+    filter: invert(0.1);
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+.contactUs img:hover{
+    transform: scale(1.05);
+    filter: invert(0);
+}
+
+
 
 
 
@@ -276,6 +320,7 @@ body{
         padding: 40px 50px;
     }
 
+
     .team{
         margin: 40px 0;
     }
@@ -293,6 +338,10 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .contactUs{
+        width: 50%;
     }
 
     .grpImage{
@@ -316,10 +365,37 @@ body{
         flex-direction: column;
     }
 
+    .image-sec{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .info{
+        margin: 10px 0;
+        width: 50%;
+    }
+
+
+    .contactUs{
+        width: 50%;
+        margin: auto;
+    }
+
+
+    .message-sec{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .message{
         margin: 20px 0;
         width: 100%;
-
     }
 
     .managingDirectors-sec{
@@ -329,6 +405,11 @@ body{
     .text{
         width: 90%;
     }
+
+    /* .contactUs{
+        margin: auto;
+        width: 47%;
+    } */
 
     .grpImage{
         width: 65%;
@@ -385,6 +466,25 @@ body{
         margin-bottom: 40px;
     }
 
+    .image-sec{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .info{
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .contactUs{
+        width: 100%;
+    }
+
     .team{
         flex-direction: column;
         margin: 0 20px;
@@ -410,6 +510,9 @@ body{
     }
 
 }
+
+
+
 
 
 @media screen and (max-width : 320px) {
@@ -440,6 +543,10 @@ body{
 
     .message{
         padding: 20px;
+    }
+
+    .contactUs{
+        width: 100%;
     }
 
     .team{
