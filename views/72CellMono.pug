@@ -1,0 +1,79 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/products.css") 
+        
+        title Products 72 Cells Mono Perc
+    body 
+
+        include ./nav.pug
+
+
+        div.products-container
+            div.cover-img
+                img(src="../public/img/solar16.jpg", alt="Career")
+
+                div.products
+                    h2 Products > PV Module
+
+                    div.productsMsg
+                        h3 Mono Perc
+
+
+        div.products-sec
+            h2 72 Cells - Mono Perc
+
+            div.card
+                div.image
+                    img(src="../public/img/products/productImg.png", alt="Product")
+                div.specs
+                    h3 Technical Specifications (ECE072M400)
+                    p #[span Model :] ECE072M400
+                    p #[span Power in Watts :] 400 W
+                    p #[span Voltage at max power :] 41.5 V
+                    p #[span Current at max power :] 9.66 A
+                    p #[span Solar Cells per Module :] 72 (12 * 6) Cells
+
+                    div.download-button
+                        a(href="../public/dataSheets/72CellMono400W.pdf" download) Download Data Sheet
+
+            div.card
+                div.image
+                    img(src="../public/img/products/productImg.png", alt="Product")
+                div.specs
+                    h3 Technical Specifications (ECE072M410)
+                    p #[span Model :] ECE072M410
+                    p #[span Power in Watts :] 410 W
+                    p #[span Voltage at max power :] 41.67 V
+                    p #[span Current at max power :] 9.84 A
+                    p #[span Solar Cells per Module :] 72 (12 * 6) Cells
+
+                    div.download-button
+                        a(href="../public/dataSheets/72CellMono410W.pdf" download) Download Data Sheet
+
+            div.card
+                div.image
+                    img(src="../public/img/products/productImg.png", alt="Product")
+                div.specs
+                    h3 Technical Specifications (ECE072M450)
+                    p #[span Model :] ECE072M450
+                    p #[span Power in Watts :] 450 W
+                    p #[span Voltage at max power :] 42.66 V
+                    p #[span Current at max power :] 10.55 A
+                    p #[span Solar Cells per Module :] 72 (12 * 6) Cells
+
+                    div.download-button
+                        a(href="../public/dataSheets/72CellMono450W.pdf" download) Download Data Sheet
+
+
+
+
+
+        include ./footer.pug
+
+
+        script(src="../public/js/products.js") 

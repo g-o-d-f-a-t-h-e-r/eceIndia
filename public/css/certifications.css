@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+
+:root{
+	--theme : rgb(0, 67, 155);
+	--old-color : rgb(0, 117, 196);
+	--background : #0a122e;
+	--greyBackground : rgb(236, 234, 234);
+	--whiteBgHead : #162661;
+	--whiteBgText : rgb(79, 99, 114);
+	--blueBgText : rgb(221, 221, 221);
+	--extraDarkBackground : #030816;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+	outline: none;
+
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.achievements-nav a.active{
+    color: var(--theme) !important;
+}
+
+.achievements-nav a.active::after{
+    background-color: var(--theme) !important;
+    width: 100% !important;
+}
+
+
+.certification-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.certification-container .cover-img{
+    width: 100%;
+    height: 400px;
+}
+
+
+.certification-container{
+    margin-top: 70px;
+    user-select: none;
+}
+
+.certification-container .cover-img{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.cover-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.certification{
+    padding: 40px 100px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.certification h2{
+    position: relative;
+    color: white;
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+.certification h2::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.certificationMsg{
+    max-width: 100%;
+    color: var(--blueBgText);
+    /* background-color: pink; */
+    margin: 80px 200px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 40px black;
+}
+
+
+.certification-sec{
+    padding: 40px 100px;
+    width: 100%;
+}
+
+.certification-sec h2{
+    font-size: 40px;
+    color: var(--whiteBgHead);
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label-img{
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    user-select: none;
+}
+
+
+.label-img img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.label-img img:hover{
+    transform: scale(1.02);
+}
+
+.label p{
+    margin: 15px 0;
+    width: 300px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--background);
+}
+
+
+@media screen and (max-width : 1024px) {
+    .certification h2{
+        margin-top: 20px;
+        font-size: 35px;
+    }
+    
+    .certificationMsg{
+        margin: 80px 50px;
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+    .certification h2{
+        margin-top: 20px;
+    }
+
+    .certificationMsg{
+        margin: 80px 50px;
+    }
+
+    .certification-sec h2{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .sec{
+        margin: 0;
+    }
+
+    .label{
+        margin: 10px;
+    }
+
+}
+
+
+@media screen and (max-height : 540px) and (orientation : landscape) {
+    .certification-container, .certification-sec{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width : 540px){
+
+    .certification{
+        padding: 20px;
+    }
+
+    .certification h2{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .certification h2:after{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .certificationMsg{
+        font-size: 15px;
+        padding: 0px;
+        margin: 80px 0;
+    }
+
+    .certification-sec{
+        padding: 40px 20px;
+    }
+
+    .certification-sec h2{
+        font-size: 30px;
+    }
+
+
+}

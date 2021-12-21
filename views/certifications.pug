@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/certifications.css") 
+        title Certifications
+    body 
+        
+        include ./nav.pug
+
+        div.certification-container
+            div.cover-img
+                img(src="../public/img/certification.jpg", alt="Certification")
+
+                div.certification
+                    h2 Certifications 
+
+                    div.certificationMsg
+                        h3 ECE India has cleared many quality certifications, cause we believe in manufacturing quality products.
+
+
+        div.certification-sec
+            h2 We Are certified by 
+
+            div.sec
+                div.label
+                    div.label-img
+                        img(src="../public/img/bis.jpg", alt="BIS")
+                    p Bureau of Indian Standards
+
+                div.label
+                    div.label-img
+                        img(src="../public/img/ies.jpg", alt="IES")
+                    p International Electrotechnical Commission
+
+                div.label
+                    div.label-img
+                        img(src="../public/img/nsic.jpg", alt="NSIC")
+                    p National Small Industries Corporation
+
+            div.sec
+                div.label
+                    div.label-img
+                        img(src="../public/img/iso.jpg", alt="ISO")
+                    p International Organization for Standardization
+
+                div.label
+                    div.label-img
+                        img(src="../public/img/ce.jpg", alt="CE")
+                    p Conformité Européenne
+
+                div.label
+                    div.label-img
+                        img(src="../public/img/mnre.jpg", alt="MNRE")
+                    p Ministry of New & Renewable Energy
+
+
+        include ./footer.pug
+
+        
+
+        script(src="../public/js/certifications.js") 

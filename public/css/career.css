@@ -1,0 +1,734 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+
+:root{
+	--theme : rgb(0, 67, 155);
+	--old-color : rgb(0, 117, 196);
+	--background : #0a122e;
+	--greyBackground : rgb(236, 234, 234);
+	--whiteBgHead : #162661;
+	--whiteBgText : rgb(79, 99, 114);
+	--blueBgText : rgb(221, 221, 221);
+	--extraDarkBackground : #030816;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+	outline: none;
+
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.career-nav a.active{
+    color: var(--theme) !important;
+}
+
+.career-nav a.active::after{
+    background-color: var(--theme) !important;
+    width: 100% !important;
+}
+
+
+.career-container{
+    margin-top:70px;
+}
+
+.cover-img{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+.cover-img img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    opacity: 0.5;
+}
+
+.career{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 40px 100px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.career h2{
+    position: relative;
+    color: white;
+    font-size: 40px;
+    user-select: none;
+    padding-left: 15px;
+}
+
+.career h2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.careerMsg{
+    max-width: 100%;
+    color: var(--blueBgText);
+    /* background-color: pink; */
+    margin: 80px 200px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 40px black;
+}
+
+.career-sec{
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.team{
+    width: 60%;
+    margin: auto;
+}
+
+.team h2{
+    font-size: 35px;
+    color: var(--whiteBgHead);
+}
+
+.team-para{
+    margin: 15px;
+}
+
+.team-para li{
+    font-size: 15px;
+    margin: 10px;
+    color: var(--whiteBgText);
+}
+
+.work-culture{
+    padding: 40px 100px;
+    background-color: var(--greyBackground);
+}
+
+.work-culture h2{
+    color: var(--whiteBgHead);
+    text-align: center;
+    font-size: 35px;
+}
+
+.work-culture-text{
+    font-size: 15px;
+    color: var(--whiteBgText);
+    margin: 15px 0 50px 0;
+    text-align: center;
+}
+
+.sec{
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.sec h3{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: black;
+    margin: 5px;
+}
+
+.sec img{
+    width: 130px;
+    height: 140px;
+    user-select: none;
+}
+
+.sec p{
+    width: 300px;
+    font-size: 15px;
+    color: var(--whiteBgText);
+}
+
+
+.open-positions{
+    padding: 40px 100px;
+}
+
+.open-positions h1{
+    color: var(--whiteBgHead);
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card{
+    background-color: var(--greyBackground);
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-text{
+    width: 70%;
+}
+
+.card-text h2{
+    font-size: 24px;
+    color: var(--theme);
+    margin: 5px 0;
+}
+
+.card-text span{
+    font-weight: 700;
+    color: black;
+}
+
+.card-text p{
+    margin: 5px 0;
+    font-size: 15px;
+    color: var(--whiteBgText);
+}
+
+.card-img{
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.apply{
+    background-color: var(--greyBackground);
+    padding: 40px 100px;
+}
+
+.apply h2{
+    font-size: 35px;
+    color: var(--whiteBgHead);
+    text-align: center;
+}
+
+#applyForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.applySec{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.applySec input{
+    margin: 10px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: var(--theme);
+
+}
+
+.applySec input:focus{
+    box-shadow: 0 0 2px var(--whiteBgHead);
+}
+
+#resume{
+    display: none;
+}
+
+.applySec p{
+    width: 97%;
+    padding: 15px 0 15px 20px;
+    border: 1px solid var(--whiteBgHead);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    color: var(--whiteBgText);
+    overflow: hidden;
+    user-select: none;
+}
+
+.applySec a{
+    padding: 16px;
+    background-color: var(--whiteBgHead);
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.applySec button{
+    border-radius: 5px;
+    border: 2px solid var(--whiteBgHead);
+    width: 97%;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.applySec button:hover{
+    background-color: var(--whiteBgHead);
+    color: white;
+}
+
+
+
+.notification{
+    background-color: white;
+    border: 2px solid green;
+    box-shadow: 0 0 10px green;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    user-select: none;
+    color: var(--whiteBgHead);
+    width: 50%;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    animation: slide 8s ease-out;
+    transition: all 0.5s ease-in;
+    border-radius: 5px;
+    z-index: 1;
+    transform : translate(-50%, -100vh)
+}
+
+@keyframes slide{
+    0%{
+        transform : translate(-50%, -100vh)
+    }
+    5%{
+        transform : translate(-50%, 20px)
+    }
+    8%{
+        transform : translate(-50%, 0)
+    }
+    95%{
+        transform : translate(-50%, 0)
+    }
+    100%{
+        transform : translate(-50%, -100vh)
+    }
+}
+
+
+
+
+/* Responsiveness-------------------------------------------- */
+
+@media screen and (max-width : 1024px) {
+
+    .career h2{
+        margin-top: 20px;
+    }
+
+    .careerMsg{
+        margin: 80px 100px;
+    }
+
+    .applySec{
+        width: 100%;
+    }
+
+    .notification{
+        top: 120px;
+        width: 70%;
+    }
+
+}
+
+
+@media screen and (max-width : 768px) {
+    .careerMsg{
+        margin: 80px 50px;
+    }
+
+    .team{
+        width: 100%;
+        text-align: center;
+    }
+
+    .team-para li{
+        list-style: none;
+    }
+
+    .work-culture{
+        padding: 40px 50px;
+    }
+
+    .open-positions{
+        padding: 40px 50px;
+    }
+
+    .card{
+        justify-content: space-between;
+    }
+
+    .card-text{
+        width: 68%;
+    }
+
+    .card-img{
+        width: 180px;
+        height: 140px;
+    }
+
+    .apply{
+        padding: 40px 0px;
+    }
+
+    .applyForm{
+        padding: 50px 0;
+    }
+
+}
+
+
+
+@media screen and (max-height : 414px) and (orientation : landscape) {
+    .career-container, .apply{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 540px) {
+
+    .career{
+        padding: 20px;
+    }
+
+    .career h2{
+        text-align: center;
+    }
+
+    .career h2:after{
+        width: 20%;
+        margin-left: 52%;
+        transform: translateX(-50%);
+    }
+
+    .careerMsg{
+        font-size: 15px;
+        padding: 0px;
+        margin: 80px 0;
+    }
+
+
+    .career-sec{
+        padding: 40px 20px;
+    }
+    .team{
+        width: 100%;
+    }
+
+    .team h2{
+        font-size: 30px;
+    }
+
+    .team-para{
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    .team-para li{
+        margin: 10px;
+    }
+
+
+    .work-culture{
+        padding: 40px 20px;
+    }
+
+    .work-culture h2{
+        font-size: 30px;
+    }
+
+    .sec{
+        flex-direction: column;
+    }
+
+    .growth, .health, .integrity, .knowledge, .ecology{
+        margin: 15px 0;
+    }
+
+    .sec p{
+        width: 100%;
+    }
+
+
+    .open-positions{
+        padding: 40px 20px;
+    }
+
+    .open-positions h1{
+        font-size: 30px;
+    }
+    
+
+    .card{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .card-text{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .card-text h2{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
+
+    .apply{
+        padding: 40px 20px;
+    }
+
+    .apply h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+    #applyForm{
+        /* flex-direction: column; */
+        width: 100%;
+        margin: 20px 0;
+        /* background-color: pink; */
+        padding: 10px;
+    }
+
+    .applySec{
+        flex-direction: column;
+    }
+
+    .applySec input{
+        width: 100%;
+    }
+
+    .applySec p{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        padding: 0;
+    }
+
+    .applySec span{
+        flex: 3;
+        overflow: hidden;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .applySec a{
+        width: 100%;
+        display: block;
+        flex: 1;
+        /* height: 100%; */
+        padding: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .applySec button{
+        width: 100%;
+    }
+
+
+    .notification{
+        top: 100px;
+        width: 90%;
+        font-size: 15px;
+    }
+
+
+}
+
+
+@media screen and (max-width : 375px) {
+    .apply{
+        padding: 40px 10px;
+    }
+
+    .applySec input{
+        margin: 8px 0;
+        padding: 15px 10px;
+    }
+
+    .applySec p{
+        padding: 15px 0 15px 10px;
+        font-size: 12px;
+    }
+
+    .applySec p{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        padding: 0;
+    }
+
+    .applySec span{
+        flex: 3;
+        overflow: hidden;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        overflow: hidden;
+        font-size: 15px;
+    }
+
+    .applySec a{
+        width: 100%;
+        display: block;
+        flex: 1;
+        /* height: 100%; */
+        padding: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+
+}
+
+
+@media screen and (max-width : 360px){
+
+    .career h2{
+        font-size: 35px;
+    }
+
+    .careerMsg{
+        font-size: 14px;
+    }
+
+    .team h2{
+        font-size: 25px;
+    }
+
+    .team-para li{ 
+        font-size: 14px;
+    }
+
+    .work-culture h2{
+        font-size: 25px;
+    }
+
+    .work-culture p{
+        font-size: 14px;
+    }
+
+
+    .open-positions h1{
+        font-size: 25px;
+    }
+    
+    .card h2{
+        font-size: 20px;
+    }
+
+    .card p{
+        font-size: 14px;
+    }
+
+
+    .apply h2{
+        font-size: 25px;
+    }
+
+    .applySec input{
+        font-size: 14px;
+    }
+
+    .applySec button {
+        font-size: 14px;
+    }
+
+    .notification{
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width : 320px) {
+    .applySec p {
+        font-size: 10px;
+    }
+
+    .notification{
+        font-size: 12px;
+    }
+
+}
+

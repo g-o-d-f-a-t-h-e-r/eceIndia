@@ -1,0 +1,49 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  <link rel="icon" href="../public/img/favicon.png">
+  link(rel="stylesheet", href="../public/css/photo.css") 
+  title Photo Gallery
+
+body 
+
+  include ./nav.pug
+
+  div.photo-container
+    div.cover-img
+      img(src="../public/img/photoGallery.jpg", alt="PhotoGallery")
+
+      div.photo
+        h2 Photo Gallery
+
+        div.photoMsg
+          h3 Solar energy – Today’s resource for a brighter tomorrow!
+
+
+  div.heading
+    h2 Galleries
+
+  .flex-container
+    
+    .gallery
+      a(style='text-decoration: none' href='photoGallery/1')
+        div.img
+          img(src='../public/img/salesOfficeInaugurationThumb.jpg' alt='' width='100%')
+        h2.text Sales Office Inauguration
+    .gallery
+      a(style='text-decoration: none' href='photoGallery/2')
+        div.img
+          img(src='../public/img/youNeedToKnowThumb.jpg' alt='' width='100%')
+        h2.text You Need To Know
+    .gallery
+      a(style='text-decoration: none' href='photoGallery/3')
+        div.img
+          img(src='../public/img/achievementsThumb.jpg' alt='' width='100%')
+        h2.text Achievements
+    
+
+  include ./footer.pug
+
+  script(src="../public/js/photoGallery.js") 

@@ -1,0 +1,205 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/clientRegistration.css") 
+        title Client Registration Form
+    body 
+
+        include ./nav.pug
+
+        div.clients-container
+            div.cover-img
+                img(src="../public/img/clientRegistration.jpg", alt="")  
+
+                div.clients
+                    h2 Client Registration 
+
+                    div.clientsMsg
+                        h3 Solar energy is bound to be in our future. There's a kind of inevitability about it.
+
+        div.clients-sec
+            h2 Register here
+
+            div.options
+                    a.online-btn Register Online 
+                    a.offline-btn Register Offline 
+
+            div.online
+                    form#clientsForm(action="/clientRegistration", method="post" enctype="multipart/form-data")
+                        div.companyDetails.sec
+                            h3 Company Details
+                            hr
+
+                            div.input
+                                input(type="text" placeholder="Company Name *" name = "companyName" required)
+                                input(type="text" placeholder="Company Address *" name = "companyAddress" required)
+                                input(type="text" placeholder="Area *" name = "area" required)
+                                input(type="text" placeholder="District" name = "district") 
+                                input(type="text" placeholder="City And State *" name = "cityAndState" required)
+                                input(type="number" placeholder="Pincode/Zipcode *" name = "pincode" required)
+
+                                div.firmType
+                                    p Type of Firm * :
+                                    div.radioInput
+                                        div
+                                            input(type="radio" id="proprietorship" name="firmType" value="Proprietorship" required)
+                                            label(for="proprietorship") Proprietorship
+                                        div
+                                            input(type="radio" id="pvtLtd" name="firmType" value="Private Limited")
+                                            label(for="pvtLtd") Private Limited
+                                        div
+                                            input(type="radio" id="publicLtd" name="firmType" value="Public Limited")
+                                            label(for="publicLtd") Public Limited
+                                        div
+                                            input(type="radio" id="opc" name="firmType" value="OPC")
+                                            label(for="opc") OPC
+                                        div
+                                            input(type="radio" id="llp" name="firmType" value="LLP")
+                                            label(for="llp") LLP
+                                            
+                                        div
+                                            input(type="radio" id="other" name="firmType" value="Other")
+                                            label(for="other") Other
+
+                                input(type="text" placeholder="GST Number *" name = "gstNumber" required)
+                                input(type="text" placeholder="PAN Number *" name = "panNumber" required)
+                                input(type="text" placeholder = "Company Website" name="companyWebsite")
+                                
+                                div.msme
+                                    p Is MSME * :
+                                    div.radioInput
+                                        div
+                                            input.isMsme(type="radio" id="yes" name="isMsme" value="Yes" onclick="showMsme(1)" required)
+                                            label(for="yes") Yes
+                                        div
+                                            input.isMsme(type="radio" id="no" name="isMsme" value="No" onclick="showMsme(0)")
+                                            label(for="no") No
+                                
+                                div.status
+                                    p Status of Company * :
+                                    div.radioInput
+                                        div
+                                            input(type="radio" id="manufacturer" name="status" value="Manufacturer" required)
+                                            label(for="manufacturer") Manufacturer
+                                        div
+                                            input(type="radio" id="trader" name="status" value="Trader")
+                                            label(for="trader") Trader
+                                        div
+                                            input(type="radio" id="epc" name="status" value="EPC")
+                                            label(for="epc") EPC
+                                        div
+                                            input(type="radio" id="importer" name="status" value="Importer")
+                                            label(for="importer") Importer
+                                        div
+                                            input(type="radio" id="exporter" name="status" value="Exporter")
+                                            label(for="exporter") Exporter
+                                        div
+                                            input(type="radio" id="serviceIndustry" name="status" value="Service Industry")
+                                            label(for="serviceIndustry") Service Industry
+
+                                input(type="text" placeholder = "Products Deals in *" name="productsDealsIn")
+
+
+                        div.director.sec
+                            h3 Prop/Director's Details
+                            hr
+
+                            div.input
+                                input(type="text" placeholder="Prop/Director Name *" name = "directorName" required)
+                                input(type="text" placeholder="Designation *" name = "directorDesignation" required)
+                                input(type="email" placeholder="Email Address *" name = "directorEmailAdd" required)
+                                input(type="number" placeholder="Mobile Number 1 *" name = "directorMobile1" required)
+                                input(type="number" placeholder="Mobile Number 2" name = "directorMobile2")
+                        
+
+                        div.contactPerson.sec
+                            h3 Contact Person's Details
+                            hr
+
+                            div.input
+                                input(type="text" placeholder="Contact Person's Name *" name = "contactName" required)
+                                input(type="text" placeholder="Designation *" name = "contactDesignation" required)
+                                input(type="email" placeholder="Email Address *" name = "contactEmailAdd" required)
+                                input(type="number" placeholder="Mobile Number 1 *" name = "contactMobile1" required)
+                                input(type="number" placeholder="Mobile Number 2" name = "contactMobile2")
+
+
+                        div.bankDetails.sec
+                            h3 Bank Details
+                            hr
+
+                            div.input
+                                input(type="number" placeholder = "Bank A/C No *" name="bankAcNumber" required)
+                                input(type="text" placeholder = "Bank A/C Name *" name="bankAcName" required)
+                                input(type="text" placeholder = "Bank Name *" name="bankName" required)
+                                input(type="text" placeholder = "IFSC Code *" name="ifscCode" required)
+                                input(type="text" placeholder = "Branch *" name="branch" required)
+                                input(type="text" placeholder = "Relationship Manager *" name="relationshipManager" required)
+
+                    
+                        div.attachments
+                            h3 Attachments
+                            hr
+                            h4 * Kindly share GST Certificate, Pan Card, MSME Certificate for Ledger Creation. *
+                            
+                            div.attachmentsInput#gstCertificateDiv
+                                input.attachment(type="file" id="gstCertificate" name="gstCertificate" accept="application/pdf" required)
+                                p.attachmentsP #[span.gstCertificateText GST Certificate (pdf) * ]
+                                    label(for="gstCertificate")
+                                        a Choose File
+                            
+                            div.attachmentsInput#panCardDiv
+                                input.attachment(type="file" id="panCard" name="panCardPdf" accept="application/pdf" required)
+                                p.attachmentsP #[span.panCardText PAN Card (pdf) * ]
+                                    label(for="panCard")
+                                        a Choose File
+                            
+                            div.attachmentsInput#msmeCertificateDiv
+                                input.attachment(type="file" id="msmeCertificate" name="msmeCertificate" accept="application/pdf" required)
+                                p.attachmentsP #[span.msmeCertificateText MSME Certificate (pdf) * ]
+                                    label(for="msmeCertificate")
+                                        a Choose File
+
+                        div.button
+                            button(onclick = "onClick()") Submit
+
+
+            div.offline
+                div.offline-sec
+                    h3 Steps to Register :
+                    hr
+
+                    div.para
+                        p #[span(style="font-weight:600") 1.] Download the Client Registration form and print it.
+                        p #[span(style="font-weight:600") 2.] Fill the Registration form with all the details carefully.
+                        p #[span(style="font-weight:600") 3.] Attach all the required documents as per the instructions.
+                        p #[span(style="font-weight:600") 4.] Send it to the Company Address: 
+
+                        div.add
+                            p ECE (India) Energies(P) Limited
+                            p Plot No. F – 27,
+                            p Amravati MIDC Area,
+                            p Express Highway NH – 06,
+                            p Amravati – 444 607(M.S.) INDIA
+                        
+                        p #[span(style="font-weight:600") 5.] Once we receive your application we will contact you. Thank You!.
+                    
+                    div.download-button
+                        a(href="../public/forms/clientRegistrationForm.pdf" download) Download Client Registration Form 
+
+        if bool
+            div.notification
+                p Client registration successfull!, we will contact you soon!
+
+
+
+
+
+
+        include ./footer.pug
+
+        script(src="../public/js/clientRegistration.js") 

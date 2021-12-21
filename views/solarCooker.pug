@@ -1,0 +1,76 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/products.css") 
+        
+        title Products Solar Cooker
+    body 
+
+        include ./nav.pug
+
+
+        div.products-container
+            div.cover-img
+                img(src="../public/img/solar16.jpg", alt="Career")
+
+                div.products
+                    h2 Products > Solar Home Lightening
+
+                    div.productsMsg
+                        h3 Solar Cooker
+
+
+        div.products-sec
+            h2 Solar Cooker
+
+            div.card
+                div.image
+                    img.solarCooker(src="../public/img/products/eceSolarCooker.png", alt="Product")
+                div.specs
+                    h3 Solar Cooker 
+                    p Major portion of total energy consumed in cooking.
+                    p Half the world’s population burn wood or dried dung to cook food.
+                    p In village, 95% energy consumed for cooking.
+                    p Source of fuel used for cooking-coal, kerosene, cooking gas-firewood, dung etc.
+                    p People are exposed to indoor air pollution as a result of burning solid fuels for cooking and heating.
+                    p So we introduced our solar cooker to save energy and save environment.
+
+
+                    div.download-buttons
+                        div.download-button
+                            a(href="../public/dataSheets/solarCookerDetails.pdf" download) Download Solar Cooker Details
+                            
+                        div.download-button
+                            a(href="../public/dataSheets/EceSolarCooker.pdf" download) Download ECE Solar Cooker
+
+
+            div.card
+                div.image
+                    img.waterHeater(src="../public/img/products/solarWaterHeater.png", alt="Product")
+                div.specs
+                    h3 Solar Water Heater 
+                    p #[span Brand :] ECE
+                    p #[span Capacity :] 150 lpd
+                    p #[span Number of Tubes :] 15 Tube
+                    p #[span Energy Rating :] 5 Star
+                    p #[span Mounting Type :] Floor Mount
+
+
+
+                    div.download-button
+                        a(href="../public/dataSheets/solarWaterHeater.pdf" download) Download Solar Water Heater pdf
+          
+
+            
+
+
+
+            
+        include ./footer.pug
+
+
+        script(src="../public/js/products.js") 

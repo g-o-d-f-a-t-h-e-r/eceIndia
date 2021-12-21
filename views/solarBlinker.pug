@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/products.css") 
+        
+        title Products Solar Blinker
+    body 
+
+        include ./nav.pug
+
+
+        div.products-container
+            div.cover-img
+                img(src="../public/img/solar16.jpg", alt="Career")
+
+                div.products
+                    h2 Products > Solar Home Lightening
+
+                    div.productsMsg
+                        h3 Traffic Signal
+
+
+        div.products-sec
+            h2 Solar Blinker - Traffic Signal
+
+            div.card
+                div.image
+                    img.waterHeater(src="../public/img/products/solarBlinker.png", alt="Product")
+                div.specs
+                    h3 Solar Blinker Specifications 
+                    p #[span Solar Cell :] 3V Mono Crystalline
+                    p #[span Light Source :] Super Bright 5mm LED
+                    p #[span Number of LEDs :] 6 Nos
+                    p #[span Directional :] Bi-Directional
+                    p #[span Battery :] 1600 MAh
+
+
+
+                    div.download-button
+                        a(href="../public/dataSheets/solarBlinkers.pdf" download) Download Data Sheet for more information
+          
+
+            
+
+
+
+            
+        include ./footer.pug
+
+
+        script(src="../public/js/products.js") 

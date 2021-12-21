@@ -1,0 +1,702 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+
+:root{
+	--theme : rgb(0, 67, 155);
+	--old-color : rgb(0, 117, 196);
+	--background : #0a122e;
+	--greyBackground : rgb(236, 234, 234);
+	--whiteBgHead : #162661;
+	--whiteBgText : rgb(79, 99, 114);
+	--blueBgText : rgb(221, 221, 221);
+	--extraDarkBackground : #030816;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+	outline: none;
+
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.downloads-nav a.active{
+    color: var(--theme) !important;
+}
+
+.downloads-nav a.active::after{
+    background-color: var(--theme) !important;
+    width: 100% !important;
+}
+
+
+
+
+
+.clients-container{
+    margin-top:70px;
+}
+
+.cover-img{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    user-select: none;
+    background-color: black;
+}
+
+.cover-img img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    opacity: 0.7;
+}
+
+.clients{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 40px 100px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.clients h2{
+    position: relative;
+    color: white;
+    font-size: 40px;
+    user-select: none;
+    padding-left: 15px;
+}
+
+.clients h2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.clientsMsg{
+    max-width: 100%;
+    color: var(--blueBgText);
+    /* background-color: pink; */
+    margin: 80px 200px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 40px black;
+}
+
+
+
+.clients-sec{
+    padding: 40px 100px;
+}
+
+.clients-sec h2{
+    font-size: 40px;
+    color: var(--whiteBgHead);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.online-btn, .offline-btn{
+    margin: 10px;
+    border: 2px solid var(--whiteBgHead);
+    padding: 15px 25px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.online-btn:hover, .offline-btn:hover{
+    background-color: var(--whiteBgHead);
+    color: white;
+}
+
+
+
+
+.online{
+    display: none;
+}
+.online.active{
+    display:block
+}
+.online-btn.active{
+    background-color: var(--whiteBgHead);
+    color: white;
+}
+
+
+.offline{
+    display: none;
+}
+.offline.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offline-btn.active{
+    background-color: var(--whiteBgHead);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+#clientsForm{
+    margin: 40px 0;
+}
+
+#clientsForm h3 {
+    font-size: 22px;
+    color: var(--whiteBgHead);
+    margin-left: 5px;
+}
+
+#clientsForm hr{
+    margin-bottom: 10px;
+}
+
+.sec{
+    margin: 40px 0;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.input input{
+    width: 600px;
+    padding: 15px 20px;
+    margin: 5px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--greyBackground);
+    color: var(--theme);
+    transition: all 0.3s ease;
+}
+
+.input > input:focus{
+    box-shadow: 0 0 3px var(--theme);
+}
+
+
+.firmType{
+    margin: 5px;
+}
+
+.firmType p{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.radioInput{
+    background-color: pink;
+    margin: 0;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    width: 600px;
+    background-color: var(--greyBackground);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+
+.radioInput label{
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.radioInput label:hover{
+    color: var(--theme);
+}
+.radioInput input[type='radio']:checked + label{
+    color: var(--theme);
+}
+
+.radioInput input{
+    width: 50px;
+    cursor: pointer;
+}
+
+
+.msme{
+    margin: 5px;
+}
+
+.msme p{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.status{
+    margin: 5px;
+}
+
+.status p{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.attachments h4{
+    user-select: none;
+    font-size: 15px;
+    color: rgb(231, 1, 1);
+    text-align: center;
+    margin: 40px;
+}
+
+
+.attachmentsInput{
+    width: 600px;
+    height: 57px;
+    margin: 20px auto;
+    background-color: var(--greyBackground);
+    padding:15px 0 15px 20px;
+    border-radius: 5px;    
+    overflow: hidden;
+    font-size: 15px;
+    border: 1px solid var(--whiteBgHead);
+    user-select: none;
+}
+
+#msmeCertificateDiv{
+    display: none;
+}
+
+#msmeCertificate{
+    display: none;
+}
+
+
+.attachment{
+    display: none;
+}
+
+.attachmentsP{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(100, 100, 100);
+}
+
+.attachmentsP span{
+    overflow: hidden;
+    width: 70%;
+}
+
+.attachmentsP a{
+    padding: 18px 20px;
+    background-color: var(--whiteBgHead);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.button button{
+    width: 600px;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 2px solid var(--whiteBgHead);
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.button button:hover{
+    background-color: var(--whiteBgHead);
+    color: white;
+}
+
+
+
+.offline-sec{
+    margin: 50px;
+    background-color: var(--greyBackground);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.offline-sec h3{
+    font-size: 22px;
+    color: var(--whiteBgHead);
+    margin-left: 10px;
+}
+
+.para{
+    margin: 20px;
+    font-size: 15px;
+}
+
+.add{
+    margin: 20px;
+    font-weight: 600;
+}
+
+.download-button{
+    text-align: center;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.download-button a{
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    user-select: none;
+    text-decoration: none;
+    color: black;
+    padding: 15px 30px;
+    border: 2px solid var(--whiteBgHead);
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease
+}
+
+.download-button a:hover{
+    background-color: var(--whiteBgHead);
+    color: white;
+}
+
+
+
+.notification{
+    background-color: white;
+    border: 2px solid green;
+    box-shadow: 0 0 10px green;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    user-select: none;
+    color: var(--whiteBgHead);
+    width: 50%;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    animation: slide 8s ease-out;
+    transition: all 0.5s ease-in;
+    border-radius: 5px;
+    z-index: 1;
+    transform : translate(-50%, -100vh)
+}
+
+@keyframes slide{
+    0%{
+        transform : translate(-50%, -100vh)
+    }
+    5%{
+        transform : translate(-50%, 20px)
+    }
+    8%{
+        transform : translate(-50%, 0)
+    }
+    95%{
+        transform : translate(-50%, 0)
+    }
+    100%{
+        transform : translate(-50%, -100vh)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 1024px) {
+    .clients{
+        margin-top: 20px;
+    }
+
+    .notification{
+        top: 120px;
+        width: 70%;
+    }
+
+    
+}
+
+@media screen and (max-width : 768px) {
+    .clients-sec{
+        padding: 40px 50px;
+    }
+
+    .clientsMsg{
+        margin: 80px 50px;
+    }
+}
+
+
+
+@media screen and (max-height : 540px) and (orientation : landscape) {
+    .clients-container, .clients-sec{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width : 540px) {
+    
+    .clients{
+        padding: 20px;
+    }
+
+    .clients h2{
+        text-align: center;
+    }
+
+    .clients h2:after{
+        width: 20%;
+        margin-left: 52%;
+        transform: translateX(-50%);
+    }
+
+    .clientsMsg{
+        font-size: 15px;
+        padding: 0px;
+        margin: 80px 0;
+    }  
+
+
+    .clients-sec{
+        padding: 40px 20px;
+    }
+
+
+    .clients-sec h2{
+        font-size: 30px;
+    }
+
+    .online-btn, .offline-btn{
+        width: 100%;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .input input{
+        width: 350px;
+    }
+
+    .radioInput{
+        width: 350px;
+    }
+
+    .radioInput input{
+        width:30px;
+        margin: 10px;
+    }
+
+
+    .attachments h4{
+        margin: 40px 20px;
+    }
+
+    .attachmentsP{
+        flex-direction: column;
+    }
+
+    .attachmentsInput{
+        position: relative;
+        width: 350px;
+        height: 100px;
+        padding: 0;
+    }
+
+    .attachmentsInput span{
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .attachmentsInput a{
+        display: block;
+        width: 350px;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+
+    .offline-sec{
+        margin: 40px 0;
+        padding: 20px;
+    }
+
+
+    .notification{
+        top: 100px;
+        width: 90%;
+        font-size: 15px;
+    }
+
+
+    
+
+
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .attachmentsInput{
+        position: relative;
+        width: 100%;
+    }
+
+    .attachments h4{
+        margin : 40px 0;
+    }
+
+    .offline-sec{
+        padding: 20px 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width : 360px) {
+
+    .online-btn, .offline-btn{
+        width: 100%;
+        font-size: 14px;
+        margin: 8px;
+        padding: 10px;
+    }
+
+   .input input{
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .radioInput{
+        width: 300px;
+    }
+
+    .radioInput input{
+        width:30px;
+        margin: 10px;
+    }
+
+    .attachmentsInput{
+        width: 300px;
+    }
+
+    .attachments p{
+        font-size: 14px;
+    }
+
+    .notification{
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media screen and (max-width : 320px) {
+
+    .clients-sec{
+        padding: 40px 10px;
+    }
+    .online-btn, .offline-btn{
+        width: 100%;
+        font-size: 14px;
+        margin: 2px;
+        padding: 10px;
+    }
+
+    .attachments{
+        margin: 40px 0;
+    }
+
+    .notification{
+        font-size: 12px;
+    }
+
+
+}
+
+
+
+
+

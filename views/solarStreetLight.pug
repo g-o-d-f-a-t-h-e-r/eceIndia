@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/products.css") 
+        
+        title Products Solar Street Light
+    body 
+
+        include ./nav.pug
+
+
+        div.products-container
+            div.cover-img
+                img(src="../public/img/solar16.jpg", alt="Career")
+
+                div.products
+                    h2 Products > Solar Home Lightening
+
+                    div.productsMsg
+                        h3 Traffic Signal
+
+
+        div.products-sec
+            h2 Solar Street Light - Traffic Signal
+
+            div.card
+                div.image
+                    img.solarStreetLight(src="../public/img/products/solarStreetLight.png", alt="Product")
+                div.specs
+                    h3 Solar Street Light Specifications 
+                    p #[span Lamp type :] LED/CFL
+                    p #[span Charging Current :] 2A Max
+                    p #[span Idle Current :] < 6 mA
+                    p #[span No of Days of Autonomy :] 2 Days
+                    p #[span Mounting Type :] Pole Mount
+
+
+
+                    div.download-button
+                        a(href="../public/dataSheets/solarStreetLights.pdf" download) Download Data Sheet for more information
+          
+
+            
+
+
+
+            
+        include ./footer.pug
+
+
+        script(src="../public/js/products.js") 

@@ -1,0 +1,644 @@
+doctype html
+head
+  title ECE India Energies Pvt Ltd
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+  meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+  link(rel='stylesheet' href='../public/css/style.css')
+  //- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://kit.fontawesome.com/038f84b764.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="../public/img/favicon.png">
+
+
+body(onload = "onload()")
+  
+  div#loading
+
+  header#navbar.nav
+      div#logo
+        a(href="/") 
+          img#logoImg(src="../public/img/ECE_India1.png", alt="ECE INDIA")
+          p#logoText ECE (INDIA) ENERGIES PRIVATE LIMITED
+
+      div#menu
+        ul
+            li.home #[a(onclick = "scrolltop()").current Home]
+              div.sub-menu-0.sub-menu
+                ul.homeDrop 
+                  li #[a(href='/ecesDistributors') ECE's Distributors]
+
+            li #[a About Us]
+              div.sub-menu-1.sub-menu
+                ul.aboutUsDrop 
+                  li #[a(href='/aboutUs/companyProfile') Company Profile]
+                  li #[a(href='/aboutUs/directorsDesk') Director's Desk]
+            li #[a Products]
+              div.sub-menu-2.sub-menu
+                ul.productsDrop 
+                  li.pvModules #[a PV Modules &nbsp &nbsp &nbsp >]
+                    div.sub-menu-2-1.sub-menu
+                      ul.pvModulesDrop 
+                        li.polyCrystaline #[a Poly Crystaline &nbsp &nbsp &nbsp >]
+                          div.sub-menu-2-1-1.sub-menu
+                            ul.polyCrystalineDrop 
+                              li #[a(href='/products/66CellPoly') 66 Cell Poly]
+                              li #[a(href='/products/72CellPoly') 72 Cell Poly]
+                              li #[a(href='/products/144CellPoly') 144 Cell Poly]
+
+                        li.monoPerc #[a Mono Perc &nbsp &nbsp &nbsp >]
+                          div.sub-menu-2-1-2.sub-menu
+                            ul.monoPercDrop 
+                              li #[a(href='/products/60CellMono') 60 Cell Mono]
+                              li #[a(href='/products/72CellMono') 72 Cell Mono]
+                              li #[a(href='/products/144CellMono') 144 Cell Mono]
+
+                        li.bifacial #[a Bifacial &nbsp &nbsp &nbsp >]
+                          div.sub-menu-2-1-3.sub-menu
+                            ul.bifacialDrop 
+                              li #[a(href='/products/framed') Framed]
+                              li #[a(href='/products/unframed') Unframed]
+
+                        li #[a(href='/products/bipv') BIPV]
+
+                        li.dcr #[a DCR &nbsp &nbsp &nbsp >]
+                          div.sub-menu-2-1-4.sub-menu
+                            ul.dcrDrop
+                              li #[a(href='/products/66CellDcr') 66 Cell DCR]
+                              li #[a(href='/products/72CellDcr') 72 Cell DCR]
+
+                        li #[a(href='/products/flexible') Flexible]
+
+
+                  li.solarHomeLightening #[a Solar Home Lightening &nbsp &nbsp &nbsp >]
+                    div.sub-menu-2-2.sub-menu
+                      ul.solarHomeLighteningDrop 
+                        li #[a(href='/products/homeLightSystems') Home Light Systems]
+                        li #[a(href='/products/solarCooker') Solar Cooker]
+                        li #[a(href='/products/solarLantern') Solar Lantern]
+                        li #[a(href='/products/solarInsectKiller') Solar Insect killer]
+                        li #[a(href='/products/solarSystem') Solar System]
+                        li.trafficSignal #[a Traffic Signal &nbsp &nbsp &nbsp >]
+                          div.sub-menu-2-2-1.sub-menu
+                            ul.trafficSignalDrop
+                              li #[a(href='/products/solarBlinker') Solar Blinker]
+                              li #[a(href='/products/solarStreetLight') Solar Street Light]
+
+
+            li #[a(href="/projects") Projects]
+
+
+            li #[a Solutions]
+              div.sub-menu-3.sub-menu
+                ul.solutionsDrop 
+                  li.productBelow20Kw #[a Products Below 20 KW &nbsp &nbsp &nbsp >]
+                    div.sub-menu-3-1.sub-menu
+                      ul.productsBelow20KwDrop 
+                        li #[a(href='/solutions/commercialBelow20Kw') Commercial Below 20 KW]
+                        li #[a(href='/solutions/residentialBelow20Kw') Residential Below 20 KW]
+
+                  li.productAbove20Kw #[a Products Above 20 KW &nbsp &nbsp &nbsp >]
+                    div.sub-menu-3-2.sub-menu
+                      ul.productsAbove20KwDrop 
+                        li #[a(href='/solutions/commercialAbove20Kw') Commercial Above 20KW]
+                        li #[a(href='/solutions/industrialAbove20Kw') Industrial Above 20 KW]
+
+                  li.oAndM #[a Operation & Maintainance &nbsp &nbsp &nbsp >]
+                    div.sub-menu-3-3.sub-menu
+                      ul.oAndMDrop 
+                        li #[a(href='/solutions/spares') Spares]
+
+                        li.amc #[a AMC &nbsp &nbsp &nbsp >]
+                          div.sub-menu-3-3-1.sub-menu
+                            ul.amcDrop 
+                              li #[a(href='/solutions/cleaningServices') Cleaning Services]
+                              li #[a(href='/solutions/electricalMaintainance') Electrical Maintainance]
+
+
+                  li #[a(href='/solutions/solarEpc') Solar EPC]
+                  li #[a(href='/solutions/largeProjects') Large Projects / Utility Projects]
+                  li #[a(href='/solutions/lisening') Lisening]
+
+            li.downloads #[a Downloads]
+              div.sub-menu-4.sub-menu
+                ul.downloadsDrop 
+                  li #[a(href='/downloads/vendorRegistrationForm') Vendor Registration Form]
+                  li #[a(href='/downloads/clientRegistrationForm') Client Registration Form]
+
+            li #[a(href="/blogs") Blogs]
+            li #[a(href="/contactUs") Contact Us]
+            li #[a(href="/news") News/CSR]
+            li #[a(href="/career") Career]
+
+            li.achievements #[a Achievements]
+              div.sub-menu-5.sub-menu
+                ul.achievementsDrop 
+                  li #[a(href='/achievements/certifications') Certifications]
+                  li #[a(href='/achievements/awards') Awards]
+                  li #[a(href='/achievements/patents') R&D / Patents]
+
+            li #[a(href="/photoGallery") Photo Gallery]
+
+      div.hamburger
+        div.hamburger-line
+
+  div.dropdown-menu
+      ul 
+        li.home-drop #[p #[a.active Home] #[i.arrow.down]]
+          div.home-menu.sub-menu-drop
+            ul 
+              li #[a(href='/ecesDistributors') ECE's Distributors]
+
+        li.aboutUs-drop #[p #[a About us] #[i.arrow.down]]
+          div.aboutUs-menu.sub-menu-drop
+            ul 
+              li #[a(href='/aboutUs/companyProfile') Company Profile]
+              li #[a(href='/aboutUs/directorsDesk') Directors Desk]
+
+
+        li.products-drop #[p #[a Products] #[i.arrow.down]]
+           div.products-menu.sub-menu-drop
+            ul 
+              li.pvModule-drop #[p #[a PV Module] #[i.arrow.down]]
+                 div.pvModule-menu.sub-menu2-drop
+                  ul 
+                    li.polyCrystaline-drop #[p #[a Poly Crystaline] #[i.arrow.down]]
+                      div.polyCrystaline-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/products/66CellPoly") 66 Cell Poly]
+                          li #[a(href="/products/72CellPoly") 72 Cell Poly]
+                          li #[a(href="/products/144CellPoly") 144 Cell Poly]
+
+                    li.monoPerc-drop #[p #[a Mono Perc] #[i.arrow.down]]
+                      div.monoPerc-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/products/60CellMono") 60 Cell Mono]
+                          li #[a(href="/products/72CellMono") 72 Cell Mono]
+                          li #[a(href="/products/144CellMono") 144 Cell Mono]
+
+                    li.bifacial-drop #[p #[a Bifacial] #[i.arrow.down]]
+                      div.bifacial-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/products/framed") Framed]
+                          li #[a(href="/products/unframed") Unframed]
+
+                    li #[a(href="/products/bipv") BIPV]
+                    li.dcr-drop #[p #[a DCR] #[i.arrow.down]]
+                      div.dcr-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/products/66CellDcr") 66 Cell DCR]
+                          li #[a(href="/products/72CellDcr") 72 Cell DCR]
+
+                    li #[a(href="/products/flexible") Flexible]
+                
+
+              li.solarHomeLightening-drop #[p #[a(style="color:white") Solar Home Lightening] #[i(style="border-color : white").arrow.down]]
+                div.solarHomeLightening-menu.sub-menu2-drop
+                  ul 
+                    li #[a(href="/products/homeLightSystem") Home Light System]
+                    li #[a(href="/products/solarCooker") Solar Cooker]
+                    li #[a(href="/products/solarLantern") Solar Lantern]
+                    li #[a(href="/products/solarInsectKiller") Solar Insect Killer]
+                    li #[a(href="/products/solarSystem") Solar System]
+                    li.trafficSignal-drop #[p #[a Traffic Signal] #[i.arrow.down]]
+                      div.trafficSignal-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/products/solarBlinker") Solar Blinker]
+                          li #[a(href="/products/solarStreetLight") Solar Street Light]
+        
+        li #[a(href='/projects') Projects]
+
+ 
+        li.solutions-drop #[p #[a Solutions] #[i.arrow.down]]
+          div.solutions-menu.sub-menu-drop
+            ul 
+              li.productsBelow20Kw-drop #[p #[a Products Below 20KW] #[i.arrow.down]]
+                div.productsBelow20Kw-menu.sub-menu2-drop
+                  ul 
+                    li #[a(href="/solutions/commercialBelow20Kw") Commercial Below 20KW]
+                    li #[a(href="/solutions/residentialBelow20Kw") Residential Below 20KW]
+
+              li.productsAbove20Kw-drop #[p #[a Products Above 20KW] #[i.arrow.down]]
+                 div.productsAbove20Kw-menu.sub-menu2-drop
+                  ul 
+                    li #[a(href="/solutions/commercialAbove20Kw") Commercial Above 20KW]
+                    li #[a(href="/solutions/industrialAbove20Kw") Industrial Above 20KW]
+
+              li.operationAndMaintainance-drop #[p #[a Operation And Maintainance] #[i.arrow.down]]
+                div.operationAndMaintainance-menu.sub-menu2-drop
+                  ul 
+                    li #[a(href="/solutions/spares") Spares]
+                    li.amc-drop #[p #[a AMC] #[i.arrow.down]]
+                       div.amc-menu.sub-menu3-drop
+                        ul 
+                          li #[a(href="/solutions/cleaningServices") Cleaning Services]
+                          li #[a(href="/solutions/electricalMaintainance") Electrical Maintainance]
+
+              li #[a(href="/solutions/solarEpc") Solar EPC]
+              li #[a(href="/solutions/largeProjects") Large Projects / Utility Projects]
+              li #[a(href="/solutions/lisening") Lisening]
+
+        li.downloads-drop #[p #[a Downloads] #[i.arrow.down]]
+          div.downloads-menu.sub-menu-drop
+            ul 
+              li #[a(href="/downloads/vendorRegistrationForm") Vendor Registration Form]
+              li #[a(href="/downloads/clientRegistrationForm") Client Registration Form]
+
+        li #[a(href='/blogs') Blogs]
+        li #[a(href='/contactUs') Contact Us]
+        li #[a(href='/news') News/CSR]
+        li #[a(href='/career') Career]
+        li.achievements-drop #[p #[a Achievements] #[i.arrow.down]]
+          div.achievements-menu.sub-menu-drop
+            ul 
+              li #[a(href="/achievements/certifications") Certifications]
+              li #[a(href="/achievements/awards") Awards]
+              li #[a(href="/achievements/patents") R&D / Patents]
+
+
+        li #[a(href='/photoGallery') Photo Gallery]
+
+  div.showcase  
+    video(src="../public/img/eceIndia.mp4" poster="../public/img/thumbnail.png" muted loop autoplay) 
+
+    div#overlay
+      div.text
+        h2.head The Green way is the better way...
+        h3.subHead Consume Green energy with our solar pannel 3W - 400W
+        p.desc Mono Crystaline, Poly Crystaline, BIPV, Mono Perc, Bifacial, Twinpeak, DCR, Flexible
+      
+        a(href="/aboutUs/companyProfile")#btn Know More... 
+
+    a(onclick = "scrollto()").indicator
+      span
+      span
+      span
+      span
+      span
+
+
+  div#container
+    div.cards
+      div.card
+        div.img1.img
+          img(src="../public/img/industrial3.png", alt="Work Experience")
+          h3.counter 10+ Years
+        div.info
+          p of rich Industry Experience
+
+      div.card
+        div.img2.img
+          img(src="../public/img/house3.png", alt="Work Experience")
+          h3.counter 1500+
+        div.info
+          p Rooftop projects
+
+      div.card
+        div.img3.img
+          img(src="../public/img/solar-panel3.png", alt="Work Experience")
+          h3.counter 200+ MW
+        div.info
+          p of projects executed
+
+
+
+    
+  div.missionAndVisionContainer
+    div.chairmanImg
+      img(src="../public/img/chairman.jfif", alt="")
+      div.details
+        h2 DR. V.T. Ingole
+        p -- Chairman --
+    div.missionAndVision
+      div.sec.sec1
+        h3 VISION 
+        p To provide sustainable solutions for Mother Earth through Eternal Solar Energy and by providing unparalleled value, we will greatly accelerate the adoption of solar energy systems. This will give our customers, our communities, and our nation clean, abundant, low-cost, distributed, and renewable energy, and will allow us to provide financial security for all shareholders while giving back to the community.
+      div.sec.sec2
+        h3 MISSION 
+        p To develop a sustainable ecosystem for Solar Energy based on Indian values of sharing and growing together and to provide the most compelling value in the solar energy industry. Value, as defined by our customers, means designing and installing the highest quality solar energy systems, on time, safely, with high customer satisfaction, at a low cost.
+
+
+
+  div.bis
+    div.qualityDesc
+      h2 Premium Quality Product 
+      p ECE India is well known for manufacturing premium quality Solar Pannels for decades. Our facility has stingent quality check procedures, paired with best in class raw materials and highly skilled workforce. We are also BIS certified which ensures the delivery of best performance of pannels at diverse geographic location and adverse climatic conditions.
+    div.qualityImg
+      img(src="../public/img/bisLogo1.png", alt="BIS certification")
+      p Quality Brand <span class="or">|</span> Quality Product <span class="or">|</span> Quality People
+
+
+
+
+  div.rooftopSec
+    div.rooftopImg
+      div.image
+        img(src="../public/img/rooftopImg1.jpg", alt="Rooftop Image")
+    div.rooftopDesc
+      h2 A track record that speaks for itself
+      p We have completed the milestone of 1500+ solar rooftop projects and we formed the solid ground with 10 MW+ satisfied customers and successful consultancy services in EPC projects given to famous big names like : M/S Adani, Reliance, IRB etc. ECE and its team are committed to become a multi-billion venture serving society and nation to its fullest in coming 5 years.
+      a(href="/projects") Find Out More #[img(src="../public/img/rightArrow.png", alt="alt")]
+
+
+
+
+  div.whyWe
+    div.whyWeDesc
+      h2 Why Choose Us?
+      p We are committed to creating a larger societal value. We believe that the communities residing around our operations are our key stakeholders and we have a firm commitment towards their empowerment and holistic development. We began contributing to community development in the our early days and continue to empower host communities around our operations. #[br] #[br] Company Socially contributes in terms of extending full support to all the government and non-government initiatives of skill development in solar PV technology. The last but the most significant reason to choose ECE(India) Energies Pvt Ltd is its qualified, trained and committed team of professionals.
+
+    div.whyWeImg
+      img(src="../public/img/solar2.jpg", alt="alt")
+
+
+
+
+  div.testimonials
+    h2 Testimonials
+    
+    div.container
+      div.indi
+        span.btn.active
+        span.btn
+        span.btn
+        span.btn
+        span.btn
+        span.btn
+        span.btn
+        span.btn
+      div.testimonial
+        div.slide-row#slide
+          div.slide-col
+            div.user-text
+              p Established by Maharashtrian. we must appreciate this company because by thinking future need and using the technology this huge infrastructure for the manufacturing of solar equipment, solar panels is developed. Best wishesh. 
+              h3 Mr. Girish Bapat
+              span.pos Member of Parliament 
+            div.user-img
+              img(src="../public/img/1.jpg", alt="alt")
+
+          div.slide-col
+            div.user-text
+              p Today I have visited ECE (INDIA) PVT LTD. I observed wonderful premises and strong Management. we proud that this is the only one company in the business of solar manufacturing in vidarbh region of Maharashtra. Best wishes   
+              h3 Mr. Uday S. Puri
+              p.pos Superintending Industries Officer, GM DIC 
+            div.user-img
+              img(src="../public/img/2.jpg", alt="alt")
+
+          div.slide-col
+            div.user-text
+              p After visiting the company we realize that the intellectual in vidarbha region is equal to the intellectual in developed region. ECE has set a good example in front of Maharashtra. My best wishes are always with this company.
+              h3 Mr. Devendra Bhuyar
+              p.pos MLA Morshi 
+            div.user-img
+              img(src="../public/img/3.jpg", alt="alt")
+
+          div.slide-col
+            div.user-text
+              p First of this kind setup in Amravati and Second in Vidarbha. Proud of this ECE India Pvt Ltd. My Best wishes for future progress. Thanks
+              h3 Prafulla V. Tayde
+              p.pos General Manager, MEDA 
+            div.user-img
+              img(src="../public/img/4.jpg", alt="alt")
+
+          div.slide-col
+            div.user-text
+              p Good work, Well done, Go ahead. We have observed very good atmosphere at the site while production of solar panels.
+              h3 Mr. Kiran Paturkar
+              p.pos President MIDC Association
+            div.user-img
+              img(src="../public/img/5.jpg", alt="alt")
+
+          div.slide-col
+            div.user-text
+              p The service provided by ECE (INDIA) ENERGIES PRIVATE LIMITED has been excellent throughout this project. Their project delivery program was well thought out and integrated seamlessly with our own operation and was delivered on time with professionalism and attention to detail. It is important for us to partner with like-minded businesses and for them to be able to work alongside us delivering on the needs.
+              h3 Kushal Dhole
+              p.pos Director at ImagineScript Solutions Pvt. Ltd. 
+            div.user-img
+              img(src="../public/img/6.jpg", alt="alt")
+
+          div.slide-col
+            div.user-text
+              p We are proud to have Mr. Amit Arokar is our electrius alumni. He is an enthusiastic, energetic, entrepreneur engineer. He is active participation in the college alumni association and in the diverse social fields like blood bank along with entrepreneurship. Being an engineering postgraduate, starting own business in non-renewable energy area shows his courage and dedication. We wish him all the best in is an endeavor.
+              h3 Nishikant Kale
+              p.pos Principal of Pro. Ram Meghe Institute of Technology & Research, Badnera-Amravati 
+            div.user-img
+              img(src="../public/img/7.png", alt="alt")
+
+          div.slide-col
+            div.user-text
+              p The service provided by ECE (INDIA) ENERGIES PRIVATE LIMITED has been excellent throughout this project. Their project delivery programme was well thought out and integrated seamlessly with our own operation and was delivered on time with professionalism and attention to detail. It is important for us to partner with like-minded businesses and for them to be able to work alongside us delivering on the needs.
+              h3 Dr. A.B. Marathe
+              p.pos Principal of HVPM's college of engineering and technology, Amravati 
+            div.user-img
+              img(src="../public/img/8.jpg", alt="alt")
+
+  div.feedback
+    h2 Testimonials
+    div.feedback-container
+      div.user-feedback#swipe
+        div.user-card
+          div.user-img
+            img(src="../public/img/1.jpg", alt="alt")
+          div.user-desc
+            p Established by Maharashtrian. we must appreciate this company because by thinking future need and using the technology this huge infrastructure for the manufacturing of solar equipment, solar panels is developed. Best wishesh. 
+            h3 Mr. Girish Bapat
+            p Member of Parliament
+
+        div.user-card
+          div.user-img
+            img(src="../public/img/2.jpg", alt="alt")
+          div.user-desc
+            p Today I have visited ECE (INDIA) PVT LTD. I observed wonderful premises and strong Management. we proud that this is the only one company in the business of solar manufacturing in vidarbh region of Maharashtra. Best wishes   
+            h3 Mr. Uday S. Puri
+            p Superintending Industries Officer, GM DIC 
+        div.user-card
+          div.user-img
+            img(src="../public/img/3.jpg", alt="alt")
+          div.user-desc
+            p After visiting the company we realize that the intellectual in vidarbha region is equal to the intellectual in developed region. ECE has set a good example in front of Maharashtra. My best wishes are always with this company.
+            h3 Mr. Devendra Bhuyar
+            p MLA Morshi
+        div.user-card
+          div.user-img
+            img(src="../public/img/4.jpg", alt="alt")
+          div.user-desc
+            p First of this kind setup in Amravati and Second in Vidarbha. Proud of this ECE India Pvt Ltd. My Best wishes for future progress. Thanks
+            h3 Prafulla V. Tayde
+            p General Manager, MEDA
+        div.user-card
+          div.user-img
+            img(src="../public/img/5.jpg", alt="alt")
+          div.user-desc
+            p Good work, Well done, Go ahead. We have observed very good atmosphere at the site while production of solar panels.
+            h3 Mr. Kiran Paturkar
+            p President MIDC Association
+        div.user-card
+          div.user-img
+            img(src="../public/img/6.jpg", alt="alt")
+          div.user-desc
+            p The service provided by ECE (INDIA) ENERGIES PRIVATE LIMITED has been excellent throughout this project. Their project delivery program was well thought out and integrated seamlessly with our own operation and was delivered on time with professionalism and attention to detail. It is important for us to partner with like-minded businesses and for them to be able to work alongside us delivering on the needs.
+            h3 Kushal Dhole
+            p Director at ImagineScript Solutions Pvt. Ltd. 
+
+        div.user-card
+          div.user-img
+            img(src="../public/img/7.png", alt="alt")
+          div.user-desc
+            p We are proud to have Mr. Amit Arokar is our electrius alumni. He is an enthusiastic, energetic, entrepreneur engineer. He is active participation in the college alumni association and in the diverse social fields like blood bank along with entrepreneurship. Being an engineering postgraduate, starting own business in non-renewable energy area shows his courage and dedication. We wish him all the best in is an endeavor.
+            h3 Nishikant Kale
+            p Principal of Pro. Ram Meghe Institute of Technology & Research, Badnera-Amravati 
+
+        div.user-card
+          div.user-img
+            img(src="../public/img/8.jpg", alt="alt")
+          div.user-desc
+            p The service provided by ECE (INDIA) ENERGIES PRIVATE LIMITED has been excellent throughout this project. Their project delivery programme was well thought out and integrated seamlessly with our own operation and was delivered on time with professionalism and attention to detail. It is important for us to partner with like-minded businesses and for them to be able to work alongside us delivering on the needs.
+            h3 Dr. A.B. Marathe
+            p Principal of HVPM's college of engineering and technology, Amravati 
+
+      div.radio
+        span.bttn.active
+        span.bttn
+        span.bttn
+        span.bttn
+        span.bttn
+        span.bttn
+        span.bttn
+        span.bttn
+
+
+  div.clients
+    div.filler
+    
+    div.clients-container
+      h2 Our Clients
+      section.customer-logos.slider 
+        div.slide
+          img(src="../public/img/client/1rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/2rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/3rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/4rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/5rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/6rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/7rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/8rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/9rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/10rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/11rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/12rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/13.1rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/14rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/15rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/16rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/17rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/18rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/19rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/20rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/21rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/22rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/23rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/24rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/25rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/26rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/27rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/28rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/29rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/30rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/31rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/32rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/33rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/34rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/35rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/36rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/37rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/38rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/39rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/40rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/41rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/42rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/43rbg.png", alt="alt")
+        div.slide
+          img(src="../public/img/client/44rbg.png", alt="alt")
+
+
+  footer.footer 
+    div.aboutAndAddress
+      div.brandLogo
+        img(src="../public/img/eceLogo.png", alt="alt")
+
+      div.about
+        h2 About ECE India
+        p ECE (India) Energies Private Limited was established to provide fruitful services to the stakeholders through value addition with an eye for quality, clean environment, and safe life.
+
+      div.address
+        h2 Corporate Address
+        p ECE (India) Energies(P) Limited
+        p  Plot No. F – 27,
+        p  Amravati MIDC Area,
+        p  Express Highway NH – 06,
+        p  Amravati – 444 607(M.S.) INDIA
+        br
+        p  Email : #[a(href="mailto: info@eceindia.com") info@eceindia.com]
+        br
+        p  Contact No. : #[a(href="tel:07212529022") 0721-2529022]
+        p  #[a(href="tel:7774092700") +91-7774092700] | #[a(href="tel:7774092701") +91-7774092701]
+        br
+        div.social
+          a(href="https://www.facebook.com/eceindiaenergies/" target="_blank") #[img(src="../public/img/facebook.png", alt="facebook")]
+          a(href="https://twitter.com/EceEnergies" target="_blank") #[img(src="../public/img/twitter.png", alt="twitter")]
+          a(href="https://www.linkedin.com/company/eceindiaenergies/" target="_blank") #[img(src="../public/img/linkedin.png", alt="linkedin")]
+          a(href="https://www.youtube.com/channel/UC3Mg8gehhm_TKFkdg6B1fiw" target="_blank") #[img(src="../public/img/youtube.png", alt="youtube")]
+
+    div.line
+
+    div.copyright
+      p &copy Copyright - All Rights Reserved of ECE India - 2019
+
+  div.msg
+    img(src="../public/img/rotate.png", alt="rotate")
+
+
+  script(src="../public/js/home.js") 

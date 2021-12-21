@@ -1,0 +1,61 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  <link rel="icon" href="../public/img/favicon.png">
+  link(rel="stylesheet", href="../public/css/photo.css") 
+  title Sales Office Inauguration Gallery
+
+body 
+
+  include ./nav.pug
+
+  div.photo-container
+      div.cover-img
+        img(src="../public/img/photoGallery.jpg", alt="PhotoGallery")
+
+        div.photo
+          h2 Photo Gallery
+
+          div.photoMsg
+            h3 Solar energy – Today’s resource for a brighter tomorrow!
+
+  div.heading
+    h2 Sales Office Inauguration
+
+  .flex-container
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/1.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/2.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/3.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/4.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/5.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/6.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/7.jpg' alt='' width='100%')
+        
+    .gallery
+      a(style='text-decoration: none')
+        img(src='../public/img/salesOfficeInaug/8.jpg' alt='' width='100%')
+
+  include ./footer.pug
+    script(src="../public/js/photoGallery.js") 
