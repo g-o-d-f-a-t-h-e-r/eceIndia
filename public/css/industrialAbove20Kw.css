@@ -101,3 +101,260 @@ body{
     justify-content: center;
     text-shadow: 0 0 40px black;
 }
+
+
+.residential-container{
+    padding: 40px 100px;
+    font-size: 15px;
+}
+
+.residential-container h2{
+    font-size: 40px;
+    color: var(--whiteBgHead);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.whatIsSolarRooftop{
+    text-align: center;
+    font-weight: 500;
+}
+
+.howSolarRooftopWork{
+    display: flex;
+    margin: 40px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text{
+    width: 62%;
+    padding: 0 30px 0 0;
+}
+
+.img{
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    animation: bounce 1s alternate infinite;
+}
+
+@keyframes bounce {
+    from { transform: translate3d(0, -8px, 0);}
+    to { transform: translate3d(0, 8px, 0);}
+}
+
+
+
+.img img{
+    width: 100%;
+    height: 100%;
+}
+
+.text h3{
+    font-size: 28px;
+    color: var(--theme);
+    line-height: 40px;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+
+.planningRooftop h2{
+    margin-top: 80px;
+}
+
+.paraPlanning ul{
+    list-style: none;
+    margin: 20px 50px;
+}
+
+.explanation{
+    margin: 40px 0;
+}
+
+.explanation h3{
+    font-size: 28px;
+    color: var(--theme);
+    line-height: 30px;
+   
+}
+
+.exp{
+    margin: 20px 0;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image{
+    width: 550px;
+    height: 350px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+
+.image img:hover{
+    transform: scale(1.01);
+}
+
+
+
+@media screen and (max-width : 1024px){
+
+    .solutions{
+        margin-top: 20px;
+    }
+
+    .residential-container{
+        padding: 40px 50px;
+    }
+
+
+    .text{
+        width: 70%;
+        padding: 0;
+        margin: 40px 0 0 0;
+    }
+
+    .planningRooftop h2{
+        margin: 0 0 40px 0;
+    }
+
+    .img{
+        width: 500px;
+        height: 350px;
+    }
+
+    .exp{
+        margin: 50px 0;
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    .solutionsMsg{
+        margin: 80px 0;
+    }
+
+    .howSolarRooftopWork{
+        flex-direction: column-reverse;
+        /* background-color: violet; */
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    .img{
+        width: 400px;
+        height: 300px;
+    }
+
+    .text{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+
+
+}
+
+
+@media screen and (max-width : 540px) {
+    .solutions{
+        padding: 20px;
+    }
+
+    .solutions h2{
+        text-align: center;
+    }
+
+    .solutions h2:after{
+        width: 20%;
+        margin-left: 52%;
+        transform: translateX(-50%);
+    }
+
+    .solutionsMsg{
+        font-size: 15px;
+        padding: 0px;
+        margin: 80px 0;
+    }  
+
+    .residential-container{
+        padding: 40px 20px;
+    }
+
+    .residential-container h2{
+        font-size: 30px;
+    }
+
+    .howSolarRooftopWork{
+        text-align: center;
+        margin: 40px 0 0 0;
+        padding: 0;
+    }
+
+    .img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 40px 0 0 0;
+    }
+
+    .image{
+        height: 250px;
+    }
+
+    .planningRooftop h2{
+        margin: 40px 0;
+    }
+
+}
+
+
+@media screen and (max-width : 375px) {
+
+    .residential-container{
+        font-size: 14px;
+    }
+
+    .residential-container h2{
+        font-size: 25px;
+    }
+
+    .residential-container h3{
+        font-size: 18px;
+    }
+
+    .img{
+        width: 300px;
+        height: 240px;
+    }
+
+    .exp{
+        margin: 20px 0;
+    }
+
+    
+
+
+}
