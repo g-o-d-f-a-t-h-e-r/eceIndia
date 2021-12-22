@@ -101,3 +101,219 @@ body{
     justify-content: center;
     text-shadow: 0 0 40px black;
 }
+
+
+.commercialAbove20KW-sec{
+    padding: 40px 100px;
+    background-color: var(--greyBackground);
+}
+
+.commercialAbove20KW-sec h2{
+    font-size: 40px;
+    color: var(--whiteBgHead);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.headingMsg{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.headingMsg p{
+    margin: 20px 0;
+}
+
+.commercialBuildings{
+    margin: 80px 0;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.commercialBuildings h3, .advantages h3{
+    font-size: 25px;
+    color: var(--theme);
+    margin: 10px 0;
+    line-height: 20px;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+.commercialBuildings-text{
+    width: 60%;
+    padding-right:50px;
+}
+
+
+
+.advantages{
+    margin: 40px 0;
+    font-size: 15px;
+}
+
+.advantages h3{
+    font-size: 25px;
+    color: var(--theme);
+    margin: 10px 0;
+}
+
+
+.examples {
+    padding: 40px 100px;
+}
+
+.examples h2{
+    font-size: 40px;
+    color: var(--whiteBgHead);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.example-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.image{
+    width: 550px;
+    height: 350px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.image img:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 10px grey);
+    
+}
+
+
+
+@media screen and (max-width : 1024px) {
+    .solutions{
+        margin-top: 20px;
+    }
+
+    .solutionsMsg{
+        margin: 50px 100px;
+    }
+
+
+    .commercialAbove20KW-sec{
+        padding: 40px 50px;
+    }
+
+    .commercialBuildings{
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: 80px 0 40px 0;
+    }
+
+    .commercialBuildings-text{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .advantages{
+        margin-top: 10px 0;
+    }
+
+    .image{
+        width: 90%;
+        height: auto;
+    }
+
+
+}
+
+
+@media screen and (max-width : 768px) {
+    .solutionsMsg{
+        margin: 50px 0;
+    }
+
+    .commercialAbove20KW-sec h2{
+        font-size: 35px;
+    }
+
+}
+
+
+@media screen and (max-width : 540px) {
+    .solutions{
+        padding: 20px;
+    }
+
+    .solutions h2{
+        text-align: center;
+    }
+
+    .solutions h2:after{
+        width: 20%;
+        margin-left: 52%;
+        transform: translateX(-50%);
+    }
+
+    .solutionsMsg{
+        font-size: 15px;
+        padding: 0px;
+        margin: 80px 0;
+    }  
+
+    .commercialAbove20KW-sec{
+        padding: 40px 20px;
+    }
+
+    .commercialAbove20KW-sec h2{
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .commercialBuildings{
+        margin: 40px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .commercialBuildings-text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .advantages{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .commercialBuildings-text h3, .advantages h3{
+        line-height: 30px;
+        text-align: center;
+        
+    }
+
+    .examples{
+        padding: 40px 10px;
+    }
+
+    .examples h2{
+        font-size: 30px;
+    }
+
+}
