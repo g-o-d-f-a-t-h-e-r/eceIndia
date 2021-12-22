@@ -367,9 +367,9 @@ input[type=number] {
 
 
 @media screen and (max-height: 540px) and (orientation : landscape){
-    .image, .letsTalk, .regards{
+    /* .image, .letsTalk, .regards{
         display: none;
-    }
+    } */
 }
 
 /* --------------------------------------------------------------------- */

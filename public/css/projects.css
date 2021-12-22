@@ -292,9 +292,9 @@ body{
 
 
 @media screen and (max-height : 540px) and (orientation : landscape) {
-    .projects-container, .projects-sec{
+    /* .projects-container, .projects-sec{
         display: none;
-    }
+    } */
 }
 
 

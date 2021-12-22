@@ -510,9 +510,9 @@ input[type=number] {
 
 
 @media screen and (max-height : 540px) and (orientation : landscape) {
-    .clients-container, .clients-sec{
+    /* .clients-container, .clients-sec{
         display: none;
-    }
+    } */
 }
 
 

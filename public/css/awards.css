@@ -227,9 +227,9 @@ body{
 }
 
 @media screen and (max-height : 540px) and (orientation : landscape) {
-    .awards-container, .awards-sec{
+    /* .awards-container, .awards-sec{
         display: none;
-    }
+    } */
 }
 
 @media screen and (max-width : 540px) {

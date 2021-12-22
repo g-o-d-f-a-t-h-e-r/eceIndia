@@ -507,9 +507,9 @@ body{
 
 
 @media screen and (max-height : 540px) and (orientation : landscape) {
-    .aboutUs-container, .our-story-container, .qualityAndFocus, .training-container, .ourInfrastructure{
+    /* .aboutUs-container, .our-story-container, .qualityAndFocus, .training-container, .ourInfrastructure{
         display: none;
-    }
+    } */
 }
 
 @media screen and (max-width : 540px) {

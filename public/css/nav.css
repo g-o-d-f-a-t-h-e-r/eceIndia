@@ -1059,11 +1059,32 @@ header{
 
 @media screen and (max-height : 540px) and (orientation : landscape){
 	
-	#navbar,.dropdown-menu, .showcase, #container, .missionAndVisionContainer, .bis, .rooftopSec, .whyWe, .testimonials, .feedback, .clients, .footer{
-		display: none;
+
+	#navbar{
+		height: 70px;
 	}
 
-	.msg{
+	#logo{
+		width: 50%;
+		/* background-color: pink; */
+	}
+
+	#logoImg{
+		width: 150px;
+	}
+
+	#logoText{
+		font-size: 20px;
+		line-height: 25px;
+		/* width: 40%; */
+	}
+
+
+	/* #navbar,.dropdown-menu, .showcase, #container, .missionAndVisionContainer, .bis, .rooftopSec, .whyWe, .testimonials, .feedback, .clients, .footer{
+		display: none;
+	} */
+
+	/* .msg{
 		display: block;
 		position: fixed;
 		top: 0;
@@ -1089,7 +1110,7 @@ header{
 			transform: rotate(90deg);
 		}
 		
-	}
+	} */
 
 }
 

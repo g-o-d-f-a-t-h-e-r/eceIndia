@@ -324,9 +324,9 @@ body{
 }
 
 @media screen and (max-height : 540px) and (orientation : landscape) {
-    .blogs-container, .blogs-sec{
+    /* .blogs-container, .blogs-sec{
         display: none;
-    }
+    } */
 }
 
 

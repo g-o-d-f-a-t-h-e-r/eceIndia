@@ -263,9 +263,9 @@ body{
 
 
 @media screen and (max-height : 540px) and (orientation : landscape) {
-    .products-container, .products-sec{
+    /* .products-container, .products-sec{
         display: none;
-    }
+    } */
 }
 
 

@@ -206,9 +206,9 @@ body{
 
 
 @media screen and (max-height : 540px) and (orientation : landscape) {
-    .certification-container, .certification-sec{
+    /* .certification-container, .certification-sec{
         display: none;
-    }
+    } */
 }
 
 

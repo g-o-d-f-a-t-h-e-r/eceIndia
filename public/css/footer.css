@@ -220,9 +220,10 @@ body, html{
 
 @media screen and (max-height : 540px) and (orientation : landscape){
 	
-	.footer{
+	/* .footer{
 		display: none;
-	}
+	} */
+
 
 }
 

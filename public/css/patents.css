@@ -212,9 +212,9 @@ body{
 }
 
 @media screen and (max-height: 540px) and (orientation : landscape) {
-    .patents-container{
+    /* .patents-container{
         display: none;
-    }
+    } */
 }
 
 @media screen and (max-width : 540px) {

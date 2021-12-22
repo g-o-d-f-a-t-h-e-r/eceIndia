@@ -426,9 +426,9 @@ body{
 }
 
 @media screen and (max-height : 540px) and (orientation : landscape) {
-    .aboutUs-container, .directors-sec, .grpPhoto{
+    /* .aboutUs-container, .directors-sec, .grpPhoto{
         display: none;
-    }
+    } */
 }
 
 @media screen and (max-width : 540px){

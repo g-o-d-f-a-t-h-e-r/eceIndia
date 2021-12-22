@@ -185,7 +185,7 @@ hr{
     width: 550px;
     height: 350px;
     overflow: hidden;
-    margin: 10px;
+    margin: 5px;
 }
 
 .image img{
@@ -232,7 +232,7 @@ hr{
     }
 
     .image{
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 

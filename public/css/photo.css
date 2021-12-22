@@ -208,9 +208,9 @@ body{
 
 
   @media screen and (max-height : 540px) and (orientation : landscape) {
-      .photo-container, .heading, .flex-container{
+      /* .photo-container, .heading, .flex-container{
           display: none;
-      }
+      } */
   }
 
 

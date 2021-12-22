@@ -406,9 +406,9 @@ input[type=number] {
 
 
 @media screen and (max-height : 540px) and (orientation : landscape) {
-    .vendors-container, .vendors-sec{
+    /* .vendors-container, .vendors-sec{
         display: none;
-    }
+    } */
 }
 
 
