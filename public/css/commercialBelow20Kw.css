@@ -163,6 +163,19 @@ hr{
 }
 
 
+.documents{
+    margin: 40px 0;
+}
+
+.documents ul{
+    margin-left: 50px;
+}
+
+.documents li{
+    margin: 5px 0;
+}
+
+
 .examples {
     padding: 40px 100px;
 }
@@ -301,6 +314,15 @@ hr{
         margin: 0;
         text-align: center;
     }
+
+    .documents .para{
+        text-align: left;
+    }
+
+    .documents ul{
+        margin-left: 30px;
+    }
+
 
     .commercialBuildings-text h3, .advantages h3{
         line-height: 30px;

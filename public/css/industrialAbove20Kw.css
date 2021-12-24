@@ -183,6 +183,24 @@ hr{
 }
 
 
+.documents{
+    margin: 40px 0;
+}
+
+.documents h3{
+    font-size: 28px;
+    color: var(--theme);
+}
+
+.documents ul{
+    margin-left: 50px;
+}
+
+.documents li{
+    margin: 5px 0;
+}
+
+
 .exampleImages{
     margin-top: 40px;
 }
@@ -331,6 +349,14 @@ hr{
 
     .planningRooftop h2{
         margin: 40px 0;
+    }
+
+    .documents .para{
+        text-align: left;
+    }
+
+    .documents ul{
+        margin-left: 30px;
     }
 
 }
