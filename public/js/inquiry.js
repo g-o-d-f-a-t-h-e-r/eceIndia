@@ -12,7 +12,7 @@ setTimeout(() => {
     body.style.overflow='hidden'
     inquiryForm.classList.add('active')
     darkBg.classList.add('active')
-}, 5000);
+}, 10000);
 
 
 closeButton.addEventListener('click', () => {
