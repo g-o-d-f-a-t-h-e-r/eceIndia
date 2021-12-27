@@ -54,42 +54,44 @@ menuBtn.addEventListener('click', () => {
             })
         
 
-            // Poly Crystaline
-                const polyCrystalineDrop = document.querySelector('.polyCrystaline-drop p')
-                const polyCrystalineMenu = document.querySelector('.polyCrystaline-menu')
+            // // Poly Crystaline
+            //     const polyCrystalineDrop = document.querySelector('.polyCrystaline-drop p')
+            //     const polyCrystalineMenu = document.querySelector('.polyCrystaline-menu')
 
-                polyCrystalineDrop.addEventListener('click', () => {
-                    polyCrystalineMenu.classList.toggle('open')
-                    // pvModuleDrop.classList.toggle('open')
-                })
+            //     polyCrystalineDrop.addEventListener('click', () => {
+            //         polyCrystalineMenu.classList.toggle('open')
+            //         // pvModuleDrop.classList.toggle('open')
+            //     })
 
-            // Mono Perc
-                const monoPercDrop = document.querySelector('.monoPerc-drop p')
-                const monoPercMenu = document.querySelector('.monoPerc-menu')
+            // // Mono Perc
+            //     const monoPercDrop = document.querySelector('.monoPerc-drop p')
+            //     const monoPercMenu = document.querySelector('.monoPerc-menu')
 
-                monoPercDrop.addEventListener('click', () => {
-                    monoPercMenu.classList.toggle('open')
-                    // pvModuleDrop.classList.toggle('open')
-                })
+            //     monoPercDrop.addEventListener('click', () => {
+            //         monoPercMenu.classList.toggle('open')
+            //         // pvModuleDrop.classList.toggle('open')
+            //     })
 
-            // Bifacial
-                const bifacialDrop = document.querySelector('.bifacial-drop p')
-                const bifacialMenu = document.querySelector('.bifacial-menu')
+            // // Bifacial
+            //     const bifacialDrop = document.querySelector('.bifacial-drop p')
+            //     const bifacialMenu = document.querySelector('.bifacial-menu')
 
-                bifacialDrop.addEventListener('click', () => {
-                    bifacialMenu.classList.toggle('open')
-                    // pvModuleDrop.classList.toggle('open')
-                })
+            //     bifacialDrop.addEventListener('click', () => {
+            //         bifacialMenu.classList.toggle('open')
+            //         // pvModuleDrop.classList.toggle('open')
+            //     })
 
-            // DCR
-                const dcrDrop = document.querySelector('.dcr-drop p')
-                const dcrMenu = document.querySelector('.dcr-menu')
+            // // DCR
+            //     const dcrDrop = document.querySelector('.dcr-drop p')
+            //     const dcrMenu = document.querySelector('.dcr-menu')
 
-                dcrDrop.addEventListener('click', () => {
-                    dcrMenu.classList.toggle('open')
-                    // pvModuleDrop.classList.toggle('open')
-                })
+            //     dcrDrop.addEventListener('click', () => {
+            //         dcrMenu.classList.toggle('open')
+            //         // pvModuleDrop.classList.toggle('open')
+            //     })
         
+
+
         // Solar Home Lightening System 
             const solarHomeLighteningDrop = document.querySelector('.solarHomeLightening-drop p')
             const solarHomeLighteningMenu = document.querySelector('.solarHomeLightening-menu')
@@ -146,14 +148,14 @@ menuBtn.addEventListener('click', () => {
             })
 
 
-            // AMC--------
-                const amcDrop = document.querySelector('.amc-drop p')
-                const amcMenu = document.querySelector('.amc-menu')
+            // // AMC--------
+            //     const amcDrop = document.querySelector('.amc-drop p')
+            //     const amcMenu = document.querySelector('.amc-menu')
 
-                amcDrop.addEventListener('click', () => {
-                    amcMenu.classList.toggle('open')
-                })
-            // -----------
+            //     amcDrop.addEventListener('click', () => {
+            //         amcMenu.classList.toggle('open')
+            //     })
+            // // -----------
         // --------------------
 
     
