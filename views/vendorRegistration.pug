@@ -31,7 +31,7 @@ html(lang="en")
                     a.offline-btn Register Offline 
 
             div.online
-                form#vendorForm(action="/vendorRegistration", method="post") 
+                form#vendorForm(action="/vendorRegistration", method="post" enctype="multipart/form-data") 
                     div.companyDetails.sec
                         h3 Company Details
                         hr
@@ -92,8 +92,26 @@ html(lang="en")
                             textarea(placeholder="Enter List of Items Manufactured" name="itemsManufactured", cols="70", rows="5")
 
 
+                    div.attachments
+                        h3 Attachments
+                        hr
+                        h4 * Kindly share GST Certificate, Pan Card for Ledger Creation. *
+                        
+                        div.attachmentsInput#gstCertificateDiv
+                            input.attachment(type="file" id="gstCertificate" name="gstCertificate" accept="application/pdf" required)
+                            p.attachmentsP #[span.gstCertificateText GST Certificate (pdf) * ]
+                                label(for="gstCertificate")
+                                    a Choose File
+                        
+                        div.attachmentsInput#panCardDiv
+                            input.attachment(type="file" id="panCard" name="panCardPdf" accept="application/pdf" required)
+                            p.attachmentsP #[span.panCardText PAN Card (pdf) * ]
+                                label(for="panCard")
+                                    a Choose File
+
+
                     div.button
-                        button Submit 
+                        button(onclick="onClick()") Submit 
 
 
             div.offline

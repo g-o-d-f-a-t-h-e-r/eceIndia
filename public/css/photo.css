@@ -113,11 +113,12 @@ body{
 .flex-container{
   padding: 40px 100px;
   margin: 0;
+  /* background-color: pink; */
 }
 
 
 .gallery {
-    margin: 10px;
+    margin: 10px; 
     border-radius: 5px;
     /* float: left; */
     width: 350px;
@@ -170,6 +171,34 @@ body{
     color:white;
     background-color: var(--background);
 
+  }
+
+
+  .backButton{
+    padding: 40px 100px;
+    /* background-color: pink; */
+    /* margin-left: 35px; */
+  }
+
+  .backButton a{
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    /* background-color: white; */
+    text-decoration: none;
+    border: 2px solid var(--whiteBgHead);
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--whiteBgHead);
+    transition: all 0.3s ease;
+  }
+
+  .backButton a:hover{
+    background-color: var(--whiteBgHead);
+    color: white;
   }
 
   
@@ -253,6 +282,14 @@ body{
 
     .gallery{
       margin:20px 0;
+    }
+
+    .backButton{
+      padding: 40px 20px;
+    }
+
+    .backButton a{
+      width: 50%;
     }
 
 

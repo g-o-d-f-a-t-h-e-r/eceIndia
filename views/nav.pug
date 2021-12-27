@@ -4,82 +4,66 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet",href="../public/css/nav.css")
+    link(rel='stylesheet' href='../public/css/nav.css')
     title nav
-  body 
 
-
-    header#navbar.nav
+body 
+  header#navbar.nav
       div#logo
         a(href="/") 
           img#logoImg(src="../public/img/ECE_India1.png", alt="ECE INDIA")
-          p#logoText ECE INDIA ENERGIES PRIVATE LIMITED
+          
+          //- p#logoText ECE INDIA
 
       div#menu
         ul
-            li.home-nav #[a(href="/" onclick = "scrolltop()") Home]
-              div.sub-menu-0.sub-menu
-                ul.homeDrop 
-                  li #[a(href='/ecesDistributors') ECE's Distributors]
+            li.home-nav #[a(href="/") Home]
+              
 
             li.aboutUs-nav #[a About Us]
               div.sub-menu-1.sub-menu
                 ul.aboutUsDrop 
                   li #[a(href='/aboutUs/companyProfile') Company Profile]
                   li #[a(href='/aboutUs/directorsDesk') Director's Desk]
+                  li #[a(href='/aboutUs/values') Values]
             li.products-nav #[a Products]
               div.sub-menu-2.sub-menu
                 ul.productsDrop 
                   li.pvModules #[a PV Modules &nbsp &nbsp &nbsp >]
                     div.sub-menu-2-1.sub-menu
                       ul.pvModulesDrop 
-                        li.polyCrystaline #[a Poly Crystaline &nbsp &nbsp &nbsp >]
-                          div.sub-menu-2-1-1.sub-menu
-                            ul.polyCrystalineDrop 
-                              li #[a(href='/products/66CellPoly') 66 Cell Poly]
-                              li #[a(href='/products/72CellPoly') 72 Cell Poly]
-                              li #[a(href='/products/144CellPoly') 144 Cell Poly]
-
-                        li.monoPerc #[a Mono Perc &nbsp &nbsp &nbsp >]
-                          div.sub-menu-2-1-2.sub-menu
-                            ul.monoPercDrop 
-                              li #[a(href='/products/60CellMono') 60 Cell Mono]
-                              li #[a(href='/products/72CellMono') 72 Cell Mono]
-                              li #[a(href='/products/144CellMono') 144 Cell Mono]
-
-                        li.bifacial #[a Bifacial &nbsp &nbsp &nbsp >]
-                          div.sub-menu-2-1-3.sub-menu
-                            ul.bifacialDrop 
-                              li #[a(href='/products/framed') Framed]
-                              li #[a(href='/products/unframed') Unframed]
+                        li.polyCrystaline #[a(href="/products/smallModule") Small Module]
+                        li.polyCrystaline #[a(href="/products/polyModule") Poly Module]
+                          
+                        li.monoPerc #[a(href="/products/monoModule") Mono Module]
+                          
+                        li.bifacial #[a(href="/products/bifacial") Bifacial]
+                          
 
                         li #[a(href='/products/bipv') BIPV]
 
-                        li.dcr #[a DCR &nbsp &nbsp &nbsp >]
-                          div.sub-menu-2-1-4.sub-menu
-                            ul.dcrDrop
-                              li #[a(href='/products/66CellDcr') 66 Cell DCR]
-                              li #[a(href='/products/72CellDcr') 72 Cell DCR]
-
-                        li #[a(href='/products/flexible') Flexible]
+                        li.dcr #[a(href="/products/dcr") DCR]
+                          
 
 
-                  li.solarHomeLightening #[a Solar Home Lightening &nbsp &nbsp &nbsp >]
+                  li.solarHomeLightening #[a Solar Products &nbsp &nbsp &nbsp >]
                     div.sub-menu-2-2.sub-menu
                       ul.solarHomeLighteningDrop 
                         li #[a(href='/products/homeLightSystems') Home Light Systems]
                         li #[a(href='/products/solarCooker') Solar Cooker]
                         li #[a(href='/products/solarLantern') Solar Lantern]
                         li #[a(href='/products/solarInsectKiller') Solar Insect killer]
-                        li #[a(href='/products/solarSystem') Solar System]
-                        li.trafficSignal #[a Traffic Signal &nbsp &nbsp &nbsp >]
-                          div.sub-menu-2-2-1.sub-menu
-                            ul.trafficSignalDrop
-                              li #[a(href='/products/solarBlinker') Solar Blinker]
-                              li #[a(href='/products/solarStreetLight') Solar Street Light]
+                        li #[a(href='/products/solarSystem') Solar On Grid/Off Grid System]
 
+                  li.solarPumpingSystem #[a(href="/products/solarPumpingSystem") Solar Pumping System]
 
-            li.projects-nav #[a(href="/projects") Projects]
+                  li.trafficSignal #[a Traffic Signal &nbsp &nbsp &nbsp >]
+                    div.sub-menu-2-3.sub-menu
+                      ul.trafficSignalDrop
+                        li #[a(href='/products/solarBlinker') Solar Blinker]
+                        li #[a(href='/products/solarStreetLight') Solar Street Light]
+      
+
 
 
             li.solutions-nav #[a Solutions]
@@ -100,22 +84,22 @@ html(lang="en")
                   li.oAndM #[a Operation & Maintainance &nbsp &nbsp &nbsp >]
                     div.sub-menu-3-3.sub-menu
                       ul.oAndMDrop 
-                        li #[a(href='/solutions/spares') Spares]
-
-                        li.amc #[a AMC &nbsp &nbsp &nbsp >]
-                          div.sub-menu-3-3-1.sub-menu
-                            ul.amcDrop 
-                              li #[a(href='/solutions/cleaningServices') Cleaning Services]
-                              li #[a(href='/solutions/electricalMaintainance') Electrical Maintainance]
+                        li #[a(href="/solutions/amc") AMC]
+                          
 
 
                   li #[a(href='/solutions/solarEpc') Solar EPC]
                   li #[a(href='/solutions/largeProjects') Large Projects / Utility Projects]
                   li #[a(href='/solutions/lisening') Lisening]
 
+            
+            li.projects-nav #[a(href="/projects") Projects]
+
+
+
             li.downloads-nav #[a Downloads]
               div.sub-menu-4.sub-menu
-                ul.downloadsDrop
+                ul.downloadsDrop 
                   li #[a(href='/downloads/vendorRegistrationForm') Vendor Registration Form]
                   li #[a(href='/downloads/clientRegistrationForm') Client Registration Form]
 
@@ -136,19 +120,17 @@ html(lang="en")
       div.hamburger
         div.hamburger-line
 
-
-    div.dropdown-menu
+  div.dropdown-menu
       ul 
-        li.home-drop #[p #[a.active Home] #[i.arrow.down]]
-          div.home-menu.sub-menu-drop
-            ul 
-              li #[a(href='/ecesDistributors') ECE's Distributors]
+        li.home-drop #[p #[a(href="/").active Home]]
+          
 
         li.aboutUs-drop #[p #[a About us] #[i.arrow.down]]
           div.aboutUs-menu.sub-menu-drop
             ul 
               li #[a(href='/aboutUs/companyProfile') Company Profile]
               li #[a(href='/aboutUs/directorsDesk') Directors Desk]
+              li #[a(href='/aboutUs/values') Values]
 
 
         li.products-drop #[p #[a Products] #[i.arrow.down]]
@@ -157,51 +139,31 @@ html(lang="en")
               li.pvModule-drop #[p #[a PV Module] #[i.arrow.down]]
                  div.pvModule-menu.sub-menu2-drop
                   ul 
-                    li.polyCrystaline-drop #[p #[a Poly Crystaline] #[i.arrow.down]]
-                      div.polyCrystaline-menu.sub-menu3-drop
-                        ul 
-                          li #[a(href="/products/66CellPoly") 66 Cell Poly]
-                          li #[a(href="/products/72CellPoly") 72 Cell Poly]
-                          li #[a(href="/products/144CellPoly") 144 Cell Poly]
-
-                    li.monoPerc-drop #[p #[a Mono Perc] #[i.arrow.down]]
-                      div.monoPerc-menu.sub-menu3-drop
-                        ul 
-                          li #[a(href="/products/60CellMono") 60 Cell Mono]
-                          li #[a(href="/products/72CellMono") 72 Cell Mono]
-                          li #[a(href="/products/144CellMono") 144 Cell Mono]
-
-                    li.bifacial-drop #[p #[a Bifacial] #[i.arrow.down]]
-                      div.bifacial-menu.sub-menu3-drop
-                        ul 
-                          li #[a(href="/products/framed") Framed]
-                          li #[a(href="/products/unframed") Unframed]
-
-                    li #[a(href='/products/bipv') BIPV]
-                    li.dcr-drop #[p #[a DCR] #[i.arrow.down]]
-                      div.dcr-menu.sub-menu3-drop
-                        ul 
-                          li #[a(href="/products/66CellDcr") 66 Cell DCR]
-                          li #[a(href="/products/72CellDcr") 72 Cell DCR]
-
-                    li #[a(href="/products/flexible") Flexible]
+                    li.polyCrystaline-drop #[p #[a(href="/products/smallModules") Small Modules]]
+                    li.polyCrystaline-drop #[p #[a(href="/products/polyModules") Poly Modules]] 
+                    li.monoPerc-drop #[p #[a(href="/products/monoModules") Mono Modules]]
+                    li.bifacial-drop #[p #[a(href="/products/bifacial") Bifacial]]
+                    li #[a(href="/products/bipv") BIPV]
+                    li.dcr-drop #[p #[a(href="/products/dcr") DCR]]
                 
 
-              li.solarHomeLightening-drop #[p #[a(style="color:white") Solar Home Lightening] #[i(style="border-color : white").arrow.down]]
+              li.solarHomeLightening-drop #[p #[a(style="color:white") Solar Products] #[i(style="border-color : white").arrow.down]]
                 div.solarHomeLightening-menu.sub-menu2-drop
                   ul 
                     li #[a(href="/products/homeLightSystem") Home Light System]
                     li #[a(href="/products/solarCooker") Solar Cooker]
                     li #[a(href="/products/solarLantern") Solar Lantern]
                     li #[a(href="/products/solarInsectKiller") Solar Insect Killer]
-                    li #[a(href="/products/solarSystem") Solar System]
-                    li.trafficSignal-drop #[p #[a Traffic Signal] #[i.arrow.down]]
-                      div.trafficSignal-menu.sub-menu3-drop
-                        ul 
-                          li #[a(href="/products/solarBlinker") Solar Blinker]
-                          li #[a(href="/products/solarStreetLight") Solar Street Light]
-        
-        li.projects-drop #[a(href='/projects') Projects]
+                    li #[a(href="/products/solarSystem") Solar On Grid/Off Grid System]
+              
+              li.solarPumpingSystem-drop #[p #[a(href="/products/solarPumpingSystem" style="color:white;") Solar Pumping System]]
+
+              li.trafficSignal-drop #[p #[a(style="color:white; font-weight: 600") Traffic Signal] #[i(style="border-color : white").arrow.down]]
+                div.trafficSignal-menu.sub-menu2-drop
+                  ul 
+                    li #[a(href="/products/solarBlinker") Solar Blinker]
+                    li #[a(href="/products/solarStreetLight") Solar Street Light]
+      
 
  
         li.solutions-drop #[p #[a Solutions] #[i.arrow.down]]
@@ -222,16 +184,13 @@ html(lang="en")
               li.operationAndMaintainance-drop #[p #[a Operation And Maintainance] #[i.arrow.down]]
                 div.operationAndMaintainance-menu.sub-menu2-drop
                   ul 
-                    li #[a(href="/solutions/spares") Spares]
-                    li.amc-drop #[p #[a AMC] #[i.arrow.down]]
-                       div.amc-menu.sub-menu3-drop
-                        ul 
-                          li #[a(href="/solutions/cleaningServices") Cleaning Services]
-                          li #[a(href="/solutions/electricalMaintainance") Electrical Maintainance]
+                    li.amc-drop #[p #[a(href="/solutions/amc") AMC]]
 
               li #[a(href="/solutions/solarEpc") Solar EPC]
               li #[a(href="/solutions/largeProjects") Large Projects / Utility Projects]
               li #[a(href="/solutions/lisening") Lisening]
+
+        li #[a(href='/projects') Projects]
 
         li.downloads-drop #[p #[a Downloads] #[i.arrow.down]]
           div.downloads-menu.sub-menu-drop
@@ -239,10 +198,10 @@ html(lang="en")
               li #[a(href="/downloads/vendorRegistrationForm") Vendor Registration Form]
               li #[a(href="/downloads/clientRegistrationForm") Client Registration Form]
 
-        li.blogs-drop #[a(href='/blogs') Blogs]
-        li.contactUs-drop #[a(href='/contactUs') Contact Us]
-        li.news-drop #[a(href='/news') News/CSR]
-        li.career-drop #[a(href='/career') Career]
+        li #[a(href='/blogs') Blogs]
+        li #[a(href='/contactUs') Contact Us]
+        li #[a(href='/news') News/CSR]
+        li #[a(href='/career') Career]
         li.achievements-drop #[p #[a Achievements] #[i.arrow.down]]
           div.achievements-menu.sub-menu-drop
             ul 
@@ -251,13 +210,7 @@ html(lang="en")
               li #[a(href="/achievements/patents") R&D / Patents]
 
 
-        li.photoGallery-drop #[a(href='/photoGallery') Photo Gallery]
+        li #[a(href='/photoGallery') Photo Gallery]
 
 
-
-    
-
-    //- div.msg
-    //-   img(src="../public/img/rotate.png", alt="rotate")
-
-    script(src="../public/js/main.js") 
+  script(src="../public/js/main.js") 

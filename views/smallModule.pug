@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/products.css") 
+        
+        title Products Small Modules
+    body 
+
+        include ./nav.pug
+
+
+        div.products-container
+            div.cover-img
+                img(src="../public/img/solar16.jpg", alt="Career")
+
+                div.products
+                    h2 Products > PV Module
+
+                    div.productsMsg
+                        h3 Small Modules
+
+
+        div.products-sec
+            h2 Small Modules
+
+
+            div.card
+                div.image
+                    img(src="../public/img/products/productImg.png", alt="Product")
+                div.specs
+                    h3 Aditya Series: ECE 40W To 90W  
+                    p •	Superior module efficiency as per international benchmarks
+                    p •	Salt mist resistant
+                    p •	High durability
+                    p •	Excellent performance in low light
+
+
+
+                    //- div.download-button
+                    //-     a(href="../public/dataSheets/adityaSmall.pdf" download) Download Data Sheet
+
+            
+
+
+
+            
+        include ./footer.pug
+
+
+        script(src="../public/js/products.js") 

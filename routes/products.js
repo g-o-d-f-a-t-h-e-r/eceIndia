@@ -5,53 +5,36 @@ const router = require('express').Router()
 
 // PV MODULE------------------------------------------------------------------------
 
+// --------------------------------------------
+// PV Modules > Small Module
+router.get('/smallModule', (req, res) => {
+    res.status(200).render('smallModule.pug')
+})
+// --------------------------------------------
+
 
 // --------------------------------------------
-// PV Modules > Poly Crystaline > 66 Cell Poly
-router.get('/66CellPoly', (req, res)=> {
-    res.status(200).render('66CellPoly.pug')
-})
-
-// PV Modules > Poly Crystaline > 72 Cell Poly
-router.get('/72CellPoly', (req, res)=> {
-    res.status(200).render('72CellPoly.pug')
-})
-
-// PV Modules > Poly Crystaline > 144 Cell Poly
-router.get('/144CellPoly', (req, res)=> {
-    res.status(200).render('144CellPoly.pug')
+// PV Modules > Poly Module
+router.get('/polyModule', (req, res)=> {
+    res.status(200).render('polyModule.pug')
 })
 // ---------------------------------------------
 
 
-
 // --------------------------------------------
-// PV Modules > Mono Perc > 60 Cells Mono
-router.get('/60CellMono', (req, res) => {
-    res.status(200).render('60CellMono.pug')
+// PV Modules > Mono Module
+router.get('/monoModule', (req, res) => {
+    res.status(200).render('monoModule.pug')
 })
-// PV Modules > Mono Perc > 72 Cells Mono
-router.get('/72CellMono', (req, res) => {
-    res.status(200).render('72CellMono.pug')
-})
-// PV Modules > Mono Perc > 144 Cells Mono
-router.get('/144CellMono', (req, res) => {
-    res.status(200).render('144CellMono.pug')
-})
-
 // --------------------------------------------
 
 
 // -------------------------------------------
 // PV Modules > Bifacial > Framed
-router.get('/framed', (req, res) => {
-    res.status(200).render('framed.pug')
+router.get('/bifacial', (req, res) => {
+    res.status(200).render('bifacial.pug')
 })
 
-// PV Modules > Bifacial > UnFramed
-router.get('/unframed', (req, res) => {
-    res.status(200).render('unframed.pug')
-})
 // ------------------------------------------
 
 
@@ -65,30 +48,18 @@ router.get('/bipv', (req, res) => {
 
 // -------------------------------------------
 // PV Modules > DCR > 66 Cell DCR
-router.get('/66CellDcr', (req, res) => {
-    res.status(200).render('66CellDcr.pug')
+router.get('/dcr', (req, res) => {
+    res.status(200).render('dcr.pug')
 })
 
-// PV Modules > DCR > 72 Cell DCR
-router.get('/72CellDcr', (req, res) => {
-    res.status(200).render('72CellDcr.pug')
-})
 // ------------------------------------------
-
-// -------------------------------------------
-// PV Modules > Flexible
-router.get('/flexible', (req, res) => {
-    res.status(200).render('flexible.pug')
-})
-// ------------------------------------------
-
 
 // ----------------------------------------------------------------------------------------------------------
 
 
 
 // ----------------------------------------------------------------------------------------------------------
-//  Solar Home Lightening---------------------------------
+//  Solar Products---------------------------------
 
 // ------------------------------------------
 // Solar Home Lightening > Home Light Systems
@@ -140,6 +111,11 @@ router.get('/solarStreetLight', (req, res) => {
 // --------------------------------------------
 
 
+
+//  Solar Pumping System
+router.get('/solarPumpingSystem', (req, res) => {
+    res.status(200).render('solarPumpingSystem.pug')
+})
 
 
 

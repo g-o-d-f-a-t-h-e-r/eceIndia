@@ -1,5 +1,10 @@
 const router = require('express').Router()
 const nodemailer = require('nodemailer')
+const upload = require('express-fileupload')
+
+
+
+router.use(upload())
 
 
 
@@ -13,6 +18,14 @@ router.post('/', async(req, res) => {
     if(!ifscCode2) ifscCode2 = '-'
     if(!branch2) branch2 = '-'
 
+
+    let gstCertificate
+    let panCardPdf
+
+    if(req.files){
+        if(req.files.gstCertificate) gstCertificate = req.files.gstCertificate
+        if(req.files.panCardPdf) panCardPdf = req.files.panCardPdf
+    }
 
     const htmlTemplate = `
 
@@ -218,7 +231,8 @@ router.post('/', async(req, res) => {
                     <p><span>List of Items Manufactured : </span><text>${itemsManufactured}</text></p>
                 </div>   
             </div>
-    
+            
+            <p style="font-weight: bold; font-size: 15px;"> Below is the attached GST Certificate and PAN card.</p>
     
         </div>
         
@@ -258,13 +272,27 @@ router.post('/', async(req, res) => {
             },
         });
 
+        
+        let attachments = [
+            {
+                filename : gstCertificate.name,
+                content : gstCertificate.data
+            },
+            {
+                filename : panCardPdf.name,
+                content : panCardPdf.data
+            }
+        ]
+
+
 
         //  Mail to client
         let mailToClient = {
             from : `'ECE INDIA' <eceindia2021@gmail.com>`,
             to : `${emailAdd}`,
             subject : `Thank You for Vendor Registration : ${companyName} !`,
-            html :`<h2 style="color : #162661;">Thank You! ${companyName}</h2><h2>We will contact you soon regarding your vendor registration request...</h2><h3>Below is the registration form for your reference...</h3>` + htmlTemplate
+            html :`<h2 style="color : #162661;">Thank You! ${companyName}</h2><h2>We will contact you soon regarding your vendor registration request...</h2><h3>Below is the registration form for your reference...</h3>` + htmlTemplate,
+            attachments : attachments
            
         }
 
@@ -285,7 +313,8 @@ router.post('/', async(req, res) => {
             from : `'ECE INDIA' <eceindia2021@gmail.com>`,
             to : `dangechetan09@gmail.com`,
             subject : `VENDOR REGISTRATION FORM : ${companyName}`,
-            html : `<h2 style="color : #162661;">VENDOR - ${companyName} wants to register with us.</h2><h3>Below is the Vendor's registration form...</h3>` + htmlTemplate
+            html : `<h2 style="color : #162661;">VENDOR - ${companyName} wants to register with us.</h2><h3>Below is the Vendor's registration form...</h3>` + htmlTemplate,
+            attachments : attachments
         }
 
         transporter.sendMail(mailToCompany, (err, info) => {

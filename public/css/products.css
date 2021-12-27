@@ -224,6 +224,52 @@ body{
 
 
 
+
+/* BIFACIAL */
+
+.image-bifacial{
+    width: 500px;
+    height: 500px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.image-bifacial img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+
+.image-bifacial img:hover{
+    transform: scale(1.01);
+}
+
+
+
+
+/* DCR , Home Light Systems*/
+.specs h3{
+    text-align: left;
+}
+
+
+
+.specs ul li{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0;
+    margin-left: 15px;
+    color: black;
+    text-align: left;
+    
+    /* background-color: black; */
+}
+
+
+
+
 @media screen and (max-width : 1024px) {
     .products h2{
         margin-top: 20px;
@@ -317,6 +363,27 @@ body{
     .download-button{
         margin-left: auto;
         margin-right: auto;
+    }
+
+
+
+    .image-bifacial{
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        overflow: hidden;
+        
+    }
+
+    .specs ul li{
+        font-size: 15px;
+        font-weight: 500;
+        margin: 10px 0;
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
+        color: black;
+        text-align: left;
+        width: 80%;
     }
 
 

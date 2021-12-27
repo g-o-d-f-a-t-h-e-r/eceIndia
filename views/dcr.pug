@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/products.css") 
+        
+        title Products DCR
+    body 
+
+        include ./nav.pug
+
+
+        div.products-container
+            div.cover-img
+                img(src="../public/img/solar16.jpg", alt="Career")
+
+                div.products
+                    h2 Products > PV Module
+
+                    div.productsMsg
+                        h3 Domestic Solar Power
+
+
+        div.products-sec
+            h2 DCR (Domestic Solar Power)
+
+            div.card
+                div.image
+                    img(src="../public/img/products/dcr.png", alt="Product")
+                div.specs
+                    h3 DCR Solar Panel
+                    ul
+                        li DCR is a term created by the MNRE (Ministry of New and Renewable Energy) to encourage the usage of Made in India solar panels. 
+                        li According to MNRE, DCR panels are those solar panels or modules wherein the solar cell and solar module are manufactured in India. MNRE reviews the Make in India initiative every year and its growth and is based on the capacities of various stages of solar panel manufacturing in India. This has become the mandate for specific projects promoted by MNRE, especially for residential projects associated with any form of subsidy.
+                        li MNRE is also planning to increase the domestic content use to include wafers, ingots, and polysilicon manufactured in India in the coming years. 
+
+
+                    //- div.download-button
+                    //-     a(href="../public/dataSheets/66CellPoly300W.pdf" download) Download Data Sheet
+
+
+            
+
+
+
+            
+        include ./footer.pug
+
+
+        script(src="../public/js/products.js") 

@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/inquiry.css") 
+        title Inquiry Form 
+    body 
+
+        div.inquiryForm
+            div.letsTalk
+
+                div.close
+                    span.inquiry-line
+
+                h2 Inquiry Form
+                form#letsTalk(action="/inquiry", method="post") 
+                    div.inquiry-sec
+                        input(type="text" placeholder = "Name *" required name="name")
+                        input(type="email" placeholder = "Your Email Address *" required name="emailAdd")
+
+                    div.inquiry-sec
+                        input(type="Number" placeholder = "Phone Number *" required name="phoneNumber")
+                        input(type="text" placeholder = "Reason for Contact *" required name="reasonForContact")
+
+                    div.inquiry-sec
+                        input(type="Number" placeholder = "Zipcode/Pincode *" required name="pincode")
+                        input(type="text" placeholder = "City *" required name="city")
+
+                    div.inquiry-sec
+                        input(type="text" placeholder = "State *" required name="state")
+                        input(type="text" placeholder = "Country *" required name="country")
+
+                    div.inquiry-sec
+                        textarea(cols="60", rows="5" placeholder="Your Message *" required name="yourMessage")
+                    
+                    div.inquiry-sec
+                        button Contact Us
+
+        div#darkBg
+
+
+
+        script(src="../public/js/inquiry.js") 

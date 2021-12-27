@@ -70,7 +70,7 @@ header{
 	display: flex;
 	align-items: center;
 	background-color: white;
-	padding: 15px 0;
+	padding: 10px 20px;
 	justify-content: space-between;
 	user-select: none;
 	z-index: 999;
@@ -88,10 +88,13 @@ header{
 
 #logo{
 	/* background-color: pink; */
-	width: 25%;
+	height: 100%;
+	width: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
+
 
 }
 
@@ -105,8 +108,13 @@ header{
 
 #logoImg{
 	width: 135px;
-	filter: invert(55%) grayscale(100%) contrast(10);
+	filter: invert(100%) grayscale(100%) contrast(100%);
+	/* background-color: blue; */
+	/* height: 100%; */
+	overflow: hidden;
+	padding: 10px 0;
 }
+
 
 #logoText{
 	width: 60%;
@@ -268,7 +276,7 @@ header{
 	#menu ul li:hover .sub-menu-1{
 		display: block;
 		position: absolute;
-		margin-top: 190px;
+		margin-top: 250px;
 		margin-left: 10px;
 	}
 
@@ -281,7 +289,7 @@ header{
 	#menu ul li:hover .sub-menu-2{
 		display: block;
 		position: absolute;
-		margin-top: 190px;
+		margin-top: 310px;
 		margin-left: 10px;
 		width: 250px;
 	}
@@ -366,23 +374,23 @@ header{
 			display: block;
 			position: absolute;
 			width: 120%;
-			margin-top: 300px;
+			margin-top: 240px;
 			margin-left: 200px;
 			padding-left: 20px;
 		}
 
 
 		/* Traffic Signal */
-			.sub-menu-2-2-1{
+			.sub-menu-2-3{
 				display: none;
 			}
 
-			.trafficSignal:hover .sub-menu-2-2-1{
+			.trafficSignal:hover .sub-menu-2-3{
 				display: block;
 				position: absolute;
-				width: 70%;
+				width: 90%;
 				margin-top: 60px;
-				margin-left: 220px;
+				margin-left: 200px;
 				padding-left: 30px;
 			}
 
@@ -438,7 +446,7 @@ header{
 		.oAndM:hover .sub-menu-3-3{
 			display: block;
 			position: absolute;
-			margin-top: 60px;
+			margin-top: 0;
 			margin-left: 250px;
 			width: 150px;
 			padding-left: 20px;
@@ -446,11 +454,11 @@ header{
 
 
 		/* AMC Drop */
-		.sub-menu-3-3-1{
+		.sub-menu-3-3{
 			display: none;
 		}
 
-		.amc:hover .sub-menu-3-3-1{
+		.amc:hover .sub-menu-3-3{
 			display: block;
 			position: absolute;
 			margin-top: 60px;
@@ -517,7 +525,478 @@ header{
 
 /* Responsive media queries  for navbar*/
 
-@media screen and (max-width : 1024px) {
+
+@media screen and (max-width : 1300px) {
+	#menu{
+	  display: none;
+	}
+  
+  
+  
+	/* Arrow Down */
+  
+	.arrow {
+	  border: solid black;
+	  border-width: 0 2px 2px 0;
+	  display: inline-block;
+	  padding: 3px;
+	  width: 8px;
+	  height: 8px;
+	  cursor: pointer;
+	}
+  
+	.down {
+	  transform: rotate(45deg);
+	  /* -webkit-transform: rotate(45deg); */
+	}
+	/* --------- */
+  
+  
+	.hamburger {
+	  width: 30px;
+	  height: 30px;
+	  /* border: 1px solid black; */
+	  margin-right: 45px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  overflow: hidden;
+	  cursor: pointer;
+	}
+  
+	.hamburger-line {
+	  width: 30px;
+	  height: 4px;
+	  background-color: black;
+	  border-radius: 10px;
+	  transition: all 0.3s ease-in-out;
+	}
+  
+	.hamburger-line::after,
+	.hamburger-line::before {
+	  content: "";
+	  position: absolute;
+	  width: 30px;
+	  height: 4px;
+	  background-color: black;
+	  border-radius: 10px;
+	  transition: all 0.3s ease-in-out;
+	}
+  
+	.scrolling-active .hamburger-line {
+	  background-color: black;
+	}
+  
+	.scrolling-active .hamburger-line::after,
+	.scrolling-active .hamburger-line::before {
+	  background-color: black;
+	}
+  
+	.hamburger-line::after {
+	  transform: translateY(10px);
+	}
+  
+	.hamburger-line::before {
+	  transform: translateY(-10px);
+	}
+  
+	.hamburger.open .hamburger-line {
+	  transform: translateX(-50px);
+	  background: transparent;
+	  box-shadow: none;
+	}
+  
+	.hamburger.open .hamburger-line::before {
+	  transform: rotate(45deg) translate(35px, -35px);
+	}
+	.hamburger.open .hamburger-line::after {
+	  transform: rotate(-45deg) translate(35px, 35px);
+	}
+  
+  
+	.dropdown-menu {
+	  transform: translateY(-800vh);
+	  transition: all 0.3s ease;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  /* right: 0; */
+	  display: block;
+	  background-color: var(--greyBackground);
+	  width: 100%;
+	  overflow-y: scroll;
+	  z-index: 9;
+	  font-size: 20px;
+	  text-align: center;
+	  height: calc(100vh);
+	  padding-top: 200px;
+	}
+  
+	.dropdown-menu a {
+	  text-decoration: none;
+	  color: black;
+	  /* margin: 20px 0; */
+	}
+  
+	.dropdown-menu li {
+	  padding: 20px 0;
+	  list-style: none;
+	  /* margin: 20px 0;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center; */
+	}
+  
+	.dropdown-menu.open {
+	  transform: translateY(0);
+	}
+  
+	#logoImg.dropDown {
+	  filter: invert(55%) grayscale(100%) contrast(10);
+	  transition: all 0.5s ease;
+	}
+  
+	#logoText.dropDown {
+	  color: var(--theme);
+	  transition: all 1s ease;
+	}
+  
+	#navbar.dropDown {
+	  transition: all 1s ease;
+	  background-color: white;
+	}
+  
+	.hamburger-line.dropDown::after {
+	  background-color: black;
+	}
+	.hamburger-line.dropDown::before {
+	  background-color: black;
+	}
+  
+	.dropdown-menu ul li {
+	  width: 100%;
+	}
+  
+	.dropdown-menu ul li p {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  /* cursor: pointer; */
+	  
+	}
+  
+	.dropdown-menu ul li p a {
+	  margin-right: 20px;
+	  cursor: pointer;
+	}
+  
+	.dropdown-menu ul li ul {
+	  position: relative;
+	  width: 100%;
+	}
+  
+	.sub-menu-drop {
+	  position: relative;
+	  /* bottom: 0; */
+	  background: var(--background);
+	  /* background-color: grey; */
+	}
+  
+	.sub-menu-drop a {
+	  font-weight: 100;
+	}
+  
+	.sub-menu2-drop {
+	  position: relative;
+	  /* bottom: 0; */
+	  background: var(--extraDarkBackground);
+	  margin-top: 10px;
+	  /* background-color: grey; */
+	}
+  
+	.sub-menu2-drop a {
+	  font-weight: 100;
+	}
+  
+	.sub-menu3-drop {
+	  position: relative;
+	  /* bottom: 0; */
+	  background: black;
+	  margin-top: 10px;
+	  /* background-color: grey; */
+	}
+  
+	.sub-menu3-drop a {
+	  font-weight: 100;
+	}
+  
+	.dropdown-menu ul li ul li a {
+	  color: white;
+	}
+  
+	.dropdown-menu ul li ul li ul {
+	  width: 100%;
+	  left: 0;
+	}
+  
+	/* Home Drop --------------------------------------------------------------------------- */
+	.home-menu {
+	  display: none;
+	}
+  
+	.home-menu.open {
+	  display: block;
+	}
+	/* ------------------------------------------------------------------------------------- */
+  
+	/* About Us Drop Down Menu-------------------------------------------------------------- */
+  
+	.aboutUs-menu {
+	  display: none;
+	}
+  
+	.aboutUs-menu.open {
+	  display: block;
+	}
+  
+	.aboutUs-drop {
+	  position: relative;
+	}
+  
+	.aboutUs-drop.open ~ p a {
+	  transition: all 0.3s ease;
+	  font-weight: 600;
+	  /* font-size: 32px; */
+	  color: var(--theme);
+	}
+  
+	/* -------------------------------------------------------------------------------------------- */
+  
+	/* Products Drop Down Menu-------------------------------------------------------------- */
+  
+	.products-menu {
+	  display: none;
+	}
+  
+	.products-menu.open {
+	  display: block;
+	  background: var(--background);
+	}
+  
+	.products-drop {
+	  position: relative;
+	}
+  
+	.products-drop.open ~ p a {
+	  transition: all 0.3s ease !important;
+	  color: var(--theme) !important;
+	  font-weight: 600 !important;
+	}
+  
+	/* PV MOdule Drop */
+  
+	.pvModule-drop p a {
+	  color: white !important;
+	  font-weight: 600 !important;
+	}
+  
+	.pvModule-drop p i {
+	  border-color: white;
+	}
+  
+	.pvModule-menu {
+	  display: none;
+	}
+  
+	.pvModule-menu.open {
+	  display: block;
+	}
+  
+	/* Poly Crystaline--- */
+	.polyCrystaline-menu {
+	  display: none;
+	}
+  
+	.polyCrystaline-menu.open {
+	  display: block;
+	}
+  
+	/* Mono Perc---------- */
+	.monoPerc-menu {
+	  display: none;
+	}
+  
+	.monoPerc-menu.open {
+	  display: block;
+	}
+  
+	/* Bifacial Crystaline--- */
+	.bifacial-menu {
+	  display: none;
+	}
+  
+	.bifacial-menu.open {
+	  display: block;
+	}
+  
+	/* DCR -------------------- */
+	.dcr-menu {
+	  display: none;
+	}
+  
+	.dcr-menu.open {
+	  display: block;
+	}
+  
+	/* Solar Home Lightening System  */
+  
+	.solarHomeLightening-menu {
+	  display: none;
+	}
+  
+	.solarHomeLightening-menu.open {
+	  display: block;
+	}
+  
+	.solarHomeLightening-drop p a {
+	  color: white !important;
+	  font-weight: 600 !important;
+	}
+  
+	/* Traffic Signal  */
+  
+	.trafficSignal-drop p i {
+	  border-color: white;
+	}
+  
+	.trafficSignal-menu {
+	  display: none;
+	}
+  
+	.trafficSignal-menu.open {
+	  display: block;
+	}
+  
+	/* Solutions Drop Down Menu------------------ */
+  
+	.solutions-menu {
+	  display: none;
+	}
+  
+	.solutions-menu.open {
+	  display: block;
+	}
+  
+	/* Products Below 20 KW */
+	.productsBelow20Kw-drop p a {
+	  color: white !important;
+	  font-weight: 600 !important;
+	}
+  
+	.productsBelow20Kw-drop p i {
+	  border-color: white;
+	}
+  
+	.productsBelow20Kw-menu {
+	  display: none;
+	}
+  
+	.productsBelow20Kw-menu.open {
+	  display: block;
+	}
+	/* -------------------- */
+  
+	/* Products Above 20 KW */
+	.productsAbove20Kw-drop p a {
+	  color: white !important;
+	  font-weight: 600 !important;
+	}
+  
+	.productsAbove20Kw-drop p i {
+	  border-color: white;
+	}
+  
+	.productsAbove20Kw-menu {
+	  display: none;
+	}
+  
+	.productsAbove20Kw-menu.open {
+	  display: block;
+	}
+	/* -------------------- */
+  
+	/* Operation and Maintainance*/
+	.operationAndMaintainance-drop p a {
+	  color: white !important;
+	  font-weight: 600 !important;
+	}
+  
+	.operationAndMaintainance-drop p i {
+	  border-color: white;
+	}
+  
+	.operationAndMaintainance-menu {
+	  display: none;
+	}
+  
+	.operationAndMaintainance-menu.open {
+	  display: block;
+	}
+  
+	/* AMC DROP----*/
+	.amc-drop p a {
+	  color: white !important;
+	  font-weight: 600 !important;
+	}
+  
+	.amc-drop p i {
+	  border-color: white;
+	}
+  
+	.amc-menu {
+	  display: none;
+	}
+  
+	.amc-menu.open {
+	  display: block;
+	}
+	/* -------------------- */
+	/* -------------------- */
+  
+	/* ----------------------------------------- */
+  
+	/* Downloads -------------------------------- */
+  
+	.downloads-menu {
+	  display: none;
+	}
+  
+	.downloads-menu.open {
+	  display: block;
+	}
+  
+	/* ------------------------------------------- */
+  
+	/* Achievements Drop -------------------------------- */
+  
+	.achievements-menu {
+	  display: none;
+	}
+  
+	.achievements-menu.open {
+	  display: block;
+	}
+  
+  
+  
+  }
+  
+  
+
+
+
+
+@media screen and (max-width : 1200px) {
 	
 	#navbar{
 		width: 100%;
@@ -529,7 +1008,9 @@ header{
 
 	#logo{
 		height: 100%;
-		width: 60%;
+		/* background-color: pink; */
+		overflow: visible;
+		width: auto;
 		/* justify-content: flex-start; */
 	}
 
@@ -577,7 +1058,7 @@ header{
 		align-items: center;
 		justify-content: center;
 		overflow: hidden;
-
+	
 	}
 
 	.hamburger-line{
@@ -1013,7 +1494,7 @@ header{
 
 	#logo{
 		height: 100%;
-		width: 70%;
+		width: auto;
 		/* justify-content: flex-start; */
 	}
 
@@ -1123,17 +1604,18 @@ header{
 		/* background-color: black; */
 		justify-content: space-between;
 		overflow: hidden;
+		padding: 15px 0;
 	}
 
 	#logo{
 		/* background-color: black; */
-		width: 70%;
+		width: auto;
 		padding: 0;
 		margin: 0;
 	}
 
 	#logoImg{
-		width: 40%;
+		width: 150px;
 		/* background-color: white; */
 		justify-content: flex-start;
 		height: 100%;
@@ -1203,7 +1685,7 @@ header{
 @media screen and (max-width : 375px) {
 
 	#logoImg{
-		width: 45%;
+		width: 140px;
 		/* background-color: white; */
 		justify-content: flex-start;
 		height: 100%;
@@ -1225,7 +1707,7 @@ header{
 @media screen  and (max-width : 360px) {
 
 	#logoImg{
-		width: 40%;
+		width: 120px;
 		/* background-color: white; */
 		justify-content: flex-start;
 		height: 100%;
@@ -1245,11 +1727,11 @@ header{
 	}
 
 	#logo{
-		width: 80%;
+		width: auto;
 	}
 
 	#logoImg{
-		width: 45%;
+		width: 120px;
 		/* background-color: white; */
 		justify-content: flex-start;
 		height: 100%;

@@ -1,0 +1,64 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/largeProjects.css") 
+        title Large Projects
+    body 
+
+        include ./nav.pug
+
+        div.solutions-container
+            div.cover-img
+                img(src="../public/img/utility/utility.jpg", alt="Solutions")
+
+                div.solutions
+                    h2 Solutions 
+
+                    div.solutionsMsg
+                        h3 Most plentiful, accessible, and least expensive power source in the world - SOLAR POWER.
+
+        
+        include ./icons.pug
+
+
+        div.largeProjects
+            h2 Large Projects
+
+            div.utility
+                h3 Utility Scale Ground Mounted Solar Solutions
+                hr
+
+                div.utility-text
+                    div.para
+                        p Are you a developer, investor or contractor interested in utility segment, looking to increase your efficiencies at lower costs? Your search ends here as ECE India Energies brings you a one-stop solar solution.
+                        p ECE India Energies is the central India’s leading solar panel manufacturer and fastest growing rooftop and distributed solar EPC company with projects over 100 MW commissioned and over 100 MW under execution. Our offerings are:
+                        p Ground mounted, RCC Roofs, Car parks, Industrial Roofs, Solar pump, Solar parks.
+
+
+
+                    div.utility-img
+                        img(src="../public/img/utility/5.jpg", alt="Utility")
+
+
+            div.EPC
+                h2 Images
+
+            div.images
+                div.image
+                    img(src="../public/img/utility/1.jpg", alt="Solar EPC")
+                div.image
+                    img(src="../public/img/utility/2.jpg", alt="Solar EPC")
+                div.image
+                    img(src="../public/img/utility/3.jpg", alt="Solar EPC")
+                div.image
+                    img(src="../public/img/utility/4.jpg", alt="Solar EPC")
+
+
+
+        include ./footer.pug
+
+        script(src="../public/js/solutions.js")

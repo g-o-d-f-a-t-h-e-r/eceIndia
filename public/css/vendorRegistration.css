@@ -242,6 +242,65 @@ input[type=number] {
     box-shadow: 0 0 3px var(--theme);
 }
 
+
+.attachments{
+    margin-top: 40px;
+}
+
+
+.attachments h4{
+    user-select: none;
+    font-size: 15px;
+    color: rgb(231, 1, 1);
+    text-align: center;
+    margin: 40px;
+}
+
+
+.attachmentsInput{
+    width: 600px;
+    height: 57px;
+    margin: 20px auto;
+    background-color: var(--greyBackground);
+    padding:15px 0 15px 20px;
+    border-radius: 5px;    
+    overflow: hidden;
+    font-size: 15px;
+    border: 1px solid var(--whiteBgHead);
+    user-select: none;
+}
+
+
+.attachment{
+    display: none;
+}
+
+.attachmentsP{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(100, 100, 100);
+}
+
+.attachmentsP span{
+    overflow: hidden;
+    width: 70%;
+}
+
+.attachmentsP a{
+    padding: 18px 20px;
+    background-color: var(--whiteBgHead);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+
 .button{
     display: flex;
     align-items: center;
@@ -466,6 +525,35 @@ input[type=number] {
     }
 
 
+    .attachments h4{
+        margin: 40px 20px;
+    }
+
+    .attachmentsP{
+        flex-direction: column;
+    }
+
+    .attachmentsInput{
+        position: relative;
+        width: 350px;
+        height: 100px;
+        padding: 0;
+    }
+
+    .attachmentsInput span{
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .attachmentsInput a{
+        display: block;
+        width: 350px;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+
+
     .offline{
         margin: 0;
         padding: 0;
@@ -540,6 +628,17 @@ input[type=number] {
         display: block;
     }
 
+
+    .attachmentsInput{
+        position: relative;
+        width: 90%;
+    }
+
+    .attachments h4{
+        margin : 40px 0;
+    }
+
+
     .offline-sec{
         padding: 25px 10px;
     }
@@ -560,6 +659,16 @@ input[type=number] {
     .notification{
         font-size: 14px;
     }
+
+    .attachmentsInput{
+        width: 95%;
+    }
+
+    .attachments p{
+        font-size: 14px;
+    }
+
+
 }
 
 @media screen and (max-width : 320px) {

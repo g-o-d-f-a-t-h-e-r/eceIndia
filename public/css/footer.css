@@ -66,11 +66,27 @@ body, html{
 
 .brandLogo img{
 	flex: 1;
-	margin: 100px 40px;
+	margin: 100px 40px 20px 40px;
 	user-select: none;
 	opacity: 1;
 	transition: all 1s ease;
 }
+
+.brandLogo a{
+	text-align: left;
+	/* background-color: black; */
+	margin-left: 80px;
+	display: block;
+	font-size: 40px;
+	/* margin-top: -80px; */
+	font-style: italic;
+	color: white;
+	user-select: none;
+  }
+  
+  .brandLogo a:hover{
+	color: white;
+  }
 
 
 .about{
@@ -173,6 +189,11 @@ body, html{
 		width: 250px;
 	}
 
+	.brandLogo a{
+		/* text-align: left; */
+		font-size: 25px;
+	  }
+
 	.copyright{
 		height: 100px;
 		display: flex;
@@ -197,6 +218,11 @@ body, html{
 	.brandLogo img{
 		width: 200px;
 		margin-top: 110px;
+	}
+
+	.brandLogo a{
+		font-size: 20px;
+		margin-left: 70px;
 	}
 
 	.about{
@@ -248,6 +274,15 @@ body, html{
 		padding: 0;
 
 	}
+
+	.brandLogo a{
+		margin: auto;
+		display: block;
+		/* background-color: black; */
+		text-align: center;
+		font-size: 25px;
+		margin-bottom: 20px;
+	  }
 
 	.about{
 		margin: 25px 0;

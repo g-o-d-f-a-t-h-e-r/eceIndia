@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" href="../public/img/favicon.png">
+        link(rel="stylesheet", href="../public/css/values.css") 
+        title Our Values
+    body 
+
+        include ./nav.pug
+
+
+        div.aboutUs-container
+            div.cover-img
+                img(src="../public/img/directorsDesk.jpg", alt="About Us")
+
+                div.aboutUs
+                    h2 About Us 
+
+                    div.aboutUsMsg
+                        h3 All energy is ultimately derived from the sun and harvesting it directly through solar power seems to be the best way to transition to renewable energy.
+
+
+
+        div.work-culture
+                h2 Our Values
+                p.work-culture-text ECE India holds very strong reputation in maintaining values, work ethics, happy workplace, performance recognition and most importantly : a highly skilled set of employees.
+
+                div.values
+                    div.sec
+                        div.growth
+                            h3 Growth
+                            img(src="../public/img/growth1.png", alt="growth")
+                            p Achieving continuous growth with improvement and innovation.
+                        
+                        div.health
+                            h3 Health
+                            img(src="../public/img/health1.png", alt="health")
+                            p Work Experience satisfaction with calm and healthy professionalism.
+                    
+                    div.sec
+                        div.integrity
+                            h3 Integrity
+                            img(src="../public/img/integrity1.png", alt="integrity")
+                            p We work with trust, transparency and commitment.
+                    
+                    div.sec
+                        div.knowledge
+                            h3 Knowledge
+                            img(src="../public/img/knowledge1.png", alt="knowledge")
+                            p Building each other with knowledge and collaboration.
+
+                        div.ecology
+                            h3 Ecology
+                            img(src="../public/img/ecology1.png", alt="ecology")
+                            p To live and care for environment by using sustainable energy products.
+
+
+
+
+        include ./footer.pug
+        
+
+        script(src="../public/js/directorsDesk.js") 
