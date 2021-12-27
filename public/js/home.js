@@ -275,6 +275,8 @@ const onload = () => {
     btn.classList.add('fade3')
     preloader.style.display = "none"
 
+    
+
     // Restrict Landscape mode
 
     if (window.matchMedia("(orientation: landscape)").matches && window.screen.height <= 540) {

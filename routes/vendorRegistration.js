@@ -311,7 +311,7 @@ router.post('/', async(req, res) => {
         // Mail to company -----------------------------------------
         let mailToCompany = {
             from : `'ECE INDIA' <eceindia2021@gmail.com>`,
-            to : `dangechetan09@gmail.com`,
+            to : `swapnil.c@eceindia.com`,
             subject : `VENDOR REGISTRATION FORM : ${companyName}`,
             html : `<h2 style="color : #162661;">VENDOR - ${companyName} wants to register with us.</h2><h3>Below is the Vendor's registration form...</h3>` + htmlTemplate,
             attachments : attachments

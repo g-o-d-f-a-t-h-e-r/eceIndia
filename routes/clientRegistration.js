@@ -288,7 +288,7 @@ router.post('/', (req, res) => {
     // Mail to company -----------------------------------------
     let mailToCompany = {
         from : `'ECE INDIA' <eceindia2021@gmail.com>`,
-        to : `dangechetan09@gmail.com`,
+        to : `swapnil.c@eceindia.com`,
         subject : `CLIENT REGISTRATION FORM : ${companyName}`,
         html : companyHtml + htmlTemplate,
         attachments : attachments

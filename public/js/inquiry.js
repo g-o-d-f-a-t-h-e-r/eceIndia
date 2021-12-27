@@ -6,6 +6,8 @@ const body = document.querySelector('*')
 
 
 
+// Inquiry Form on load-------------------------------------------------------
+
 setTimeout(() => {
     body.style.overflow='hidden'
     inquiryForm.classList.add('active')
@@ -18,3 +20,6 @@ closeButton.addEventListener('click', () => {
     inquiryForm.classList.remove('active')
     darkBg.classList.remove('active')
 })
+
+
+// ------------------------------------------------------------------------------
