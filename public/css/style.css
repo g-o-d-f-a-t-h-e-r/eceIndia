@@ -124,7 +124,7 @@ header {
   display: flex;
   align-items: center;
   /* background-color: rgba(0, 0, 0, 0.712); */
-  padding: 10px 20px;
+  padding: 0 20px;
   justify-content: space-between;
   user-select: none;
   z-index: 10;
@@ -140,12 +140,12 @@ header {
 
 #logo {
   /* background-color: pink; */
-  width: auto;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
+  padding: 0 10px;
 }
 
 #logo a {
@@ -156,8 +156,10 @@ header {
 }
 
 #logoImg {
-  width: 135px;
+  width: 120px;
 }
+
+
 
 #logoText {
   width: 100%;
@@ -239,10 +241,9 @@ header {
   height: 100px;
 }
 
-.scrolling-active #logo img {
+/* .scrolling-active #logo img {
   filter: invert(55%) grayscale(100%) contrast(10);
-  /* -webkit-filter: invert(100%); */
-}
+} */
 
 .scrolling-active #logoText {
   color: var(--theme);
@@ -1578,6 +1579,18 @@ div.filler {
   opacity: 0;
   transform: translateX(-100px);
   transition: all 1s ease;
+  /* width: 500px; */
+  width: 30%;
+  padding: 100px 25px;
+  /* margin-right: 50px; */
+  /* background-color: pink; */
+}
+
+.brandLogo img {
+  flex: 1;
+  /* margin: 100px 0px 20px 40px; */
+  user-select: none;
+  width: 100%;
 }
 
 .brandLogo.animateX {
@@ -1586,15 +1599,17 @@ div.filler {
 }
 
 .brandLogo a{
+  width: 100%;
   text-align: left;
   /* background-color: black; */
-  margin-left: 80px;
+  /* margin-left: 80px; */
   display: block;
   font-size: 40px;
-  /* margin-top: -80px; */
+  margin-top: 20px;
   font-style: italic;
   color: white;
   user-select: none;
+  text-align: center;
 }
 
 .brandLogo a:hover{
@@ -1602,18 +1617,16 @@ div.filler {
 }
 
 
-.brandLogo img {
-  flex: 1;
-  margin: 100px 40px 20px 40px;
-  user-select: none;
-  
-}
+
 
 
 
 .about {
-  flex: 2;
-  margin: 100px 40px;
+  /* flex: 2; */
+  /* margin: 100px 50px; */
+  padding: 100px 25px;
+  width: 30%;
+  /* background-color: green; */
 }
 
 .subs-sec{
@@ -1645,8 +1658,11 @@ div.filler {
 }
 
 .address {
-  flex: 2;
-  margin: 100px 40px;
+  /* flex: 2; */
+  /* margin: 100px 40px; */
+  padding: 100px 25px;
+  width: 30%;
+  /* background-color: red; */
 }
 
 .address h2 {
@@ -2229,9 +2245,10 @@ div.filler {
 
   #logo {
     height: 100%;
-    width: 60%;
+    /* width: 60%; */
     /* justify-content: flex-start; */
     overflow: visible;
+    /* margin: 10px 0; */
   }
 
   #logo a {
@@ -2240,7 +2257,7 @@ div.filler {
   }
 
   #logoImg {
-    width: 200px;
+    width: 180px;
   }
 
   #logoText {
@@ -2369,8 +2386,9 @@ div.filler {
   }
 
   #logoImg.dropDown {
-    filter: invert(55%) grayscale(100%) contrast(10);
+    /* filter: invert(55%) grayscale(100%) contrast(10); */
     transition: all 0.5s ease;
+    filter: none;
   }
 
   #logoText.dropDown {
@@ -2878,7 +2896,7 @@ div.filler {
   }
 
   .brandLogo img {
-    width: 250px;
+    width: 100%;
   }
 
   .copyright {
@@ -2900,7 +2918,7 @@ div.filler {
 
   #logo {
     height: 100%;
-    width: 70%;
+    /* width: 70%; */
     /* justify-content: flex-start; */
   }
 
@@ -3169,21 +3187,13 @@ div.filler {
 
   .brandLogo a{
     font-size: 20px;
-    margin-left: 70px;
+    /* margin-left: 70px; */
   }
 
 
   .brandLogo img {
-    width: 200px;
-    margin-top: 110px;
-  }
-
-  .about {
-    margin: 100px 0;
-  }
-
-  .address {
-    margin: 100px 20px;
+    width: 100%;
+    /* margin-top: 110px; */
   }
 
   .copyright {
@@ -3790,6 +3800,11 @@ div.filler {
     padding: 30px;
   }
 
+  .brandLogo{
+    width: 100%;
+    padding: 25px;
+  }
+
   .brandLogo a{
     margin: auto;
     display: block;
@@ -3809,11 +3824,13 @@ div.filler {
   .about {
     margin: 25px 0;
     padding: 0;
+    width: 100%;
   }
 
   .address {
-    margin: 25px 0;
+    margin: 0;
     padding: 0;
+    width: 100%;
   }
 
 
@@ -4012,7 +4029,7 @@ div.filler {
 
 @media screen and (max-width: 360px) {
   #logoImg {
-    width: 130px;
+    width: 140px;
     /* background-color: white; */
     justify-content: flex-start;
     height: 100%;
@@ -4066,7 +4083,7 @@ div.filler {
   }
 
   #logoImg {
-    width: 120px;
+    width: 140px;
     /* background-color: white; */
     justify-content: flex-start;
     height: 100%;

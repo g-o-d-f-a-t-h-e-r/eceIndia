@@ -64,18 +64,28 @@ body, html{
 	justify-content: space-evenly;
 }
 
+
+.brandLogo{
+	width: 30%;
+	margin: 0;
+	padding: 100px 25px;
+	/* background-color: red; */
+}
+
 .brandLogo img{
-	flex: 1;
-	margin: 100px 40px 20px 40px;
+	width: 100%;
+	/* flex: 1; */
+	/* margin: 100px 40px 20px 40px; */
 	user-select: none;
 	opacity: 1;
 	transition: all 1s ease;
 }
 
 .brandLogo a{
-	text-align: left;
+	text-align: center;
 	/* background-color: black; */
-	margin-left: 80px;
+	width: 100%;
+	margin-top: 20px;
 	display: block;
 	font-size: 40px;
 	/* margin-top: -80px; */
@@ -90,8 +100,9 @@ body, html{
 
 
 .about{
-	flex: 2;
-	margin: 100px 40px;
+	width: 30%;
+	padding: 100px 25px;
+	/* background-color: green; */
 }
 
 .about h2{
@@ -107,8 +118,11 @@ body, html{
 
 
 .address{
-	flex: 2;
-	margin: 100px 40px;
+	width: 30%;
+	/* flex: 2; */
+	/* margin: 100px 40px; */
+	padding: 100px 25px;
+	/* background-color: blue; */
 }
 
 .address h2{
@@ -186,12 +200,13 @@ body, html{
 	}
 
 	.brandLogo img{
-		width: 250px;
+		width: 100%;
 	}
 
 	.brandLogo a{
 		/* text-align: left; */
 		font-size: 25px;
+		width: 100%;
 	  }
 
 	.copyright{
@@ -215,23 +230,19 @@ body, html{
 		font-size: 15px;
 	}
 
+	
 	.brandLogo img{
-		width: 200px;
-		margin-top: 110px;
+		width: 100%;
 	}
 
 	.brandLogo a{
+		width: 100%;
+		text-align: center;
+		/* background-color: black; */
 		font-size: 20px;
-		margin-left: 70px;
+		/* margin-left: 70px; */
 	}
 
-	.about{
-		margin: 100px 0;
-	}
-
-	.address{
-		margin: 100px 20px;
-	}
 
 	.copyright{
 		height: 100px;
@@ -266,13 +277,16 @@ body, html{
 	.aboutAndAddress{
 		flex-direction: column;
 		text-align: center;
-		padding: 30px;
+		padding: 10px;
+	}
+
+	.brandLogo{
+		width: 100%;
+		padding: 25px;
 	}
 
 	.brandLogo img{
-		margin: 25px 0;
-		padding: 0;
-
+		width: 100%;
 	}
 
 	.brandLogo a{
@@ -281,17 +295,17 @@ body, html{
 		/* background-color: black; */
 		text-align: center;
 		font-size: 25px;
-		margin-bottom: 20px;
+		margin-top: 20px;
 	  }
 
 	.about{
-		margin: 25px 0;
-		padding: 0;
+		width: 100%;
+		padding: 25px;
 	}
 
 	.address{
-		margin: 25px 0;
-		padding: 0;
+		width: 100%;
+		padding: 25px;
 	}
 
 	.social{
