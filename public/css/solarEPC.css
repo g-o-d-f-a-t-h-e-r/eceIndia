@@ -4,7 +4,7 @@
 :root{
 	--theme : rgb(0, 67, 155);
 	--old-color : rgb(0, 117, 196);
-	--background : #0a122e;
+	--background : #0a122e;;
 	--greyBackground : rgb(236, 234, 234);
 	--whiteBgHead : #162661;
 	--whiteBgText : rgb(79, 99, 114);
@@ -111,7 +111,9 @@ body{
 
 .solarEPC-sec h2, .businessModels h2, .EPC h2{
     font-size: 40px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -161,7 +163,9 @@ body{
 
 .businessModels h3{
     font-size: 30px;
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 hr{
@@ -223,13 +227,17 @@ hr{
 
 .EPC h3{
     font-size: 30px;
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .EPC span{
     font-size: 60px;
     margin-right: 5px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .EPC h4{
@@ -360,7 +368,9 @@ hr{
 
     .solarEPC-sec h2, .businessModels h2, .EPC h2{
         font-size: 30px;
-        color: var(--whiteBgHead);
+           background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
         text-align: center;
         margin-bottom: 40px;
     }

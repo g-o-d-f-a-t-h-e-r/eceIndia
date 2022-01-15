@@ -5,7 +5,7 @@
 :root{
 	--theme : rgb(0, 67, 155);
 	--old-color : rgb(0, 117, 196);
-	--background : #0a122e;
+	--background : #0a122e;;
 	--greyBackground : rgb(236, 234, 234);
 	--whiteBgHead : #162661;
 	--whiteBgText : rgb(79, 99, 114);
@@ -113,7 +113,9 @@ body{
 
 .our-story-container h2{
     text-align: center;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 40px;
     margin-bottom: 30px;
 }
@@ -123,6 +125,7 @@ body{
 }
 
 .our-story-para{
+    text-align: justify;
     flex: 3;
     width: 500px;
     display: flex;
@@ -169,7 +172,9 @@ body{
 
 .qualityPolicy h2{
     font-size: 40px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 
@@ -179,7 +184,7 @@ body{
 }
 
 .qualityPoints{
-    background-color: var(--background);
+    background: linear-gradient(to right, #01ACEF, #01A550);
     color: white;
     text-align: center;
     font-weight: 600;
@@ -205,7 +210,9 @@ body{
 
 .focusArea h2{
     font-size: 40px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 
@@ -233,7 +240,9 @@ body{
 }
 
 .point span:hover{
-    background-color: var(--whiteBgHead);
+    background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: white;
 }
 
@@ -256,7 +265,9 @@ body{
 
 .training-container h2{
     font-size: 40px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 
@@ -269,6 +280,7 @@ body{
 }
 
 .training .para{
+    text-align: justify;
     width: 60%;
     font-size: 15px;
     height: 300px;
@@ -305,7 +317,9 @@ body{
 
 .ourInfrastructure h2{
     font-size: 40px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -344,13 +358,14 @@ body{
 }
 
 .infraPara{
+    text-align: justify;
     background-color: var(--greyBackground);
     padding: 40px;
     border-radius: 10px;
 }
 
 .infraPoints{
-    background-color: var(--background);
+    background: linear-gradient(to right, #01ACEF, #01A550);
     color: white;
     font-weight: 600;
     padding: 30px;
@@ -441,6 +456,7 @@ body{
     }
 
     .our-story-para{
+        text-align: justify;
         width: 100%;
     }
 
@@ -466,6 +482,7 @@ body{
     }
 
     .training .para{
+        text-align: justify;
         padding: 0 20px;
     }
 
@@ -548,6 +565,7 @@ body{
     }
 
     .training .para{
+        text-align: justify;
         width: 100%;
         margin: 10px 0;
         padding: 0;
@@ -573,6 +591,7 @@ body{
     }
 
     .infraPara{
+        text-align: justify;
         padding: 20px;
     }
 
@@ -610,6 +629,7 @@ body{
 
 @media screen and (max-width : 320px) {
     .training .para{
+        text-align: justify;
         margin-top: 50px;
     }
 }

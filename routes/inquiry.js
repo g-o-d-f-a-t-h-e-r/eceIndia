@@ -34,7 +34,7 @@ router.post('/', (req, res) => {
                     --theme: rgb(0, 67, 155);
                     /* --theme : #152142; */
                     --old-color: rgb(0, 117, 196);
-                    --background: #0a122e;
+                    --background: #0a122e;;
                     --greyBackground: rgb(236, 234, 234);
                     /* --whiteBgText : rgb(104, 104, 104); */
                     --whiteBgHead: #162661;
@@ -69,7 +69,9 @@ router.post('/', (req, res) => {
                     .image h1{
                         font-size: 35px;
                         text-align: center;
-                        color: var(--whiteBgHead);
+                           background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
                         margin: 0;
                         padding: 0;
             
@@ -96,7 +98,9 @@ router.post('/', (req, res) => {
                         font-weight: 700;
                         font-size: 25px;
                         margin-bottom: 20px;
-                        color: var(--whiteBgHead);
+                           background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
                     }
                     .content p{
                         font-size: 16px;
@@ -107,12 +111,16 @@ router.post('/', (req, res) => {
                     .content a{
                         margin-left: 10px;
                         text-decoration: none;
-                        color: var(--theme);
+                       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
                         transition: all 0.3s ease;
                     }
             
                     .content a:hover{
-                        color: var(--whiteBgHead);
+                           background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
                     }
             
                     .img img{
@@ -121,7 +129,9 @@ router.post('/', (req, res) => {
             
                     .regards{
                         padding: 20px 90px;
-                        color: var(--whiteBgHead);
+                           background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
                     }
             
                     .regards h2{

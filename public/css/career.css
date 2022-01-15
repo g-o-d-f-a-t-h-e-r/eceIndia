@@ -4,7 +4,7 @@
 :root{
 	--theme : rgb(0, 67, 155);
 	--old-color : rgb(0, 117, 196);
-	--background : #0a122e;
+	--background : #0a122e;;
 	--greyBackground : rgb(236, 234, 234);
 	--whiteBgHead : #162661;
 	--whiteBgText : rgb(79, 99, 114);
@@ -111,7 +111,9 @@ body{
 
 .team h2{
     font-size: 35px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .team-para{
@@ -130,7 +132,9 @@ body{
 }
 
 .open-positions h1{
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 35px;
     text-align: center;
     margin-bottom: 30px;
@@ -152,7 +156,9 @@ body{
 
 .card-text h2{
     font-size: 24px;
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 5px 0;
 }
 
@@ -190,7 +196,9 @@ body{
 
 .apply h2{
     font-size: 35px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 
@@ -228,7 +236,6 @@ input[type=number] {
     border-radius: 5px;
     padding: 15px 20px;
     font-size: 15px;
-    color: var(--theme);
 
 }
 
@@ -255,7 +262,9 @@ input[type=number] {
 
 .applySec a{
     padding: 16px;
-    background-color: var(--whiteBgHead);
+    background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: white;
     cursor: pointer;
     user-select: none;
@@ -275,7 +284,9 @@ input[type=number] {
 }
 
 .applySec button:hover{
-    background-color: var(--whiteBgHead);
+    background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: white;
 }
 
@@ -290,7 +301,9 @@ input[type=number] {
     text-align: center;
     padding: 15px;
     user-select: none;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     width: 50%;
     position: fixed;
     top: 100px;

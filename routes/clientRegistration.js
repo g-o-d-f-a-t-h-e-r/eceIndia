@@ -43,7 +43,7 @@ router.post('/', (req, res) => {
                 :root{
                     --theme : rgb(0, 67, 155);
                     --old-color : rgb(0, 117, 196);
-                    --background : #0a122e;
+                    --background : #0a122e;;
                     --greyBackground : rgb(236, 234, 234);
                     --whiteBgHead : #162661;
                     --whiteBgText : rgb(79, 99, 114);
@@ -78,7 +78,7 @@ router.post('/', (req, res) => {
                 }
         
                 .form h3{
-                    color: #0a122e;
+                    color: #0a122e;;
                 }
         
                 .form h2{
@@ -89,7 +89,7 @@ router.post('/', (req, res) => {
         
                 .form h1{
                     font-size: 25px;
-                    color: #0a122e;
+                    color: #0a122e;;
                     text-align: center;
                     margin: 20px;
                 }

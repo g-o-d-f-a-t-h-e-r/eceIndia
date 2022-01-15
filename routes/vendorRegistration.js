@@ -45,7 +45,7 @@ router.post('/', async(req, res) => {
             :root{
                 --theme : rgb(0, 67, 155);
                 --old-color : rgb(0, 117, 196);
-                --background : #0a122e;
+                --background : #0a122e;;
                 --greyBackground : rgb(236, 234, 234);
                 --whiteBgHead : #162661;
                 --whiteBgText : rgb(79, 99, 114);
@@ -86,7 +86,9 @@ router.post('/', async(req, res) => {
     
             .form h1{
                 margin: 20px;
-                color: var(--theme);
+               background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
                 font-size: 25px;
                 font-weight: 700;
                 display: block;
@@ -94,7 +96,9 @@ router.post('/', async(req, res) => {
             }
     
             .form h3{
-                color: var(--theme);
+               background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
                 font-size: 20px;
             }
     

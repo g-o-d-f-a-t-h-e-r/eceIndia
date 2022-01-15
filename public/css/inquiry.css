@@ -4,7 +4,7 @@
 :root{
 	--theme : rgb(0, 67, 155);
 	--old-color : rgb(0, 117, 196);
-	--background : #0a122e;
+	/* --background :; */
 	--greyBackground : rgb(236, 234, 234);
 	--whiteBgHead : #162661;
 	--whiteBgText : rgb(79, 99, 114);
@@ -60,7 +60,7 @@ input[type=number] {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    /* background-color: black; */
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 2px;
@@ -109,7 +109,7 @@ input[type=number] {
 .inquiryForm{
     position: fixed;
     z-index: 9;
-    background-color: var(--background);
+    background: linear-gradient(to right, #01ACEF, #01A550);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -45%);

@@ -4,7 +4,7 @@
 :root{
 	--theme : rgb(0, 67, 155);
 	--old-color : rgb(0, 117, 196);
-	--background : #0a122e;
+	--background : #0a122e;;
 	--greyBackground : rgb(236, 234, 234);
 	--whiteBgHead : #162661;
 	--whiteBgText : rgb(79, 99, 114);
@@ -110,7 +110,9 @@ body{
 
 .commercialAbove20KW-sec h2{
     font-size: 40px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -126,6 +128,7 @@ body{
 }
 
 .commercialBuildings{
+    text-align: justify;
     margin: 80px 0;
     font-size: 15px;
     display: flex;
@@ -135,7 +138,9 @@ body{
 
 .commercialBuildings h3, .advantages h3{
     font-size: 25px;
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 10px 0;
     line-height: 20px;
 }
@@ -152,13 +157,16 @@ hr{
 
 
 .advantages{
+    text-align: justify;
     margin: 40px 0;
     font-size: 15px;
 }
 
 .advantages h3{
     font-size: 25px;
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 10px 0;
 }
 
@@ -181,7 +189,9 @@ hr{
 
 .examples h2{
     font-size: 40px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: 25px;
 }
@@ -227,7 +237,9 @@ hr{
 
     .commercialBuildings h3, .advantages h3{
         font-size: 25px;
-        color: var(--theme);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
         margin: 10px 0;
         line-height: 30px;
     }

@@ -4,7 +4,7 @@
 :root{
 	--theme : rgb(0, 67, 155);
 	--old-color : rgb(0, 117, 196);
-	--background : #0a122e;
+	--background : #0a122e;;
 	--greyBackground : rgb(236, 234, 234);
 	--whiteBgHead : #162661;
 	--whiteBgText : rgb(79, 99, 114);
@@ -103,12 +103,17 @@ body{
 
 
 .products-sec{
+    text-align: justify;
     padding: 40px 100px;
 }
 
 .products-sec h2{
     font-size: 40px;
-    color: var(--whiteBgHead);
+    /* color: var(--whiteBgHead);
+    background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
     margin-bottom: 40px;
     text-align: center;
 }
@@ -155,12 +160,17 @@ body{
 
 .specs{
     /* background-color: pink; */
+    text-align: justify;
     width: 60%;
 }
 
 .specs h3{
     font-size: 25px;
-    color: var(--theme);
+    /* color: var(--theme); */
+    background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     margin: 20px 0;
     /* user-select: none; */
 }
@@ -199,7 +209,8 @@ body{
 }
 
 .download-button:hover{
-    background-color: var(--whiteBgHead);
+    /* background-color: var(--whiteBgHead); */
+    background:linear-gradient(to right, #01ACEF, #01A550);
 }
 
 .download-button:hover a{

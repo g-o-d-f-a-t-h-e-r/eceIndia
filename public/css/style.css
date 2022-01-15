@@ -45,7 +45,8 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--theme);
+  /* background: var(--theme); */
+  background: linear-gradient(to right, #01ACEF, #01A550);
   border-radius: 10px;
 }
 
@@ -81,7 +82,9 @@ body {
   text-align: center;
   padding: 15px;
   user-select: none;
-  color: var(--whiteBgHead);
+     background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   width: 50%;
   position: fixed;
   top: 100px;
@@ -125,7 +128,7 @@ header {
   align-items: center;
   /* background-color: rgba(0, 0, 0, 0.712); */
   padding: 0 20px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   user-select: none;
   z-index: 10;
   height: 120px;
@@ -257,7 +260,8 @@ header {
   color: var(--theme);
 }
 .scrolling-active #menu a:after {
-  background-color: var(--theme);
+  /* background-color: var(--theme); */
+  background: linear-gradient(to right, #01ACEF, #01A550);
 }
 
 /* Drop down styling ---------------------------------------------------------------------------------------- */
@@ -294,7 +298,7 @@ header {
 .home:hover .sub-menu-0 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 130px;
   margin-left: 10px;
 }
@@ -309,7 +313,7 @@ header {
 #menu ul li:hover .sub-menu-1 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 250px;
   margin-left: 10px;
 }
@@ -322,7 +326,7 @@ header {
 #menu ul li:hover .sub-menu-2 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 310px;
   margin-left: 10px;
   width: 250px;
@@ -336,7 +340,7 @@ header {
 .pvModules:hover .sub-menu-2-1 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   width: 120%;
   margin-top: 300px;
   margin-left: 200px;
@@ -351,7 +355,7 @@ header {
 .polyCrystaline:hover .sub-menu-2-1-1 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   width: 70%;
   margin-top: 120px;
   margin-left: 220px;
@@ -366,7 +370,7 @@ header {
 .monoPerc:hover .sub-menu-2-1-2 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   width: 70%;
   margin-top: 120px;
   margin-left: 220px;
@@ -381,7 +385,7 @@ header {
 .bifacial:hover .sub-menu-2-1-3 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   width: 70%;
   margin-top: 60px;
   margin-left: 220px;
@@ -396,7 +400,7 @@ header {
 .dcr:hover .sub-menu-2-1-4 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   width: 70%;
   margin-top: 60px;
   margin-left: 220px;
@@ -411,7 +415,7 @@ header {
 .solarHomeLightening:hover .sub-menu-2-2 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   width: 120%;
   margin-top: 240px;
   margin-left: 200px;
@@ -426,7 +430,7 @@ header {
 .trafficSignal:hover .sub-menu-2-3 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   width: 90%;
   margin-top: 60px;
   margin-left: 200px;
@@ -441,13 +445,13 @@ header {
 #menu ul li:hover .sub-menu-3 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 430px;
   margin-left: 10px;
   width: 300px;
 }
 
-/* Products Below 20KW */
+/* Rooftop Below 20KW */
 .sub-menu-3-1 {
   display: none;
 }
@@ -455,14 +459,14 @@ header {
 .productBelow20Kw:hover .sub-menu-3-1 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 60px;
   margin-left: 250px;
   width: 300px;
   padding-left: 20px;
 }
 
-/* Products Above 20KW */
+/* Rooftop Above 20KW */
 .sub-menu-3-2 {
   display: none;
 }
@@ -470,7 +474,7 @@ header {
 .productAbove20Kw:hover .sub-menu-3-2 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 60px;
   margin-left: 250px;
   width: 300px;
@@ -485,7 +489,7 @@ header {
 .oAndM:hover .sub-menu-3-3 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 0;
   margin-left: 250px;
   width: 150px;
@@ -500,7 +504,7 @@ header {
 .amc:hover .sub-menu-3-3-1 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 60px;
   margin-left: 80px;
   width: 250px;
@@ -516,7 +520,7 @@ header {
 .downloads:hover .sub-menu-4 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 190px;
   margin-left: 10px;
 }
@@ -529,7 +533,7 @@ header {
 .achievements:hover .sub-menu-5 {
   display: block;
   position: absolute;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 250px;
   margin-left: 10px;
   width: 200px;
@@ -856,7 +860,7 @@ header {
   color: white;
   text-align: center;
   user-select: none;
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   display: block;
   width: 100%;
   padding: 5px 0;
@@ -911,19 +915,24 @@ header {
 .missionAndVision h3 {
   font-size: 35px;
   position: relative;
-  color: var(--whiteBgHead);
+     background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .missionAndVision h3:after {
   content: "";
   height: 3px;
   width: 100%;
-  background-color: var(--whiteBgHead);
+    background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   position: absolute;
   left: 0;
   bottom: 0;
 }
 
 .missionAndVision p {
+  text-align: justify;
   margin-top: 20px;
   margin-left: 20px;
   color: var(--whiteBgText);
@@ -933,7 +942,7 @@ header {
 
 /* BIS section ---------------------------------------------------------------------------------------------- */
 .bis {
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);
   color: white;
   padding: 90px;
   display: flex;
@@ -966,6 +975,7 @@ header {
 }
 
 .qualityDesc p {
+  text-align: justify;
   font-weight: 300;
   color: var(--blueBgText);
   opacity: 0;
@@ -1088,7 +1098,9 @@ header {
 .rooftopDesc h2 {
   font-size: 35px;
   line-height: 40px;
-  color: var(--whiteBgHead);
+     background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease;
@@ -1101,6 +1113,7 @@ header {
 }
 
 .rooftopDesc p {
+  text-align: justify;
   color: var(--whiteBgText);
   margin: 25px 0;
   font-size: 15px;
@@ -1127,7 +1140,7 @@ header {
   font-size: 15px;
   font-weight: 700;
   text-decoration: none;
-  color: var(--whiteBgHead);
+   
   height: 50px;
   padding: 28px 35px;
   text-align: center;
@@ -1186,7 +1199,9 @@ header {
 .whyWeDesc h2 {
   font-size: 35px;
   margin-bottom: 15px;
-  color: var(--whiteBgHead);
+     background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease;
@@ -1264,7 +1279,9 @@ header {
   padding: 40px;
   text-align: center;
   font-size: 35px;
-  color: var(--whiteBgHead);
+     background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease;
@@ -1314,7 +1331,8 @@ header {
 }
 
 .testimonials .user-text {
-  background: var(--background);
+  /* background: var(--background); */
+  background: linear-gradient(to right, #01ACEF, #01A550);
   width: 550px;
   height: 320px;
   position: absolute;
@@ -1333,6 +1351,7 @@ header {
 }
 
 .testimonials .user-text p {
+  text-align: justify;
   color: var(--blueBgText);
   font-weight: 300;
   opacity: 0;
@@ -1396,19 +1415,24 @@ header {
   margin: 4px;
   border-radius: 15px;
   /* background: var(--whiteBgHead); */
-  border: 2px solid var(--whiteBgHead);
+  /* border: 2px solid var(--whiteBgHead); */
+  border: 2px solid  transparent;
+  border-image: linear-gradient(to right, #01ACEF, #01A550);
+  border-image-slice: 1;
   cursor: pointer;
   transition: all 0.2s ease;
   transition-delay: 0.2s;
 }
 
 .btn:hover {
-  background: var(--whiteBgHead);
+  /* background: var(--whiteBgHead); */
+  background: linear-gradient(to right, #01ACEF, #01A550);
 }
 
 .btn.active {
   width: 45px;
-  background: var(--whiteBgHead);
+  /* background: var(--whiteBgHead); */
+  background: linear-gradient(to right, #01ACEF, #01A550);
 }
 
 .testimonial {
@@ -1454,7 +1478,9 @@ div.filler {
 .clients-container h2 {
   margin-top: 50px;
   font-size: 35px;
-  color: var(--whiteBgHead);
+     background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease;
@@ -1546,7 +1572,7 @@ div.filler {
 /* Footer Section ------------------------------------------------------------------------------------------- */
 
 .footer {
-  background-color: var(--background);
+  background: linear-gradient(to right, #01ACEF, #01A550);;
   color: var(--blueBgText);
   font-size: 15px;
 }
@@ -1896,7 +1922,9 @@ div.filler {
   }
 
   #logoText.dropDown {
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: all 1s ease;
   }
 
@@ -2006,7 +2034,9 @@ div.filler {
     transition: all 0.3s ease;
     font-weight: 600;
     /* font-size: 32px; */
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   /* -------------------------------------------------------------------------------------------- */
@@ -2126,7 +2156,7 @@ div.filler {
     display: block;
   }
 
-  /* Products Below 20 KW */
+  /* Rooftop Below 20 KW */
   .productsBelow20Kw-drop p a {
     color: white !important;
     font-weight: 600 !important;
@@ -2145,7 +2175,7 @@ div.filler {
   }
   /* -------------------- */
 
-  /* Products Above 20 KW */
+  /* Rooftop Above 20 KW */
   .productsAbove20Kw-drop p a {
     color: white !important;
     font-weight: 600 !important;
@@ -2239,7 +2269,7 @@ div.filler {
     width: 100%;
     height: 120px;
     /* background-color: black; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     overflow: hidden;
   }
 
@@ -2392,7 +2422,9 @@ div.filler {
   }
 
   #logoText.dropDown {
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: all 1s ease;
   }
 
@@ -2499,7 +2531,9 @@ div.filler {
     transition: all 0.3s ease;
     font-weight: 600;
     /* font-size: 32px; */
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   /* -------------------------------------------------------------------------------------------- */
@@ -2619,7 +2653,7 @@ div.filler {
     display: block;
   }
 
-  /* Products Below 20 KW */
+  /* Rooftop Below 20 KW */
   .productsBelow20Kw-drop p a {
     color: white !important;
     font-weight: 600 !important;
@@ -2638,7 +2672,7 @@ div.filler {
   }
   /* -------------------- */
 
-  /* Products Above 20 KW */
+  /* Rooftop Above 20 KW */
   .productsAbove20Kw-drop p a {
     color: white !important;
     font-weight: 600 !important;
@@ -2912,7 +2946,7 @@ div.filler {
     width: 100%;
     height: 120px;
     /* background-color: black; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     overflow: hidden;
   }
 
@@ -3118,6 +3152,7 @@ div.filler {
   }
 
   .rooftopDesc p {
+    text-align: justify;
     margin: 0;
   }
 
@@ -3450,6 +3485,7 @@ div.filler {
   }
 
   .missionAndVision p{
+    text-align: justify;
     margin-left: 0;
   }
 
@@ -3521,6 +3557,7 @@ div.filler {
   }
 
   .rooftopDesc p {
+    text-align: justify;
     margin: 20px 0;
     padding: 0;
   }
@@ -3653,7 +3690,9 @@ div.filler {
   .feedback h2 {
     text-align: center;
     font-size: 30px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
     opacity: 0;
     transform: translateY(50px);
@@ -3666,7 +3705,7 @@ div.filler {
   }
 
   .feedback-container {
-    background-color: var(--background);
+    background: linear-gradient(to right, #01ACEF, #01A550);
     width: 100%;
     padding: 30px 0px;
     overflow: hidden;
@@ -3941,12 +3980,14 @@ div.filler {
   .feedback h2 {
     text-align: center;
     font-size: 30px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
   }
 
   .feedback-container {
-    background-color: var(--background);
+    background: linear-gradient(to right, #01ACEF, #01A550);
     width: 100%;
     padding: 30px 0px;
     overflow: hidden;

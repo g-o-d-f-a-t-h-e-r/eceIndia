@@ -4,7 +4,7 @@
 :root{
 	--theme : rgb(0, 67, 155);
 	--old-color : rgb(0, 117, 196);
-	--background : #0a122e;
+	--background : #0a122e;;
 	--greyBackground : rgb(236, 234, 234);
 	--whiteBgHead : #162661;
 	--whiteBgText : rgb(79, 99, 114);
@@ -110,7 +110,9 @@ body{
 
 .residential-container h2{
     font-size: 40px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -121,6 +123,7 @@ body{
 }
 
 .howSolarRooftopWork{
+    text-align: justify;
     display: flex;
     margin: 40px 0;
     align-items: center;
@@ -153,14 +156,18 @@ body{
 
 .text h3{
     font-size: 28px;
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     line-height: 40px;
 }
 
 hr{
     margin-bottom: 20px;
 }
-
+.planningRooftop{
+    text-align: justify;
+}
 
 .planningRooftop h2{
     margin-top: 80px;
@@ -172,12 +179,15 @@ hr{
 }
 
 .explanation{
+    text-align: justify;
     margin: 40px 0;
 }
 
 .explanation h3{
     font-size: 28px;
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     line-height: 30px;
    
 }
@@ -189,7 +199,9 @@ hr{
 
 .documents h3{
     font-size: 28px;
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .documents ul{

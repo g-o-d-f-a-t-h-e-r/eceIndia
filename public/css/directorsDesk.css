@@ -4,7 +4,7 @@
 :root{
 	--theme : rgb(0, 67, 155);
 	--old-color : rgb(0, 117, 196);
-	--background : #0a122e;
+	--background : #0a122e;;
 	--greyBackground : rgb(236, 234, 234);
 	--whiteBgHead : #162661;
 	--whiteBgText : rgb(79, 99, 114);
@@ -109,7 +109,9 @@ body{
 
 .directors-sec h2{
     font-size: 40px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -120,7 +122,9 @@ body{
 
 .chairmansMessage h3, .managingDirectorsMessage h3, .ourTeamsMessage h3{
     font-size: 30px;
-    color: var(--theme);
+   background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sec{
@@ -151,7 +155,7 @@ body{
 .info{
     text-align: center;
     margin: 10px 0;
-    background-color: var(--background);
+    background: linear-gradient(to right, #01ACEF, #01A550);
     color: var(--blueBgText);
     padding: 10px 30px;
     border-radius: 5px;
@@ -168,7 +172,7 @@ body{
 }
 
 .message{
-    
+    text-align: justify;
     font-size: 15px;
     font-weight: 500;
     background-color: var(--greyBackground);
@@ -190,7 +194,7 @@ body{
     padding: 10px 30px;
     margin: 10px 0;
     border-radius: 5px;
-    background-color: var(--background);
+    background: linear-gradient(to right, #01ACEF, #01A550);
     user-select: none;
 }
 
@@ -270,7 +274,9 @@ body{
 
 .text h4{
     font-size: 18px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 10px 0;
 }
 

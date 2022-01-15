@@ -4,7 +4,7 @@
 :root{
 	--theme : rgb(0, 67, 155);
 	--old-color : rgb(0, 117, 196);
-	--background : #0a122e;
+	--background : #0a122e;;
 	--greyBackground : rgb(236, 234, 234);
 	--whiteBgHead : #162661;
 	--whiteBgText : rgb(79, 99, 114);
@@ -106,7 +106,9 @@ body{
 }
 
 .add h2{
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 35px;
 }
 
@@ -138,7 +140,9 @@ body{
 .letsTalk h2{
     text-align: center;
     font-size: 35px;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #letsTalk{
@@ -165,7 +169,7 @@ body{
     border: none;
     padding: 15px 20px;
     border-radius: 2px;   
-    color: var(--whiteBgHead);
+    
     font-size: 15px;
     transition: all 0.3s ease;
     
@@ -195,7 +199,7 @@ input[type=number] {
     padding: 15px 20px;
     border-radius: 2px;
     border: none;
-    color: var(--whiteBgHead);
+    
     font-size: 15px;
     transition: all 0.3s ease;
 }
@@ -211,7 +215,7 @@ input[type=number] {
     border: none;
     padding: 15px 20px;
     border-radius: 2px;   
-    color: var(--whiteBgHead);
+     
     font-size: 16px;
     transition: all 0.3s ease;
     border: 2px solid var(--whiteBgHead);
@@ -222,7 +226,8 @@ input[type=number] {
 }
 
 .sec button:hover{
-    background-color: var(--whiteBgHead);
+   
+    background: linear-gradient(to right, #01ACEF, #01A550);
     color: white;
 }
 
@@ -235,7 +240,9 @@ input[type=number] {
     text-align: center;
     padding: 15px;
     user-select: none;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     width: 50%;
     position: fixed;
     top: 100px;
@@ -326,7 +333,9 @@ input[type=number] {
     }
 
     .add h2{
-        color: var(--whiteBgHead);
+           background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
         font-size: 30px;
     }
 

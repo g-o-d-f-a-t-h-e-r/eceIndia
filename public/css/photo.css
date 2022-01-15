@@ -3,7 +3,7 @@
 :root{
 	--theme : rgb(0, 67, 155);
 	--old-color : rgb(0, 117, 196);
-	--background : #0a122e;
+	--background : #0a122e;;
 	--greyBackground : rgb(236, 234, 234);
 	--whiteBgHead : #162661;
 	--whiteBgText : rgb(79, 99, 114);
@@ -101,7 +101,9 @@ body{
 
 
 .heading h2{
-  color: var(--whiteBgHead);
+     background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   font-size: 40px;
   text-align: center;
   margin-top: 40px;
@@ -169,7 +171,7 @@ body{
     text-align: center;
     font-size: small;
     color:white;
-    background-color: var(--background);
+    background: linear-gradient(to right, #01ACEF, #01A550);
 
   }
 
@@ -192,12 +194,16 @@ body{
     padding: 15px 40px;
     font-size: 18px;
     font-weight: 600;
-    color: var(--whiteBgHead);
+       background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: all 0.3s ease;
   }
 
   .backButton a:hover{
-    background-color: var(--whiteBgHead);
+    background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: white;
   }
 

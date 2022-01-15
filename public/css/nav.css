@@ -46,7 +46,8 @@ html, body{
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-	background: var(--theme);
+	/* background: var(--theme); */
+	background: linear-gradient(to right, #01ACEF, #01A550);
 	border-radius: 10px;
   }
   
@@ -71,7 +72,7 @@ header{
 	align-items: center;
 	background-color: white;
 	padding: 0 20px;
-	justify-content: space-between;
+	justify-content: start;
 	user-select: none;
 	z-index: 999;
 	height: 70px;
@@ -178,7 +179,8 @@ header{
 #menu a:after{
 	content: "";
 	position: absolute;
-	background-color:var(--theme);
+	/* background-color:var(--theme); */
+	background: linear-gradient(to right, #01ACEF, #01A550);
 	height: 3px;
 	width: 0;
 	left: 0;
@@ -210,14 +212,15 @@ header{
 }
 
 .scrolling-active #menu a{
-	color: black;
+	/* color: black; */
 	transition: all 0.3s ease;
 }
 .scrolling-active #menu a:hover{
 	color: var(--theme);
 }
 .scrolling-active #menu a:after{
-	background-color: var(--theme);
+	/* background-color: var(--theme); */
+	background: linear-gradient(to right, #01ACEF, #01A550);
 }
 
 

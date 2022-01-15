@@ -145,7 +145,7 @@ menuBtn.addEventListener('click', () => {
         })
 
 
-        // Products Below 20 KW
+        // Rooftop Below 20 KW
             const productsBelow20KwDrop = document.querySelector('.productsBelow20Kw-drop p')
             const productsBelow20KwMenu = document.querySelector('.productsBelow20Kw-menu')
 
@@ -154,7 +154,7 @@ menuBtn.addEventListener('click', () => {
             })
         // --------------------
 
-        // Products Above 20 KW
+        // Rooftop Above 20 KW
             const productsAbove20KwDrop = document.querySelector('.productsAbove20Kw-drop p')
             const productsAbove20KwMenu = document.querySelector('.productsAbove20Kw-menu')
 

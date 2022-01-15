@@ -4,7 +4,7 @@
 :root{
 	--theme : rgb(0, 67, 155);
 	--old-color : rgb(0, 117, 196);
-	--background : #0a122e;
+	--background : #0a122e;;
 	--greyBackground : rgb(236, 234, 234);
 	--whiteBgHead : #162661;
 	--whiteBgText : rgb(79, 99, 114);
@@ -107,7 +107,11 @@ body{
 
 .vendors-sec h2{
     font-size: 40px;
-    color: var(--whiteBgHead);
+    /* color: var(--whiteBgHead); */
+    background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     text-align: center;
     margin-bottom: 50px;
 }
@@ -130,7 +134,8 @@ body{
 }
 
 .online-btn:hover, .offline-btn:hover{
-    background-color: var(--whiteBgHead);
+    /* background-color: var(--whiteBgHead); */
+    background: linear-gradient(to right, #01ACEF, #01A550);
     color: white;
 }
 
@@ -141,7 +146,8 @@ body{
     display:block
 }
 .online-btn.active{
-    background-color: var(--whiteBgHead);
+    /* background-color: var(--whiteBgHead); */
+    background: linear-gradient(to right, #01ACEF, #01A550);
     color: white;
 }
 
@@ -155,7 +161,8 @@ body{
     justify-content: center;
 }
 .offline-btn.active{
-    background-color: var(--whiteBgHead);
+    /* background-color: var(--whiteBgHead); */
+    background: linear-gradient(to right, #01ACEF, #01A550);
     color: white;
 }
 
@@ -167,7 +174,11 @@ body{
 
 #vendorForm h3{
     font-size: 22px;
-    color: var(--whiteBgHead);
+    /* color: var(--whiteBgHead); */
+    background: -webkit-linear-gradient(left,#01ACEF, #01A550);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     margin-left: 5px;
 }
 
@@ -291,7 +302,8 @@ input[type=number] {
 
 .attachmentsP a{
     padding: 18px 20px;
-    background-color: var(--whiteBgHead);
+    /* background-color: var(--whiteBgHead); */
+    background: linear-gradient(to right, #01ACEF, #01A550);
     color: white;
     cursor: pointer;
     font-size: 15px;
@@ -312,8 +324,8 @@ input[type=number] {
     width: 600px;
     padding: 15px 20px;
     background-color: transparent;
-    border: 2px solid var(--whiteBgHead);
-    border-radius: 5px;
+    /* border: 2px solid var(--whiteBgHead); */
+    /* border-radius: 5px; */
     cursor: pointer;
     user-select: none;
     font-weight: 600;
@@ -322,7 +334,8 @@ input[type=number] {
 }
 
 .button button:hover{
-    background-color: var(--whiteBgHead);
+    /* background-color: var(--whiteBgHead); */
+    background: linear-gradient(to right, #01ACEF, #01A550);
     color: white;
 }
 
@@ -366,8 +379,8 @@ input[type=number] {
     text-decoration: none;
     color: black;
     padding: 15px 30px;
-    border: 2px solid var(--whiteBgHead);
-    border-radius: 5px;
+    /* border: 2px solid var(--whiteBgHead); */
+    /* border-radius: 5px; */
     font-weight: 600;
     transition: all 0.3s ease
 }
