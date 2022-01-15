@@ -2,11 +2,11 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
         <link rel="icon" href="../public/img/favicon.png">
-        link(rel="stylesheet", href="../public/css/products.css") 
-        
+        link(rel="stylesheet" href="../public/css/products.css") 
+
         title Products Small Modules
     body 
 
@@ -15,7 +15,7 @@ html(lang="en")
 
         div.products-container
             div.cover-img
-                img(src="../public/img/solar16.jpg", alt="Career")
+                img(src="../public/img/solar16.jpg" alt="Career")
 
                 div.products
                     h2 Products > PV Module
@@ -30,7 +30,7 @@ html(lang="en")
 
             div.card
                 div.image
-                    img(src="../public/img/products/productImg.png", alt="Product")
+                    img(src="../public/img/products/productImg.png" alt="Product")
                 div.specs
                     h3 Aditya Series: ECE 40W To 90W  
                     p •	Superior module efficiency as per international benchmarks
@@ -40,14 +40,20 @@ html(lang="en")
 
 
 
-                    //- div.download-button
-                    //-     a(href="../public/dataSheets/adityaSmall.pdf" download) Download Data Sheet
+                    div.download-button
+                        a(href="../public/dataSheets/adityaSmall-40w.pdf" download) Download Data Sheet 40W
+                    div.download-button
+                        a(href="../public/dataSheets/adityaSmall-50w.pdf" download) Download Data Sheet 50W
+                    div.download-button
+                        a(href="../public/dataSheets/adityaSmall-60w.pdf" download) Download Data Sheet 60W
+                    div.download-button
+                        a(href="../public/dataSheets/adityaSmall-75-80w.pdf" download) Download Data Sheet 75-80W
 
-            
 
 
 
-            
+
+
         include ./footer.pug
 
 
