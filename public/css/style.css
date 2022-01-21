@@ -1051,6 +1051,7 @@ header {
   margin-left: 30px;
   display: flex;
   flex-direction: column;
+  
 }
 
 .qualityDesc h2 {
@@ -1073,6 +1074,7 @@ header {
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease;
+  font: medium;
 }
 
 .qualityDesc p.animate {
