@@ -29,7 +29,18 @@ body{
     margin: 0;
     padding: 0;
 }
+.flex-container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.flex-child {
+    width: 300px;
+    margin: 10px;
+} 
 .solutions-nav a.active{
     color: var(--theme) !important;
 }

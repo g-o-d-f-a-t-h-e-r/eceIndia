@@ -266,6 +266,24 @@ const onload = () => {
     let btn = document.querySelector("#btn")
     const preloader = document.getElementById('loading')
     let header = document.querySelector('.nav')
+    let text1 = document.getElementById('runningtext1');
+    let text2 = document.getElementById('runningtext2');
+    let text3 = document.getElementById('runningtext3');
+    let text4 = document.getElementById('runningtext4');
+    let text5 = document.getElementById('runningtext5');
+    let text6 = document.getElementById('runningtext6');
+
+
+
+    console.log("Hello")
+    animate(text1, 0, 10, 5000);
+    animate(text2, 0, 1500, 5000);
+    animate(text3, 0, 200, 5000);
+    animate(text4, 0, 100, 5000);
+    animate(text5, 0, 6, 5000);
+    animate(text6, 0, 6, 5000);
+
+
 
     window.scrollTo(0, 0)
     header.style.width = "100%"
@@ -446,20 +464,20 @@ document.addEventListener('scroll', () => {
         const qualityDescH2 = document.querySelector('.qualityDesc h2')
         const qualityDescP = document.querySelector('.qualityDesc p')
         const qualityImg = document.querySelector('.qualityImg img')
-        const qualityImgP = document.querySelector('.qualityImg p')
+        // const qualityImgP = document.querySelector('.qualityImg p')
 
         qualityDescH2.classList.add('animate')
         qualityDescP.classList.add('animate')
         qualityImg.classList.add('animate')
-        qualityImgP.classList.add('animate')
+        // qualityImgP.classList.add('animate')
     }
 
     if(window.scrollY > 3000 && window.screen.width <= 414){
         const qualityImg = document.querySelector('.qualityImg img')
-        const qualityImgP = document.querySelector('.qualityImg p')
+        // const qualityImgP = document.querySelector('.qualityImg p')
 
         qualityImg.classList.add('animate')
-        qualityImgP.classList.add('animate')
+        // qualityImgP.classList.add('animate')
     }
 
     if(window.scrollY > 3200 && window.screen.width <= 414){

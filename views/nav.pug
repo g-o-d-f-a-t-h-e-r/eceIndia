@@ -97,14 +97,29 @@ body
 
 
 
-            li.downloads-nav #[a Downloads]
-              div.sub-menu-4.sub-menu
-                ul.downloadsDrop 
-                  li #[a(href='/downloads/vendorRegistrationForm') Vendor Registration Form]
-                  li #[a(href='/downloads/clientRegistrationForm') Client Registration Form]
+
 
             li.blogs-nav #[a(href="/blogs") Blogs]
-            li.contactUs-nav #[a(href="/contactUs") Contact Us]
+            
+            
+            
+            
+            
+            li #[a Contact Us]
+              div.sub-menu-6.sub-menu
+                ul.solutionsDrop 
+                  li #[a(href="/contactUs") Contact Us]
+                  li.productBelow20Kw #[a Downloads &nbsp &nbsp &nbsp >]
+                    div.sub-menu-6-1.sub-menu
+                      ul.productsBelow20KwDrop 
+                        li #[a(href='/downloads/vendorRegistrationForm') Vendor Registration Form]
+                        li #[a(href='/downloads/clientRegistrationForm') Client Registration Form]
+
+
+
+
+
+            //- li.contactUs-nav #[a(href="/contactUs") Contact Us]
             li.news-nav #[a(href="/news") News/CSR]
             li.career-nav #[a(href="/career") Career]
 

@@ -21,6 +21,7 @@ const photoGalleryRoute = require('./routes/photo')
 const productsRoute = require('./routes/products')
 const solutionsRoute = require('./routes/solutions')
 const inquiryRoute = require('./routes/inquiry')
+const solarark = require('./routes/solarark')
 
 const port = process.env.PORT || 80
 
@@ -56,6 +57,7 @@ app.use('/photoGallery', photoGalleryRoute)
 app.use('/products', productsRoute)
 app.use('/solutions', solutionsRoute)
 app.use('/inquiry', inquiryRoute)
+app.use('/solarark', solarark)
 
 
 

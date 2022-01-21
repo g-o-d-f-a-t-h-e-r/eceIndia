@@ -6,6 +6,7 @@ head
   meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
   link(rel='stylesheet' href='../public/css/style.css')
   //- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  script(src="../public/js/runningcounter.js") 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="https://kit.fontawesome.com/038f84b764.js" crossorigin="anonymous"></script>
@@ -114,14 +115,25 @@ body(onload = "onload()")
 
 
 
-            li.downloads #[a Downloads]
-              div.sub-menu-4.sub-menu
-                ul.downloadsDrop 
-                  li #[a(href='/downloads/vendorRegistrationForm') Vendor Registration Form]
-                  li #[a(href='/downloads/clientRegistrationForm') Client Registration Form]
+
 
             li #[a(href="/blogs") Blogs]
-            li #[a(href="/contactUs") Contact Us]
+
+
+
+            li #[a Contact Us]
+              div.sub-menu-6.sub-menu
+                ul.solutionsDrop 
+                  li #[a(href="/contactUs") Contact Us]
+                  li.productBelow20Kw #[a Downloads &nbsp &nbsp &nbsp >]
+                    div.sub-menu-6-1.sub-menu
+                      ul.productsBelow20KwDrop 
+                        li #[a(href='/downloads/vendorRegistrationForm') Vendor Registration Form]
+                        li #[a(href='/downloads/clientRegistrationForm') Client Registration Form]
+
+               
+
+            //- li #[a(href="/contactUs") Contact Us]
             li #[a(href="/news") News/CSR]
             li #[a(href="/career") Career]
 
@@ -216,6 +228,12 @@ body(onload = "onload()")
               li #[a(href="/downloads/clientRegistrationForm") Client Registration Form]
 
         li #[a(href='/blogs') Blogs]
+
+
+
+
+
+        
         li #[a(href='/contactUs') Contact Us]
         li #[a(href='/news') News/CSR]
         li #[a(href='/career') Career]
@@ -253,42 +271,54 @@ body(onload = "onload()")
       div.card
         div.img1.img
           img(src="../public/img/industrial3.png", alt="Work Experience")
-          h3.counter 10+ Years
+          h3.counter
+            span#runningtext1 100
+            |   Years
         div.info
           p of rich Industry Experience
 
       div.card
         div.img2.img
           img(src="../public/img/house3.png", alt="Work Experience")
-          h3.counter 1500+
+          h3.counter 
+            span#runningtext2 1500+
+            span +
         div.info
           p Rooftop projects
 
       div.card
         div.img3.img
           img(src="../public/img/solar-panel3.png", alt="Work Experience")
-          h3.counter 200+ MW
+          h3.counter
+            span#runningtext3 200
+            |   + MW
         div.info
           p of projects executed
 
       div.card
         div.img3.img
           img(src="../public/img/automation.png", alt="Work Experience")
-          h3.counter 100+
+          h3.counter 
+            span#runningtext4 100+
+            span +
         div.info
           p fully automated machines
 
       div.card
         div.img3.img
           img(src="../public/img/quality.png", alt="Work Experience")
-          h3.counter 6 certifications
+          h3.counter
+            span#runningtext5 6
+            |   certifications
         div.info
           p for premium quality products
 
       div.card
         div.img3.img
           img(src="../public/img/patent.png", alt="Work Experience")
-          h3.counter 6 patents
+          h3.counter
+            span#runningtext6 6
+            |   patents
         div.info
           p in r&d of solar panel
 
@@ -314,10 +344,10 @@ body(onload = "onload()")
   div.bis
     div.qualityDesc
       h2 Premium Quality Product 
-      p ECE India is well known for manufacturing premium quality Solar Pannels for decades. Our facility has stingent quality check procedures, paired with best in class raw materials and highly skilled workforce. We are also BIS certified which ensures the delivery of best performance of pannels at diverse geographic location and adverse climatic conditions.
+      p(style="font-weight:bold;color:white") ECE India is well known for manufacturing premium quality Solar Pannels for decades. Our facility has stingent quality check procedures, paired with best in class raw materials and highly skilled workforce. We are also BIS certified which ensures the delivery of best performance of pannels at diverse geographic location and adverse climatic conditions.
     div.qualityImg
       img(src="../public/img/bisLogo1.png", alt="BIS certification")
-      p Quality Brand <span class="or">|</span> Quality Product <span class="or">|</span> Quality People
+      //- p Quality Brand <span class="or">|</span> Quality Product <span class="or">|</span> Quality People
 
 
 
@@ -614,11 +644,14 @@ body(onload = "onload()")
         a Sun for Everyone
 
       div.about
-        h2 About ECE India
+        h2.linkcolorchange
+          a(href='/solarark' style='color:white') About ECE India
+         
         p ECE India Energies Private Limited was established to provide fruitful services to the stakeholders through value addition with an eye for quality, clean environment, and safe life.
 
         div.subs-sec
-          h2 About Solarark Projects Pvt. Ltd.
+          h2.linkcolorchange 
+            a(href='/solarark' style='color:white') About Solarark Projects Pvt. Ltd.
           p Solarark Projects Pvt. Ltd. is the subsidiary of ECE India which helps ECE India to establish solar projects for their customers.
           br
           p 
@@ -642,6 +675,7 @@ body(onload = "onload()")
           a(href="https://twitter.com/EceEnergies" target="_blank") #[img(src="../public/img/twitter.png", alt="twitter")]
           a(href="https://www.linkedin.com/company/eceindiaenergies/" target="_blank") #[img(src="../public/img/linkedin.png", alt="linkedin")]
           a(href="https://www.youtube.com/channel/UC3Mg8gehhm_TKFkdg6B1fiw" target="_blank") #[img(src="../public/img/youtube.png", alt="youtube")]
+          a(href="https://www.youtube.com/channel/UC3Mg8gehhm_TKFkdg6B1fiw" target="_blank") #[img(src="../public/img/instagram.png", alt="youtube")]
 
     div.line
 

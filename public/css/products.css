@@ -30,6 +30,13 @@ body{
     padding: 0;
 }
 
+
+
+.listiconsize{
+    width: 75px;
+    margin-right: 20px;
+}
+
 .products-nav a.active{
     color: var(--theme) !important;
 }
@@ -177,7 +184,7 @@ body{
 
 .specs span{
     font-weight: 700;
-    width: 200px;
+    width: 100%;
     display: inline-block;
 }
 

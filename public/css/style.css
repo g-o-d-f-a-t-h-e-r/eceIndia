@@ -31,7 +31,9 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-
+.linkcolorchange a{
+  color:white
+}
 /* Scrollbar css -------------------------------------------------------------------------------------------- */
 
 ::-webkit-scrollbar {
@@ -538,6 +540,96 @@ header {
   margin-left: 10px;
   width: 200px;
 }
+
+
+
+
+/* Trying  */
+/* Sub menu - 6 */
+.sub-menu-6 {
+  display: none;
+}
+
+#menu ul li:hover .sub-menu-6 {
+  display: block;
+  position: absolute;
+  background: linear-gradient(to right, #01ACEF, #01A550);
+  margin-top: 200px;
+  margin-left: 10px;
+  width: 300px;
+}
+
+/* Rooftop Below 20KW */
+.sub-menu-6-1 {
+  display: none;
+}
+
+.productBelow20Kw:hover .sub-menu-6-1 {
+  display: block;
+  position: absolute;
+  background: linear-gradient(to right, #01ACEF, #01A550);
+  margin-top: 60px;
+  margin-left: 250px;
+  width: 300px;
+  padding-left: 20px;
+}
+
+/* Rooftop Above 20KW */
+.sub-menu-6-2 {
+  display: none;
+}
+
+.productAbove20Kw:hover .sub-menu-6-2 {
+  display: block;
+  position: absolute;
+  background: linear-gradient(to right, #01ACEF, #01A550);
+  margin-top: 60px;
+  margin-left: 250px;
+  width: 300px;
+  padding-left: 20px;
+}
+
+/* O and M */
+.sub-menu-6-3 {
+  display: none;
+}
+
+.oAndM:hover .sub-menu-6-3 {
+  display: block;
+  position: absolute;
+  background: linear-gradient(to right, #01ACEF, #01A550);
+  margin-top: 0;
+  margin-left: 250px;
+  width: 150px;
+  padding-left: 20px;
+}
+
+/* AMC Drop */
+.sub-menu-6-3-1 {
+  display: none;
+}
+
+.amc:hover .sub-menu-6-3-1 {
+  display: block;
+  position: absolute;
+  background: linear-gradient(to right, #01ACEF, #01A550);
+  margin-top: 60px;
+  margin-left: 80px;
+  width: 250px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------------------------------------------------------------------------------------------------- */
 
@@ -2269,7 +2361,7 @@ div.filler {
     width: 100%;
     height: 120px;
     /* background-color: black; */
-    /* justify-content: space-between; */
+    justify-content: space-between;
     overflow: hidden;
   }
 
