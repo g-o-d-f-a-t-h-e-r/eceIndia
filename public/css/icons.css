@@ -48,6 +48,8 @@ body{
     align-items: center;
     justify-content: space-between;
     height: 120px;
+    margin: auto;
+    
 }
 
 .img-icon{
@@ -69,6 +71,7 @@ body{
     text-align: center;
     font-weight: 500;
     font-size: 15px;
+    padding: 20px;
 }
 
 @media screen and (max-width : 1024px) {
