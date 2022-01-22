@@ -404,7 +404,7 @@ header{
 	#menu ul li:hover .sub-menu-3{
 		display: block;
 		position: absolute;
-		margin-top: 430px;
+		margin-top: 375px;
 		margin-left: 10px;
 		width: 300px;
 	}
@@ -418,7 +418,7 @@ header{
 		.productBelow20Kw:hover .sub-menu-3-1{
 			display: block;
 			position: absolute;
-			margin-top: 60px;
+			margin-top: 180px;
 			margin-left: 250px;
 			width: 300px;
 			padding-left: 20px;

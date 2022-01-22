@@ -155,12 +155,12 @@ menuBtn.addEventListener('click', () => {
         // --------------------
 
         // Rooftop Above 20 KW
-            const productsAbove20KwDrop = document.querySelector('.productsAbove20Kw-drop p')
-            const productsAbove20KwMenu = document.querySelector('.productsAbove20Kw-menu')
+            // const productsAbove20KwDrop = document.querySelector('.productsAbove20Kw-drop p')
+            // const productsAbove20KwMenu = document.querySelector('.productsAbove20Kw-menu')
 
-            productsAbove20KwDrop.addEventListener('click', () => {
-                productsAbove20KwMenu.classList.toggle('open')
-            })
+            // productsAbove20KwDrop.addEventListener('click', () => {
+            //     productsAbove20KwMenu.classList.toggle('open')
+            // })
         // --------------------
 
         // Operation and Maintainance

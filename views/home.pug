@@ -85,17 +85,19 @@ body(onload = "onload()")
             li #[a Solutions]
               div.sub-menu-3.sub-menu
                 ul.solutionsDrop 
-                  li.productBelow20Kw #[a Rooftop Below 20 KW &nbsp &nbsp &nbsp >]
+                  li.productBelow20Kw #[a Rooftop&nbsp &nbsp &nbsp >]
                     div.sub-menu-3-1.sub-menu
                       ul.productsBelow20KwDrop 
                         li #[a(href='/solutions/commercialBelow20Kw') Commercial Below 20 KW]
-                        li #[a(href='/solutions/residentialBelow20Kw') Residential Below 20 KW]
-
-                  li.productAbove20Kw #[a Rooftop Above 20 KW &nbsp &nbsp &nbsp >]
-                    div.sub-menu-3-2.sub-menu
-                      ul.productsAbove20KwDrop 
                         li #[a(href='/solutions/commercialAbove20Kw') Commercial Above 20KW]
+                        li #[a(href='/solutions/residentialBelow20Kw') Residential Below 20 KW]
                         li #[a(href='/solutions/industrialAbove20Kw') Industrial Above 20 KW]
+
+                  //- li.productAbove20Kw #[a Rooftop Above 20 KW &nbsp &nbsp &nbsp >]
+                  //-   div.sub-menu-3-2.sub-menu
+                  //-     ul.productsAbove20KwDrop 
+                  //-       li #[a(href='/solutions/commercialAbove20Kw') Commercial Above 20KW]
+                  //-       li #[a(href='/solutions/industrialAbove20Kw') Industrial Above 20 KW]
 
                   li.oAndM #[a Operation & Maintainance &nbsp &nbsp &nbsp >]
                     div.sub-menu-3-3.sub-menu
@@ -198,17 +200,19 @@ body(onload = "onload()")
       li.solutions-drop #[p #[a Solutions] #[i.arrow.down]]
         div.solutions-menu.sub-menu-drop
           ul 
-            li.productsBelow20Kw-drop #[p #[a Rooftop Below 20KW] #[i.arrow.down]]
+            li.productsBelow20Kw-drop #[p #[a Rooftop] #[i.arrow.down]]
               div.productsBelow20Kw-menu.sub-menu2-drop
                 ul 
                   li #[a(href="/solutions/commercialBelow20Kw") Commercial Below 20KW]
-                  li #[a(href="/solutions/residentialBelow20Kw") Residential Below 20KW]
-
-            li.productsAbove20Kw-drop #[p #[a Rooftop Above 20KW] #[i.arrow.down]]
-              div.productsAbove20Kw-menu.sub-menu2-drop
-                ul 
                   li #[a(href="/solutions/commercialAbove20Kw") Commercial Above 20KW]
+                  li #[a(href="/solutions/residentialBelow20Kw") Residential Below 20KW]
                   li #[a(href="/solutions/industrialAbove20Kw") Industrial Above 20KW]
+
+            //- li.productsAbove20Kw-drop #[p #[a Rooftop Above 20KW] #[i.arrow.down]]
+            //-   div.productsAbove20Kw-menu.sub-menu2-drop
+            //-     ul 
+            //-       li #[a(href="/solutions/commercialAbove20Kw") Commercial Above 20KW]
+            //-       li #[a(href="/solutions/industrialAbove20Kw") Industrial Above 20KW]
 
             li.operationAndMaintainance-drop #[p #[a Operation And Maintainance] #[i.arrow.down]]
               div.operationAndMaintainance-menu.sub-menu2-drop
