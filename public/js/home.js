@@ -272,6 +272,10 @@ const onload = () => {
     let text4 = document.getElementById('runningtext4');
     let text5 = document.getElementById('runningtext5');
     let text6 = document.getElementById('runningtext6');
+    let text7 = document.getElementById('runningtext7');
+    let text8 = document.getElementById('runningtext8');
+    let text9 = document.getElementById('runningtext9');
+    let text10 = document.getElementById('runningtext10');
 
 
 
@@ -282,6 +286,10 @@ const onload = () => {
     animate(text4, 0, 100, 5000);
     animate(text5, 0, 6, 5000);
     animate(text6, 0, 6, 5000);
+    animate(text7, 0, 50, 5000);
+    animate(text8, 0, 50, 5000);
+    animate(text9, 0, 50000, 5000);
+    animate(text10, 0, 73000, 5000);
 
 
 
