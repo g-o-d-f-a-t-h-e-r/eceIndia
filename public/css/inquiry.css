@@ -139,7 +139,10 @@ input[type=number] {
 .inquiry-sec input, .inquiry-sec textarea{
     padding: 10px 30px 10px 15px;
 }
-
+.inquiry-sec select{
+    padding: 10px 74px 10px 15px;
+    color:gray;
+}
 .inquiry-sec button{
     width: 100%;
     padding: 10px 20px;
@@ -192,7 +195,8 @@ input[type=number] {
         margin: 2px 0;
     }
 
-    .inquiry-sec input{
+    .inquiry-sec input,.inquiry-sec select
+    {
         width: 80%;
         margin: 5px;
         padding: 10px 10px;
@@ -241,7 +245,7 @@ input[type=number] {
         padding: 20px 5px;
     }
 
-    .inquiry-sec input{
+    .inquiry-sec input,.inquiry-sec select{
         width: 80%;
         margin: 5px 5px;
         padding: 5px 10px;

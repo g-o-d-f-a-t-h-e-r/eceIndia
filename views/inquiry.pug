@@ -23,18 +23,24 @@ html(lang="en")
 
                     div.inquiry-sec
                         input(type="Number" placeholder = "Phone Number *" required name="phoneNumber")
-                        input(type="text" placeholder = "Reason for Contact *" required name="reasonForContact")
+                        //- input(type="text" placeholder = "Type Of Enquiry"  name="reasonForContact")
+                        select#cars(name='typeofenquiry')
+                            option(value="" disabled selected) Type Of Inquiry 
+                            option(value='Distributer') Distributer
+                            option(value='Integrator') Integrator
+                            option(value='Installer') Installer
+                            //- option(value='audi') Audi
 
                     div.inquiry-sec
-                        input(type="Number" placeholder = "Zipcode/Pincode *" required name="pincode")
-                        input(type="text" placeholder = "City *" required name="city")
+                        input(type="Number" placeholder = "Zipcode/Pincode" name="pincode")
+                        input(type="text" placeholder = "City" name="city")
 
                     div.inquiry-sec
-                        input(type="text" placeholder = "State *" required name="state")
-                        input(type="text" placeholder = "Country *" required name="country")
+                        input(type="text" placeholder = "State"  name="state")
+                        input(type="text" placeholder = "Country"  name="country")
 
                     div.inquiry-sec
-                        textarea(cols="60", rows="5" placeholder="Your Message *" required name="yourMessage")
+                        textarea(cols="60", rows="5" placeholder="Your Message" name="yourMessage")
                     
                     div.inquiry-sec
                         button Contact Us
