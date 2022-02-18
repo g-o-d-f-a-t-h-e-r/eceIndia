@@ -22,6 +22,7 @@ const productsRoute = require('./routes/products')
 const solutionsRoute = require('./routes/solutions')
 const inquiryRoute = require('./routes/inquiry')
 const solarark = require('./routes/solarark')
+const ourdealer = require('./routes/ourdealer')
 
 const port = process.env.PORT || 80
 
@@ -58,6 +59,7 @@ app.use('/products', productsRoute)
 app.use('/solutions', solutionsRoute)
 app.use('/inquiry', inquiryRoute)
 app.use('/solarark', solarark)
+app.use('/ourdealer', ourdealer)
 
 
 
