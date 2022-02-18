@@ -178,7 +178,7 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    margin: 20px 0;
+    margin-top: 20px;
     /* user-select: none; */
 }
 
