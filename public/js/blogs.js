@@ -96,3 +96,29 @@ const card12 = document.querySelector('.card12')
 heading12.addEventListener('click', () => {
     card12.classList.toggle('active')
 })
+
+
+
+
+
+const heading13 = document.querySelector('.blog13 h3')
+const card13 = document.querySelector('.card13')
+
+heading13.addEventListener('click', () => {
+    card13.classList.toggle('active')
+})
+
+
+const heading14 = document.querySelector('.blog14 h3')
+const card14 = document.querySelector('.card14')
+
+heading14.addEventListener('click', () => {
+    card14.classList.toggle('active')
+})
+
+const heading15 = document.querySelector('.blog15 h3')
+const card15 = document.querySelector('.card15')
+
+heading15.addEventListener('click', () => {
+    card15.classList.toggle('active')
+})

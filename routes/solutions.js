@@ -49,8 +49,8 @@ router.get('/largeProjects', (req, res) => {
 
 // --------------------------------------------------------------------------------------------------------------------
 // Lisening
-router.get('/lisening', (req, res) => {
-    res.status(200).render('lisening.pug')
+router.get('/liaisoning', (req, res) => {
+    res.status(200).render('liaisoning.pug')
 })
 
 

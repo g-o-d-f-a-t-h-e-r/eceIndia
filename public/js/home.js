@@ -741,7 +741,7 @@ setInterval(() => {
 
 button[0].onclick = () => {
     slide.style.transform = "translateX(0px)"
-    for(i=0; i < 2; i++){
+    for(i=0; i < 8; i++){
         button[i].classList.remove('active')
     }
     button[0].classList.add('active')
@@ -749,44 +749,44 @@ button[0].onclick = () => {
 }
 button[1].onclick = () => {
     slide.style.transform = "translateX(-800px)"
-    for(i=0; i < 2; i++){
+    for(i=0; i < 8; i++){
         button[i].classList.remove('active')
     }
     button[1].classList.add('active')
     counter = 1
 }
-// button[2].onclick = () => {
-//     slide.style.transform = "translateX(-1600px)"
-//     for(i=0; i < 8; i++){
-//         button[i].classList.remove('active')
-//     }
-//     button[2].classList.add('active')
-//     counter = 2
-// }
-// button[3].onclick = () => {
-//     slide.style.transform = "translateX(-2400px)"
-//     for(i=0; i < 8; i++){
-//         button[i].classList.remove('active')
-//     }
-//     button[3].classList.add('active')
-//     counter = 3
-// }
-// button[4].onclick = () => {
-//     slide.style.transform = "translateX(-3200px)"
-//     for(i=0; i < 8; i++){
-//         button[i].classList.remove('active')
-//     }
-//     button[4].classList.add('active')
-//     counter = 4
-// }
-// button[5].onclick = () => {
-//     slide.style.transform = "translateX(-4000px)"
-//     for(i=0; i < 8; i++){
-//         button[i].classList.remove('active')
-//     }
-//     button[5].classList.add('active')
-//     counter = 5
-// }
+button[2].onclick = () => {
+    slide.style.transform = "translateX(-1600px)"
+    for(i=0; i < 8; i++){
+        button[i].classList.remove('active')
+    }
+    button[2].classList.add('active')
+    counter = 2
+}
+button[3].onclick = () => {
+    slide.style.transform = "translateX(-2400px)"
+    for(i=0; i < 8; i++){
+        button[i].classList.remove('active')
+    }
+    button[3].classList.add('active')
+    counter = 3
+}
+button[4].onclick = () => {
+    slide.style.transform = "translateX(-3200px)"
+    for(i=0; i < 8; i++){
+        button[i].classList.remove('active')
+    }
+    button[4].classList.add('active')
+    counter = 4
+}
+button[5].onclick = () => {
+    slide.style.transform = "translateX(-4000px)"
+    for(i=0; i < 8; i++){
+        button[i].classList.remove('active')
+    }
+    button[5].classList.add('active')
+    counter = 5
+}
 // button[6].onclick = () => {
 //     slide.style.transform = "translateX(-4800px)"
 //     for(i=0; i < 8; i++){

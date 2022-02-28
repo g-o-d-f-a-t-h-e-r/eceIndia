@@ -37,8 +37,11 @@ body, html{
 	bottom: 0;
 	background: linear-gradient(to right, #01ACEF, #01A550);
 	color: var(--blueBgText);
-	font-size: 15px;
+	/* font-size: 15px; */
 	width: 100%;
+	color: white;
+  font-size: medium;
+  font-weight: 500;
 }
 
 .footer h2{

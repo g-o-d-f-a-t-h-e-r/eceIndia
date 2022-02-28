@@ -215,7 +215,8 @@ header {
   margin: auto 10px;
   transition: all 0.3s ease;
   /* color: rgb(207, 220, 230); */
-  font-weight: 400;
+  font-weight: 500;
+  font-size: medium;
   cursor: pointer;
 }
 
@@ -451,7 +452,7 @@ header {
   background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 375px;
   margin-left: 10px;
-  width: 300px;
+  width: 320px;
 }
 
 /* Rooftop Below 20KW */
@@ -494,7 +495,7 @@ header {
   position: absolute;
   background: linear-gradient(to right, #01ACEF, #01A550);
   margin-top: 0;
-  margin-left: 250px;
+  margin-left: 270px;
   width: 150px;
   padding-left: 20px;
 }
@@ -1669,7 +1670,10 @@ div.filler {
 .footer {
   background: linear-gradient(to right, #01ACEF, #01A550);;
   color: var(--blueBgText);
-  font-size: 15px;
+  /* font-size: 15px; */
+  color: white;
+  font-size: medium;
+  font-weight: 500;
 }
 
 .footer h2 {
